@@ -18,12 +18,12 @@
 }
  'use client' */
 
-const Button = ({ children = "Book en samtale", onClick, variant = "primary" }) => {
+const Button = ({ children = "Book en samtale", variant = "primary" }) => {
   
   const isPrimary = variant === "primary";
   
-  return ( <button 
-    onClick={onClick}
+  return ( 
+  <button 
     className={`${isPrimary 
       ? "bg-[#367067] text-white hover:text-[#367067] hover:bg-[#DBE1F8] " 
       : "bg-[#DBE1F8] text-[#367067] hover:text-white hover:bg-[#367067] hover:border-[#DBE1F8]"

@@ -13,7 +13,6 @@ const HeroSection = () => {
         width={1920}
         height={1080}
         className="absolute inset-0 w-full h-full object-cover"
-        priority
       />
       
       {/* Black overlay with 60% opacity */}
@@ -35,12 +34,12 @@ const HeroSection = () => {
 
         <div className="absolute bottom-0 right-0 z-20 bg-[#3670674D]/70 border-t-[#367067] border-t-2 rounded-lg p-6">
         {/* Content inside box DOES have max-width constraint */}
-        <div className="text-white space-y-4 max-w-xl">
+        <div className="text-white space-y-4 max-w-xl pr-12">
           <p className="text-sm leading-relaxed">
             At starte eller være i gang med at skulle kan være både spændende og frustrerende. Jeg hjælper med at håndtere pres, usikkerhed og fastlåsthed, så du kan finde ro, fokus og trivsel i hverdagen.
           </p>
           <div className="pt-2">
-            <Button>Book en samtale</Button>
+            <Button variant="primary" />
           </div>
         </div>
       </div>

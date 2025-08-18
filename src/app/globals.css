@@ -30,6 +30,12 @@ body {
   padding: 0 20px;
 }
 
+.list-max {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /* Section spacing */
 section {
   margin-bottom: 100px;
@@ -66,15 +72,53 @@ h1 {
 
 h2 {
   font-size: 80px;  
-  font-weight: 100;
+  font-weight: 200;
   line-height: 1;
+  
+}
 
+h3 {
+  font-family: var(--font-archivo), sans-serif;
+  font-size: 34px;
+  font-weight: 600;
 }
 
 p {
+  font-family: var(--font-archivo), sans-serif;
   font-weight: 200;
 }
 
 button {
+  font-family: var(--font-archivo), sans-serif;
   cursor: pointer;
+}
+
+
+/* Image with background shape */
+figure.custom {
+  position: relative;
+  margin-inline:0 0 auto auto;
+  max-inline-size: 400px;
+  margin: 3rem;
+  display: block;
+  margin-left: auto;
+}
+
+figure.custom::before {
+  content: '';
+  background: #367067;
+  height: 400px;
+  width: 315px;
+  position: absolute;
+  bottom: -2rem;
+  left: -2rem;
+  z-index: 1;
+  
+}
+
+figure.custom img {
+  inline-size: 100%;
+  display: block;
+   position: relative;
+  z-index: 2;
 }
