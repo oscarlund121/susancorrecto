@@ -1,14 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Archivo, Fraunces } from "next/font/google";
 import "./globals.css";
+import Navigation from "./components/layout/Navigation";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+
+
+const archivo = Archivo({
+  variable: "--font-archivo",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const fraunces = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export const metadata = {
@@ -19,8 +24,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+         
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${archivo.variable} ${fraunces.variable} antialiased`}
       >
         {children}
       </body>
