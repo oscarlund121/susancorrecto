@@ -6,7 +6,7 @@ const Navigation = ({ variant = 'default' }) => {
   return (
     <nav className={`${variant === 'transparent' ? 'bg-transparent' : 'bg-[#367067]'} px-14 py-10`}>
       {/* White rounded navigation bar */}
-      <div className="bg-[white] rounded-full px-8 py-2 flex items-center justify-between max-w-[1400px] mx-auto">
+      <div className="bg-[white] rounded-full px-8 py-2 flex items-center justify-between  mx-auto">
         
         {/* Logo section */}
         <div className="flex items-center gap-4">

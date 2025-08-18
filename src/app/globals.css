@@ -13,15 +13,66 @@
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-h1, h2 {
+/* Content wrappers */
+.content-max {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-max {
+  max-width: 1250px;
+  margin: 0 ;
+  padding: 0 20px;
+}
+
+/* Section spacing */
+section {
+  margin-bottom: 100px;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+  section {
+    margin-bottom: 80px;
+  }
+  
+  .content-max,
+  .text-max {
+    padding: 0 16px;
+  }
+}
+
+
+h1,
+h2 {
   font-family: var(--font-fraunces), serif;
+}
+
+h1 {
+  font-size: 145px;
+  font-weight: 100;
+  max-width: 1250px;
+  line-height: 1;
+}
+
+h2 {
+  font-size: 80px;  
+  font-weight: 100;
+  line-height: 1;
+
+}
+
+p {
+  font-weight: 200;
 }
 
 button {
