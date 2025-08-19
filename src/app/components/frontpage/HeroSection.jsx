@@ -39,7 +39,7 @@ const HeroSection = () => {
           <p className="text-sm leading-relaxed">
             At starte eller være i gang med at skulle kan være både spændende og
             frustrerende. Jeg hjælper med at håndtere pres, usikkerhed og
-            fastlåsthed, så du kan finde ro, fokus og trivsel i hverdagen.
+            fastlåsthed, så du kan finde ro, fokus og trivsel i hverdagen!.
           </p>
           <div className="pt-2">
             <Button variant="secondary" />
