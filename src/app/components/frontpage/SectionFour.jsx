@@ -16,12 +16,12 @@ const SectionFour = () => {
         variant="primary"
       />
       <div className="content-max ">
-        <div className="grid pl-6 grid-cols-2 mt-25 items-center ">
-          <ul className="flex flex-col gap-16 ">
+        <div className="grid pl-6 grid-cols-1 md:grid-cols-2 mt-25 items-center gap-8 lg:gap-0">
+          <ul className="flex flex-col gap-8 lg:gap-16 order-2 lg:order-1">
             <li>
               <Link
                 href="/essentiel-integrativ-psykoterapi"
-                className="border-b-2 flex flex-col justify-between  hover:bg-black/5 transition-colors p-4 -m-4 rounded"
+                className="border-b-2 flex flex-col justify-between  hover:bg-black/5 transition-colors p-2 lg:p-4 -m-2 lg:-m-4 rounded"
               >
                 <h3 className="text-left">Essentiel Integrativ Psykoterapi</h3>
                 <div className="flex justify-end">
@@ -32,7 +32,7 @@ const SectionFour = () => {
             <li>
               <Link
                 href="/kort-terapi"
-                className="border-b-2 flex flex-col justify-between hover:bg-black/5 transition-colors p-4 -m-4 rounded"
+                className="border-b-2 flex flex-col justify-between hover:bg-black/5 transition-colors p-2 lg:p-4 -m-2 lg:-m-4 rounded"
               >
                 <h3 className="text-left">Kort terapi</h3>
                 <div className="flex justify-end">
@@ -43,7 +43,7 @@ const SectionFour = () => {
             <li>
               <Link
                 href="/gruppeforloeb"
-                className="border-b-2 flex flex-col justify-between hover:bg-black/5 transition-colors p-4 -m-4 rounded"
+                className="border-b-2 flex flex-col justify-between hover:bg-black/5 transition-colors p-2 lg:p-4 -m-2 lg:-m-4 rounded"
               >
                 <h3 className="text-left">Gruppeforløb</h3>
                 <div className="flex justify-end">
@@ -54,7 +54,7 @@ const SectionFour = () => {
             <li>
               <Link
                 href="/online-terapi"
-                className="border-b-2 flex flex-col justify-between hover:bg-black/5 transition-colors p-4 -m-4 rounded"
+                className="border-b-2 flex flex-col justify-between hover:bg-black/5 transition-colors p-2 lg:p-4 -m-2 lg:-m-4 rounded"
               >
                 <h3 className="text-left">Online terapi</h3>
                 <div className="flex justify-end">
@@ -64,7 +64,7 @@ const SectionFour = () => {
             </li>
           </ul>
 
-          <figure className="custom">
+          <figure className="custom order-1 md:order-2 ">
             <Image
               src="/img/determind.jpg"
               alt="Hero background"

@@ -132,6 +132,7 @@ figure.custom img {
 @media (max-width: 768px) {
   figure.custom {
     margin-inline: auto;
+    
   }
   
   h1 {

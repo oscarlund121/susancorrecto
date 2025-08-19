@@ -19,7 +19,7 @@ const HeaderSection = ({
             </h2>
           </div>
           
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 mt-6 sm:mt-2">
             <Link href={buttonHref}>
               <Button variant={variant}>
                 {buttonText}
