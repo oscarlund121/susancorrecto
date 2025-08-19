@@ -67,7 +67,7 @@ const Navigation = ({ variant = 'default' }) => {
       </div>
 
       {/* Mobile menu */}
-      <div className={`xl:hidden mt-4 bg-white rounded-2xl mx-4 transition-all duration-300 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
+     <div className={`xl:hidden absolute  left-0 right-0 mt-4 bg-white rounded-2xl mx-4 transition-all duration-300 ${isMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'}`}>
         <div className="py-6 px-8 space-y-4">
           <Link 
             href="/" 
