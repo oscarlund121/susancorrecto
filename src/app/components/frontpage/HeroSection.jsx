@@ -12,7 +12,7 @@ const HeroSection = () => {
         alt="Hero background"
         width={1920}
         height={1080}
-        className="absolute inset-0 w-full h-full object-cover sm:object-right"
+        className="absolute inset-0 w-full h-full object-cover object-[70%_center] sm:object-[30%_center]"
       />
 
       {/* Black overlay with 60% opacity */}
@@ -33,7 +33,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-[-3.5rem] right-0 z-20 bg-[#3670674D]/70 border-t-[#367067] border-t-2 rounded-lg p-6 ">
+      <div className="absolute bottom-[-3.5rem] right-0 z-20 bg-[#3670674D]/70 border-t-[#367067]  mx-6 sm:mx-0 border-t-2 rounded-lg p-6 ">
         {/* Content inside box DOES have max-width constraint */}
         <div className="text-white flex flex-col items-center sm:items-start md:w-xl w-full ">
           <p className="text-max">
