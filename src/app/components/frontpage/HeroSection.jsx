@@ -12,7 +12,7 @@ const HeroSection = () => {
         alt="Hero background"
         width={1920}
         height={1080}
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover sm:object-right"
       />
 
       {/* Black overlay with 60% opacity */}
@@ -35,7 +35,7 @@ const HeroSection = () => {
 
       <div className="absolute bottom-[-3.5rem] right-0 z-20 bg-[#3670674D]/70 border-t-[#367067] border-t-2 rounded-lg p-6 ">
         {/* Content inside box DOES have max-width constraint */}
-        <div className="text-white flex flex-col items-center sm:items-start space-y-4 md:w-xl w-sm ">
+        <div className="text-white flex flex-col items-center sm:items-start md:w-xl w-full ">
           <p className="text-max">
             At starte eller være i gang med at skulle kan være både spændende og
             frustrerende. Jeg hjælper med at håndtere pres, usikkerhed og
