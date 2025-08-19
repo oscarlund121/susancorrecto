@@ -13,7 +13,7 @@ const SectionTwo = () => {
         </h2>
 
         {/* Checkmark box */}
-        <div className="bg-[#d3d5e9]/20 p-8 w-lg mt-10 ml-5">
+        <div className="bg-[#d3d5e9]/20 p-8 w-sm md:w-lg mt-10 px-5">
           <ul className="space-y-6">
             <li className="flex items-start gap-4">
               <div className="flex-shrink-0 w-6 h-6 bg-white rounded-full flex items-center justify-center mt-0.5">

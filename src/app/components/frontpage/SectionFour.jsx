@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const SectionFour = () => {
   return (
-    <div className="py-16 bg-[#DBE1F8] ">
+    <div className="py-32 bg-[#DBE1F8] ">
       <HeaderSection
         title="Jeg tilbyder evidensbaseret psykoterapi med fokus på helhedsorienteret behandling og personlig udvikling."
         buttonText="Kom i kontakt"
@@ -16,7 +16,7 @@ const SectionFour = () => {
         variant="primary"
       />
       <div className="content-max ">
-        <div className="grid pl-6 grid-cols-2 mt-40 ">
+        <div className="grid pl-6 grid-cols-2 mt-25 items-center ">
           <ul className="flex flex-col gap-16 ">
             <li>
               <Link

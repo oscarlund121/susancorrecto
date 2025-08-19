@@ -12,7 +12,7 @@ const HeaderSection = ({
   return (
     <div>
       <div className="content-max">
-        <div className="flex justify-between items-end">
+        <div className="flex justify-between flex-col items-end">
           <div className="text-max">
             <h2>
               {title}
