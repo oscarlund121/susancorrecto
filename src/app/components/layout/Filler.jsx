@@ -2,12 +2,12 @@
 
 import Button from "../ui/Button";
 
-const SectionThree = () => {
+const Filler = ({title}) => {
   return (
     <div className="bg-[#DBE1F8] py-32">
       <div className=" flex flex-col items-center justify-center gap-12">
         <h2 className="text-center text-max">
-          Vi finder løsningen sammen, skridt for skridt, i dit tempo.
+          {title}
         </h2>
         <div className="flex justify-center">
           <Button />
@@ -17,4 +17,4 @@ const SectionThree = () => {
   );
 };
 
-export default SectionThree;
+export default Filler;
