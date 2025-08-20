@@ -11,13 +11,14 @@ const SectionFour = () => {
     <div className="py-32 bg-[#DBE1F8] ">
       <HeaderSection
         title="Jeg tilbyder evidensbaseret psykoterapi med fokus på helhedsorienteret behandling og personlig udvikling."
+        text="Psykoterapi handler ikke kun om at fjerne symptomer, men om at styrke dig som menneske. Jeg tilbyder et trygt og respektfuldt rum, hvor du kan udforske dine følelser, bearbejde svære oplevelser og finde nye måder at leve på."
         buttonText="Kom i kontakt"
         buttonHref="/kontakt"
         variant="primary"
       />
       <div className="content-max ">
-        <div className="grid pl-6 grid-cols-1 md:grid-cols-2 mt-25 items-center gap-8 lg:gap-0">
-          <ul className="flex flex-col gap-8 lg:gap-16 order-2 lg:order-1">
+        <div className="grid px-6 grid-cols-1 md:grid-cols-2 mt-25 items-center gap-8 lg:gap-0">
+          <ul className="flex span-2 flex-col gap-8 lg:gap-16 order-2 lg:order-1">
             <li>
               <Link
                 href="/essentiel-integrativ-psykoterapi"
@@ -64,12 +65,13 @@ const SectionFour = () => {
             </li>
           </ul>
 
-          <figure className="custom order-1 md:order-2 ">
+          <figure className="custom  order-2 ">
             <Image
               src="/img/determind.jpg"
               alt="Hero background"
               width={315}
               height={450}
+              
             />
           </figure>
         </div>
