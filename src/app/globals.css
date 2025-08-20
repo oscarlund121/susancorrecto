@@ -57,9 +57,8 @@ h2 {
 }
 
 h1 {
-  font-size: clamp(60px, 8vw, 145px);
+  font-size: clamp(72px, 8vw, 145px);
   font-weight: 100;
-  max-width: 1250px;
   line-height: 1;
 }
 
@@ -107,7 +106,7 @@ figure.custom {
   margin-left: auto;
   
   /* CSS variabler */
-  --bg-color: #367067;
+  --bg-color: #D3D9E5;
   --bg-opacity: 0.8;
   --offset-x: clamp(-2rem, -5vw, -4rem);
   --offset-y: clamp(-2rem, -5vw, -4rem);
@@ -117,8 +116,8 @@ figure.custom::before {
   content: '';
   background: var(--bg-color);
   opacity: var(--bg-opacity);
-  height: clamp(300px, 50vw, 450px);
-  width: clamp(200px, 45vw, 325px);
+  height: clamp(200px, 50vw, 300px);
+  width: clamp(200px, 45vw, 300px);
   position: absolute;
   top: var(--offset-y);  /* Default position */
   left: var(--offset-x);

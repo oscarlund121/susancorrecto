@@ -24,7 +24,7 @@ const HeroSection = () => {
       </div>
 
       {/* Hero content */}
-        <div className="relative z-20 flex items-start content-max pt-20 md:pt-16 sm:pt-12">
+        <div className="relative z-20 flex items-start min-h-[60vh] sm:min-h-[70vh] content-max pt-20 md:pt-16 sm:pt-12">
         <div className="text-left text-white ">
           {/* Add your hero content here */}
           <h1 className="mb-4  text-hero-max text-left">
@@ -35,7 +35,7 @@ const HeroSection = () => {
 
       <div className="absolute bottom-[-3.5rem] right-0 z-20 bg-[#3670674D]/70 border-t-[#367067]  mx-6 sm:mx-0 border-t-2  p-6 ">
         {/* Content inside box DOES have max-width constraint */}
-        <div className="text-white flex flex-col items-center sm:items-start md:w-xl ">
+        <div className="text-white flex flex-col items-center md:items-start md:w-lg ">
           <p className="text-max">
             At starte eller være i gang med at skulle kan være både spændende og
             frustrerende. Jeg hjælper med at håndtere pres, usikkerhed og

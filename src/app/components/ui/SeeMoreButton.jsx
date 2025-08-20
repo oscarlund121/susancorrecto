@@ -31,7 +31,7 @@ const SeeMoreButton = ({
         >
           <path
             d="M2 6H10M10 6L6 2M10 6L6 10"
-            stroke={isLight ? "white" : "#367067"}
+            stroke={isLight ? "#367067" : "white"}
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"

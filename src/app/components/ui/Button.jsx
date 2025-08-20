@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 /* const Button = ({ children = "Book en samtale", onClick }) => {
 
@@ -19,39 +19,47 @@
  'use client' */
 
 const Button = ({ children = "Book en samtale", variant = "primary" }) => {
-  
   const isPrimary = variant === "primary";
-  
-  return ( 
-  <button 
-    className={`${isPrimary 
-      ? "bg-[#367067] text-white hover:text-[#367067] hover:bg-[#DBE1F8] " 
-      : "bg-[#DBE1F8] text-[#367067] hover:text-white hover:bg-[#367067] hover:border-[#DBE1F8]"
-    } pl-4 pr-3 py-2 border-2 border-[#367067] rounded-full text-xl font-light flex items-center gap-3 transition-colors group`}
-  >
-    {children}
-    <div className={`w-12 h-12 rounded-full flex items-center justify-center ${isPrimary 
-      ? "bg-[#DBE1F8] group-hover:bg-[#367067]" 
-      : "bg-[#367067] group-hover:bg-[#DBE1F8]"
-    }`}>
-      <svg width="16" height="16" viewBox="0 0 12 12" fill="none">
-        <path 
-          d="M2 6H10M10 6L6 2M10 6L6 10" 
-          stroke={isPrimary ? "#367067" : "#DBE1F8"} 
-          strokeWidth="2" 
-          strokeLinecap="round" 
-          strokeLinejoin="round" 
-          className={isPrimary 
-            ? "group-hover:stroke-[#DBE1F8]" 
-            : "group-hover:stroke-[#367067]"
-          }
-        />
-      </svg>
-    </div>
-  </button>
-  );
-   
-}
- 
 
-export default Button;  
+  return (
+    <button
+      className={`${
+        isPrimary
+          ? "bg-[#367067] text-white hover:text-[#367067] hover:bg-[#DBE1F8] "
+          : "bg-[#DBE1F8] text-[#367067] hover:text-white hover:bg-[#367067] hover:border-[#DBE1F8]"
+      } pl-3 pr-2 py-2 sm:pl-4 sm:pr-3 sm:py-2 border-2 border-[#367067] rounded-full text-lg sm:text-xl font-light flex items-center gap-2 sm:gap-3 transition-colors group`}
+    >
+      {children}
+      <div
+        className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center ${
+          isPrimary
+            ? "bg-[#DBE1F8] group-hover:bg-[#367067]"
+            : "bg-[#367067] group-hover:bg-[#DBE1F8]"
+        }`}
+      >
+        <svg
+          width="12"
+          height="12"
+          className="sm:w-4 sm:h-4"
+          viewBox="0 0 12 12"
+          fill="none"
+        >
+          <path
+            d="M2 6H10M10 6L6 2M10 6L6 10"
+            stroke={isPrimary ? "#367067" : "#DBE1F8"}
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className={
+              isPrimary
+                ? "group-hover:stroke-[#DBE1F8]"
+                : "group-hover:stroke-[#367067]"
+            }
+          />
+        </svg>
+      </div>
+    </button>
+  );
+};
+
+export default Button;
