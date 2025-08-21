@@ -29,11 +29,11 @@ const SectionSix = () => {
             </span>
           </figure>
 
-          <div className="col-span-2 flex flex-col justify-top  text-white order-1 md:order-2">
-            <div className="mt-6 px-6">
+          <div className="col-span-2 flex flex-col justify-center  text-white order-1 md:order-2">
+            <div className="mt- ">
               <div className="text-max ">
               
-                <h3 className="mb-4 border-b-2 border-white pb-2">Susan Albertsen</h3>
+                <h3 className="mb-4 w-full md:w-xl border-b-2 border-white pb-2">Susan Albertsen</h3>
 
                 <p className="mb-6 w-full md:w-xl">
                   Jeg er uddannet psykoterapeut med 20 års erfaring i at støtte
@@ -45,7 +45,7 @@ const SectionSix = () => {
                 </p>
               </div>
 
-              <div className="flex justify-end">
+              <div className="flex justify-end w-full md:w-xl">
                 <Link href="/om-susan">
                   <SeeMoreButton variant="light">Læs mere</SeeMoreButton>
                 </Link>
