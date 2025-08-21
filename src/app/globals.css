@@ -173,10 +173,13 @@ figure.custom img {
 /* Mobile adjustments */
 @media (max-width: 768px) {
   figure.custom {
-    margin-inline: auto;
+    margin-inline: auto
     
   }
   
+    figure.custom::before {
+    content: none;
+    }
   h1 {
     line-height: 0.95;
     width: 350px;
@@ -265,7 +268,7 @@ figure.custom img {
 /* Mobile adjustments for testimonials */
 @media (max-width: 768px) {
   .hs {
-    grid-template-columns: 10px repeat(var(--total, 3), calc(50% - var(--gutter))) 10px;
+    grid-template-columns: 10px repeat(var(--total, 3), calc(80% - var(--gutter))) 10px;
   }
 }
 

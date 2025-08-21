@@ -12,7 +12,7 @@ const SectionSeven = () => {
         variant="secondary"
       />
       <div className="flex flex-col content-max ">
-        <div className="flex flex-col md:flex-row items-center justify-around gap-1  mt-16 ">
+        <div className="flex flex-col md:flex-row items-center justify-around gap-1 px-6 md:px-0 mt-16 ">
           <Help
             title="Unge & Studerende"
             tags={[
@@ -36,7 +36,7 @@ const SectionSeven = () => {
             ]}
           />
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-around gap-1 mt-8">
+        <div className="flex flex-col md:flex-row items-center justify-around gap-1 px-6 md:px-0 mt-16 ">
           <Help
             title="Følelser & Angst"
             tags={[
@@ -60,7 +60,7 @@ const SectionSeven = () => {
             ]}
           />
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-around gap-1 mt-8 ">
+        <div className="flex flex-col md:flex-row items-center justify-around gap-1 px-6 md:px-0 mt-16  ">
           <Help
             title="Relationer & Familie"
             tags={[
