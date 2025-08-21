@@ -36,7 +36,7 @@ const HeroSection = () => {
       <div className="absolute bottom-[-3.5rem] right-0 z-20 bg-transparent sm:bg-[#3670674D]/70 sm:border-t-[#367067]  border-t-0 mx-6 sm:mx-0 sm:border-t-2  p-6 ">
         {/* Content inside box DOES have max-width constraint */}
         <div className="text-white flex flex-col items-center md:items-start md:w-lg ">
-          <p className="text-max">
+          <p className="md:text-max">
             At starte eller være i gang med at skulle kan være både spændende og
             frustrerende. Jeg hjælper med at håndtere pres, usikkerhed og
             fastlåsthed, så du kan finde ro, fokus og trivsel i hverdagen.
