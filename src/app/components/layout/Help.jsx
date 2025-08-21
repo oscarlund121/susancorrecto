@@ -4,7 +4,7 @@ import SeeMoreButton from "../ui/SeeMoreButton";
 const Help = ({ title, tags }) => {
   return (
 
-    <div className="xl:w-[600px] lg:w[500px]  md:w-[350px] w-sm h-[300px] mb-16">
+    <div className="xl:w-[600px] lg:w[500px] px-6  md:w-[350px] w-sm h-[300px] mb-16">
       <h3 className="mb-6  border-b-2 border-black">
         {title}
       </h3>
