@@ -46,7 +46,7 @@ const testimonialData = [
 
 const SectionEight = () => {
   return (
-    <div className="app relative min-h-screen py-32 pb-16">
+    <div className="app relative min-h-screen py-32">
       {/* Background image */}
       <Image
         src="/img/testi-img.jpg"
@@ -58,10 +58,10 @@ const SectionEight = () => {
       <div className="absolute inset-0 bg-black/50 z-10"></div>
 
       {/* Header - stays in content area */}
-      <div className="relative z-20">
-        <h2 className="text-white text-center mb-8">Det siger mine klienter:</h2>
-      </div>
-      
+      <h2 className="relative z-20 text-white text-center mb-4">
+        Det siger mine klienter:
+      </h2>
+
       {/* Testimonials - full width with .full class */}
       <div className="full relative z-20">
         <Testimonials testimonials={testimonialData} />

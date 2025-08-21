@@ -191,7 +191,7 @@ figure.custom img {
 .app {
   display: grid;
   grid-gap: var(--gutter) 0;
-  grid-template-columns: aut 1fr auto ;
+  grid-template-columns: auto 1fr auto ;
   align-content: start;
 }
 

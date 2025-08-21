@@ -8,10 +8,10 @@ const SeeMoreButton = ({
   const isLight = variant === "light";
 
   return (
-    <button className="flex items-center gap-2 sm:gap-3 hover:gap-4 transition-all duration-200">
+    <button className="group flex items-center gap-2 sm:gap-3 hover:gap-4 transition-all duration-200">
       <span
         className={`text-sm sm:text-lg lg:text-xl font-light transition-colors ${
-          isLight ? "text-black" : "text-white"
+          isLight ? "text-black group-hover:text-[#367067]" : "text-white group-hover:text-white"
         }`}
       >
         {children}
@@ -20,8 +20,8 @@ const SeeMoreButton = ({
       <div
         className={`w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 rounded-full flex items-center justify-center transition-all duration-200 ${
           isLight
-            ? "bg-[#DBE1F8] hover:bg-[#367067]"
-            : "bg-[#367067] hover:bg-[#DBE1F8]"
+            ? "bg-[#DBE1F8] group-hover:bg-[#367067]"
+            : "bg-[#367067] group-hover:bg-[#DBE1F8]"
         }`}
       >
         <svg 
@@ -35,6 +35,10 @@ const SeeMoreButton = ({
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
+            className={isLight 
+              ? "group-hover:stroke-[#DBE1F8]" 
+              : "group-hover:stroke-[#367067]"
+            }
           />
         </svg>
       </div>
