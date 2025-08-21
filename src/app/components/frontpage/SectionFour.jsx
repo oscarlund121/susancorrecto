@@ -22,10 +22,10 @@ const SectionFour = () => {
             <li>
               <Link
                 href="/essentiel-integrativ-psykoterapi"
-                className="border-b-2 flex flex-col justify-between  bg-[#367067] text-white hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline"
+                className="border-b-2 border-l-1 flex flex-col justify-between  bg-white text-black hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline rounded-lg"
               >
                 <h3 className="text-left">Essentiel Integrativ Psykoterapi</h3>
-                <div className="flex justify-end">
+                <div className="flex justify-end pr-6">
                   <SeeMoreButton variant="light" />
                 </div>
               </Link>
@@ -33,11 +33,11 @@ const SectionFour = () => {
             <li>
               <Link
                 href="/essentiel-integrativ-psykoterapi"
-                className="border-b-2 flex flex-col justify-between  bg-[#367067] text-white hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline"
+                className="border-b-2 border-l-1 flex flex-col justify-between  bg-white text-black hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline rounded-lg"
               >
                 <h3 className="text-left">EMDR <span className="font-extralight italic text-xs sm:text-base">(Eye Movement Desensitization and Reprocessing)</span></h3>
 
-                <div className="flex justify-end">
+                <div className="flex justify-end pr-6">
                   <SeeMoreButton variant="light" />
                 </div>
               </Link>
@@ -45,10 +45,10 @@ const SectionFour = () => {
             <li>
               <Link
                 href="/essentiel-integrativ-psykoterapi"
-                className="border-b-2 flex flex-col justify-between  bg-[#367067] text-white hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline"
+                className="border-b-2 border-l-1 flex flex-col justify-between  bg-white text-black hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline rounded-lg"
               >
                 <h3 className="text-left">Meditation</h3>
-                <div className="flex justify-end">
+                <div className="flex justify-end pr-6">
                   <SeeMoreButton variant="light" />
                 </div>
               </Link>
@@ -56,10 +56,10 @@ const SectionFour = () => {
             <li>
              <Link
                 href="/essentiel-integrativ-psykoterapi"
-                className="border-b-2 flex flex-col justify-between  bg-[#367067] text-white hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline"
+                className="border-b-2 border-l-1 flex flex-col justify-between  bg-white text-black hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline rounded-lg"
               >
                 <h3 className="text-left">Familie- & parterapi</h3>
-                <div className="flex justify-end">
+                <div className="flex justify-end pr-6">
                   <SeeMoreButton variant="light" />
                 </div>
               </Link>

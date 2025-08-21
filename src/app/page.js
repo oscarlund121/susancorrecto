@@ -6,6 +6,7 @@ import SectionFour from "./components/frontpage/SectionFour";
 import SectionFive from "./components/frontpage/SectionFive";
 import SectionSix from "./components/frontpage/SectionSix";
 import SectionSeven from "./components/frontpage/SectionSeven";
+import SectionEight from "./components/frontpage/SectionEight";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
            <Filler title="Jeg hjælper dig med at finde styrke, ro og retning, uanset hvor du står." />
 
       <SectionSeven />
+      <SectionEight />
     </div>
   );
 }

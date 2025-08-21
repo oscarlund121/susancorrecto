@@ -9,8 +9,8 @@ const SectionSix = () => {
   return (
     <div className="py-32 bg-[#367067]">
       <div className="content-max">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
-          <figure className="custom col-span-1 mt-10 md:mt-0 flex flex-col justify-center items-center w-full order-2 md:order-1">
+        <div className="grid grid-cols-1 text-max md:grid-cols-3 gap-2">
+          <figure className="custom col-span-1 mt-10 md:mt-0 flex flex-col  justify-center items-center w-full order-2 md:order-1">
             <Image
               src="/img/about-front.jpg"
               alt="Om Susan Image"
