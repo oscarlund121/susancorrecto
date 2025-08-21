@@ -7,8 +7,11 @@ import Link from "next/link";
 
 const SectionSix = () => {
   return (
-    <div className="py-32 bg-[#367067]">
-      <div className="content-max">
+    <div className="py-32 text-white bg-[#367067]">
+      {/* HeaderSection får fuld bredde */}
+      <HeaderSection title="Erfaren psykoterapeut i Aarhus" variant={false} />
+
+      <div className="content-max mt-12">
         <div className="grid grid-cols-1 text-max md:grid-cols-3 gap-2">
           <figure className="custom col-span-1 mt-10 md:mt-0 flex flex-col  justify-center items-center w-full order-2 md:order-1">
             <Image
@@ -26,17 +29,11 @@ const SectionSix = () => {
             </span>
           </figure>
 
-          <div className="col-span-2 flex flex-col justify-center text-white order-1 md:order-2">
-            <div className="border-b-2 border-white mx-6">
-              <HeaderSection
-                title="Erfaren psykoterapeut i Aarhus "
-                variant={false}
-              />
-            </div>
-
+          <div className="col-span-2 flex flex-col justify-top  text-white order-1 md:order-2">
             <div className="mt-6 px-6">
-              <div className="text-max">
-                <h3 className="mb-4 ">Om mig</h3>
+              <div className="text-max ">
+              
+                <h3 className="mb-4 border-b-2 border-white pb-2">Susan Albertsen</h3>
 
                 <p className="mb-6 w-full md:w-xl">
                   Jeg er uddannet psykoterapeut med 20 års erfaring i at støtte
