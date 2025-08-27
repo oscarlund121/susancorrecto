@@ -9,7 +9,6 @@ const SectionSix = () => {
   return (
     <div className="py-32 flex flex-col items-center text-white bg-[#367067]">
       {/* HeaderSection får fuld bredde */}
-      <HeaderSection title="Erfaren psykoterapeut i Aarhus" variant={false} />
 
       <div className="content-max mt-12">
         <div className="grid grid-cols-1 text-max md:grid-cols-2 gap-2 mx-auto">
@@ -30,10 +29,14 @@ const SectionSix = () => {
           </figure>
 
           <div className=" flex flex-col justify-center  text-white order-1 md:order-2">
+            <div className="mb-6">
+              <h2>Erfaren psykoterapeut i Aarhus</h2>
+            </div>
             <div className="mt-2 ">
               <div className="md:text-max ">
-              
-                <h3 className="mb-4 w-full md:w-xl border-b-2 border-white pb-2">Susan Albertsen</h3>
+                <h3 className="mb-4 w-full md:w-xl border-b-2 border-white pb-2">
+                  Susan Albertsen
+                </h3>
 
                 <p className="mb-6 w-full md:w-xl">
                   Jeg er uddannet psykoterapeut med 20 års erfaring i at støtte

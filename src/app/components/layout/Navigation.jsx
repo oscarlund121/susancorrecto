@@ -5,9 +5,35 @@ import { useState } from 'react'
 
 const Navigation = ({ variant = 'default' }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false)
+  const [dropdownTimeout, setDropdownTimeout] = useState(null)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
+  }
+
+  const handleDropdownEnter = () => {
+    if (dropdownTimeout) {
+      clearTimeout(dropdownTimeout)
+      setDropdownTimeout(null)
+    }
+    setIsDropdownOpen(true)
+  }
+
+  const handleDropdownLeave = () => {
+    const timeout = setTimeout(() => {
+      setIsDropdownOpen(false)
+    }, 150) // 150ms delay før dropdown lukker
+    setDropdownTimeout(timeout)
+  }
+
+  const toggleDesktopDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen)
+  }
+
+  const toggleMobileDropdown = () => {
+    setIsMobileDropdownOpen(!isMobileDropdownOpen)
   }
 
   return (
@@ -16,22 +42,59 @@ const Navigation = ({ variant = 'default' }) => {
       <div className="bg-[white] rounded-full px-4 md:px-8 py-2 flex items-center justify-between mx-auto">
         
         {/* Logo section */}
-        <div className="flex items-center gap-4">
+        <Link href="/" className="flex items-center gap-4 cursor-pointer">
           <div className="w-12 h-12 bg-black rounded"></div>
           <div className="hidden sm:block">
             <div className="text-black text-sm font-medium">Psykoterapi</div>
             <div className="text-black text-sm font-light">Susan Albertsen</div>
           </div>
-        </div>
+        </Link>
         
         {/* Desktop Navigation links */}
         <div className="hidden xl:flex items-center gap-8">
           <Link href="/" className="text-[#367067] text-lg font-light hover:underline">
             Forside
           </Link>
-          <Link href="/ydelser" className="text-[#367067] text-lg font-light hover:underline">
-            Ydelser
-          </Link>
+          
+          {/* Ydelser dropdown */}
+          <div 
+            className="relative"
+            onMouseEnter={handleDropdownEnter}
+            onMouseLeave={handleDropdownLeave}
+          >
+            <button 
+              onClick={toggleDesktopDropdown}
+              className="text-[#367067] text-lg font-light hover:underline flex items-center gap-1"
+            >
+              Ydelser
+              <svg className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            
+            {/* Dropdown menu */}
+            <div 
+              className={`absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border transition-all duration-200 z-50 ${isDropdownOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
+              onMouseEnter={handleDropdownEnter}
+              onMouseLeave={handleDropdownLeave}
+            >
+              <div className="py-2">
+                <Link href="/emdr" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
+                  EMDR Terapi
+                </Link>
+                <Link href="/essentiel-integrativ-psykoterapi" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
+                  Essentiel Integrativ Psykoterapi
+                </Link>
+                <Link href="/meditation" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
+                  Meditation
+                </Link>
+                <Link href="/familie-par" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
+                  Familie- og parterapi
+                </Link>
+              </div>
+            </div>
+          </div>
+          
           <Link href="/omSusan" className="text-[#367067] text-lg font-light hover:underline">
             Om Susan
           </Link>
@@ -76,13 +139,52 @@ const Navigation = ({ variant = 'default' }) => {
           >
             Forside
           </Link>
-          <Link 
-            href="/ydelser" 
-            className="block text-[#367067] text-lg font-light py-2 hover:bg-gray-50 rounded"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Ydelser
-          </Link>
+          
+          {/* Mobile Ydelser dropdown */}
+          <div>
+            <button 
+              onClick={toggleMobileDropdown}
+              className="w-full text-left text-[#367067] text-lg font-light py-2 hover:bg-gray-50 rounded flex items-center justify-between"
+            >
+              Ydelser
+              <svg className={`w-3 h-3 transition-transform duration-200 ${isMobileDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            
+            {/* Mobile dropdown items */}
+            <div className={`ml-4 mt-2 space-y-2 transition-all duration-200 ${isMobileDropdownOpen ? 'opacity-100 max-h-48' : 'opacity-0 max-h-0 overflow-hidden'}`}>
+              <Link 
+                href="/emdr" 
+                className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                EMDR Terapi
+              </Link>
+              <Link 
+                href="/essentiel-integrativ-psykoterapi" 
+                className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Essentiel Integrativ Psykoterapi
+              </Link>
+              <Link 
+                href="/meditation" 
+                className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Meditation
+              </Link>
+              <Link 
+                href="/familie-par" 
+                className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Familie- og parterapi
+              </Link>
+            </div>
+          </div>
+          
           <Link 
             href="/omSusan" 
             className="block text-[#367067] text-lg font-light py-2 hover:bg-gray-50 rounded"

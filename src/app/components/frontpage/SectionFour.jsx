@@ -9,6 +9,7 @@ import Link from "next/link";
 const SectionFour = () => {
   return (
     <div className="py-32 bg-white ">
+      <div className="content-max ">
       <HeaderSection
         title="Jeg tilbyder evidensbaseret psykoterapi med fokus på helhedsorienteret behandling og personlig udvikling."
         text="Psykoterapi handler ikke kun om at fjerne symptomer, men om at styrke dig som menneske. Jeg tilbyder et trygt og respektfuldt rum, hvor du kan udforske dine følelser, bearbejde svære oplevelser og finde nye måder at leve på."
@@ -16,7 +17,6 @@ const SectionFour = () => {
         buttonHref="/kontakt"
         variant="secondary"
       />
-      <div className="content-max ">
         <div className="grid px-6 grid-cols-1 md:grid-cols-3 mt-25 items-center gap-8 lg:gap-4">
           <ul className="flex col-span-3 flex-col gap-8 lg:gap-16 ">
             <li className="mt-6">

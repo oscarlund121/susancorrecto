@@ -82,6 +82,12 @@ p {
   font-size: clamp(16px, 2vw, 18px);
   line-height: 1.6;
 }
+li {
+  font-family: var(--font-archivo), sans-serif;
+  font-weight: 600;
+  font-size: clamp(16px, 2vw, 18px);
+  line-height: 1.6;
+}
 
 blockquote {
   font-family: var(--font-archivo), sans-serif;

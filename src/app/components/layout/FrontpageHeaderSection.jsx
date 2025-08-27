@@ -8,9 +8,13 @@ const HeaderSection = ({
   buttonText = "Book en samtale",
   buttonHref = "/booking",
   variant = "primary",
+  borderColor = "black", // Ny prop for border farve
 }) => {
+  
+  const borderClass = borderColor === "white" ? "border-white" : "border-black";
+  
   return (
-    <div>
+    <div className={` ${borderClass} pb-16`}>
       <div className="content-max">
         <div className="flex justify-between items-end">
           <div className=" space-y-8">
@@ -19,7 +23,7 @@ const HeaderSection = ({
               <p className=" w-full md:w-xl">{text}</p>
 
               {variant !== false && (
-                <div className="flex-shrink-0 items-end mt-6 sm:mt-2">
+                <div className="flex-shrink-0 justify-end items-end mt-6 sm:mt-2">
                   <Link href={buttonHref}>
                     <Button variant={variant}>{buttonText}</Button>
                   </Link>
