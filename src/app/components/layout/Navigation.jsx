@@ -79,16 +79,16 @@ const Navigation = ({ variant = 'default' }) => {
               onMouseLeave={handleDropdownLeave}
             >
               <div className="py-2">
-                <Link href="/emdr" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
+                <Link href="/ydelser/emdr" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
                   EMDR Terapi
                 </Link>
-                <Link href="/essentiel-integrativ-psykoterapi" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
+                <Link href="/ydelser/essentiel-integrativ-psykoterapi" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
                   Essentiel Integrativ Psykoterapi
                 </Link>
-                <Link href="/meditation" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
+                <Link href="/ydelser/meditation" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
                   Meditation
                 </Link>
-                <Link href="/familie-par" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
+                <Link href="/ydelser/familie-par" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
                   Familie- og parterapi
                 </Link>
               </div>
@@ -155,28 +155,28 @@ const Navigation = ({ variant = 'default' }) => {
             {/* Mobile dropdown items */}
             <div className={`ml-4 mt-2 space-y-2 transition-all duration-200 ${isMobileDropdownOpen ? 'opacity-100 max-h-48' : 'opacity-0 max-h-0 overflow-hidden'}`}>
               <Link 
-                href="/emdr" 
+                href="/ydelser/emdr" 
                 className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
                 onClick={() => setIsMenuOpen(false)}
               >
                 EMDR Terapi
               </Link>
               <Link 
-                href="/essentiel-integrativ-psykoterapi" 
+                href="/ydelser/essentiel-integrativ-psykoterapi" 
                 className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Essentiel Integrativ Psykoterapi
               </Link>
               <Link 
-                href="/meditation" 
+                href="/ydelser/meditation" 
                 className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
                 onClick={() => setIsMenuOpen(false)}
               >
                 Meditation
               </Link>
               <Link 
-                href="/familie-par" 
+                href="/ydelser/familie-par" 
                 className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
                 onClick={() => setIsMenuOpen(false)}
               >

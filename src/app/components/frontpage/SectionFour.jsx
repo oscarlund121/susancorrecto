@@ -21,7 +21,7 @@ const SectionFour = () => {
           <ul className="flex col-span-3 flex-col gap-8 lg:gap-16 ">
             <li className="mt-6">
               <Link
-                href="/essentiel-integrativ-psykoterapi"
+                href="/ydelser/essentiel-integrativ-psykoterapi"
                 className="border-b-2 border-l-1 flex flex-col justify-between  bg-white text-black hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline rounded-lg"
               >
                 <h3 className="text-left">Essentiel Integrativ Psykoterapi</h3>
@@ -32,7 +32,7 @@ const SectionFour = () => {
             </li>
            <li className="mt-6">
               <Link
-                href="/essentiel-integrativ-psykoterapi"
+                href="/ydelser/emdr"
                 className="border-b-2 border-l-1 flex flex-col justify-between  bg-white text-black hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline rounded-lg"
               >
                 <h3 className="text-left">EMDR <span className="font-extralight italic text-xs sm:text-base">(Eye Movement Desensitization and Reprocessing)</span></h3>
@@ -44,7 +44,7 @@ const SectionFour = () => {
             </li>
            <li className="mt-6">
               <Link
-                href="/essentiel-integrativ-psykoterapi"
+                href="/ydelser/meditation"
                 className="border-b-2 border-l-1 flex flex-col justify-between  bg-white text-black hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline rounded-lg"
               >
                 <h3 className="text-left">Meditation</h3>
@@ -55,7 +55,7 @@ const SectionFour = () => {
             </li>
            <li className="mt-6">
              <Link
-                href="/essentiel-integrativ-psykoterapi"
+                href="/ydelser/familie-par"
                 className="border-b-2 border-l-1 flex flex-col justify-between  bg-white text-black hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline rounded-lg"
               >
                 <h3 className="text-left">Familie- & parterapi</h3>

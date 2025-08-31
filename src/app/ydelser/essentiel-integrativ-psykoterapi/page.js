@@ -1,8 +1,8 @@
 import HeaderSection from "@/app/components/layout/FrontpageHeaderSection";
-import Navigation from "../components/layout/Navigation";
+import Navigation from "../../components/layout/Navigation";
 import Image from "next/image";
-import Help from "../components/layout/UnderHelp";
-import Button from "../components/ui/Button";
+import Help from "../../components/layout/UnderHelp";
+import Button from "../../components/ui/Button";
 
 const helpAreas = [
   "Angst & bekymringer",

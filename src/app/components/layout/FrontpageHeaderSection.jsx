@@ -17,7 +17,7 @@ const HeaderSection = ({
       <div className="content-max">
         <div className="flex justify-between items-end">
           <div className=" space-y-8">
-            <div className="xl:w-7xl lg:w-5xl md:w-xl">
+            <div className="w-full ">
               <h2>{title}</h2>
             </div>
             <div className="flex flex-col md:flex-row md:justify-between md:items-end mt-4 md:mt-10 gap-4">
