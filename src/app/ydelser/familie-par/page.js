@@ -15,7 +15,7 @@ export default function FamiliePar() {
   return (
     <div>
       <div className="relative z-50">
-        <Navigation variant="" />
+        <Navigation />
       </div>
       <div className="bg-[#DBE1F8] py-32">
         <div className="mb-16">
@@ -27,34 +27,33 @@ export default function FamiliePar() {
             borderColor="black"
           />
         </div>
-        <div className="content-max px-6 md:px-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
+        <div className="bg-white py-32">
+          <div className="content-max px-6 md:px-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <div className="mb-6 border-b-2 border-black">
-                  <h3>Hvad er familie- og parterapi?</h3>
+                <div>
+                  <div className="border-b-1 border-black">
+                    <h3>Hvad er familie- og parterapi?</h3>
+                  </div>
+                  <p className="sm:w-xl w-sm mt-6">
+                    Familie- og parterapi er en mulighed for at få øje på nye perspektiver, bryde fastlåste mønstre og skabe bedre kommunikation. Vi arbejder i trygge rammer, hvor alle parter bliver hørt og set.
+                  </p>
                 </div>
-                <p className="sm:w-xl w-sm mt-6">
-                  I familie- og parterapi skaber vi et rum, hvor vi kan udforske relationerne mellem jer – hvad enten det er som par, forældre-børn eller hele familien. Terapien giver plads til at forstå hinandens oplevelser, følelser og behov, så I kan finde nye måder at mødes på.
-                </p>
-                <br />
-                <p className="sm:w-xl w-sm">
-                  Jeg inddrager metoder fra mentalisering, kommunikationstræning og følelsesregulering, så vi kan arbejde både med forståelse og konkrete redskaber.
-                </p>
+                <Help
+                  title="Hvornår kan metoden hjælpe?"
+                  tags={helpAreas}
+                />
               </div>
-              <Help
-                title="Hvornår kan familie- og parterapi hjælpe?"
-                tags={helpAreas}
-              />
+              <figure className="custom">
+                <Image
+                  src="/img/determind.jpg"
+                  alt="Beskrivelse af billedet"
+                  width={500}
+                  height={300}
+                  className="w-full h-full object-cover"
+                />
+              </figure>
             </div>
-            <figure className="custom">
-              <Image
-                src="/img/determind.jpg"
-                alt="Beskrivelse af billedet"
-                width={500}
-                height={300}
-              />
-            </figure>
           </div>
         </div>
         <div className="bg-[#367067] py-32 text-white">
@@ -77,15 +76,15 @@ export default function FamiliePar() {
                 </div>
                 <div className="mt-8">
                   <div className="mb-6 border-b-2 border-white">
-                    <h3>Sådan foregår et forløb</h3>
+                    <h3>Sådan forgår et forløb</h3>
                   </div>
                   <div className="sm:w-xl w-sm mb-8 ">
                     <p>
-                      Vi starter med at tale om jeres udfordringer og ønsker. Derefter tilrettelægger vi forløbet, så alle føler sig trygge. Nogle sessioner kan være med hele familien, andre kun med dele af den. Vi arbejder med både forståelse, følelser og praktiske strategier, så I kan tage nye skridt i hverdagen.
+                      Vi starter altid med en indledende samtale, hvor vi afklarer, hvad der fylder mest for jer, og hvordan I ønsker, at jeres relation skal se ud fremover. Derefter arbejder vi struktureret med de områder, hvor I ønsker forandring.
                     </p>
                     <br />
                     <p>
-                      Kontakt mig for en uforpligtende samtale om, hvordan familie- og parterapi kan hjælpe jer med at finde hinanden igen, styrke jeres relationer og skabe et tryggere fundament for fremtiden.
+                      Kontakt mig for en uforpligtende samtale om, hvordan familie- og parterapi kan hjælpe jer med at finde nye veje i jeres relation.
                     </p>
                   </div>
                   <Button

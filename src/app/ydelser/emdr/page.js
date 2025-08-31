@@ -16,7 +16,7 @@ export default function EMDR() {
   return (
     <div>
       <div className="relative z-50">
-        <Navigation variant="" />
+        <Navigation />
       </div>
       <div className="bg-[#DBE1F8] py-32">
         <div className="mb-16">
@@ -28,30 +28,33 @@ export default function EMDR() {
             borderColor="black"
           />
         </div>
-        <div className="content-max px-6 md:px-0">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
+        <div className="bg-white py-32">
+          <div className="content-max px-6 md:px-0">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
-                <div className="mb-6 border-b border-black">
-                  <h3>Hvad er EMDR terapi?</h3>
+                <div>
+                  <div className="border-b-1 border-black">
+                    <h3>Hvad er EMDR terapi?</h3>
+                  </div>
+                  <p className="sm:w-xl w-sm mt-6">
+                    EMDR er en psykoterapeutisk metode, der hjælper hjernen med at bearbejde traumatiske minder og oplevelser. Under behandlingen følger du terapeutens bevægelser med øjnene, mens du tænker på det belastende emne. Dette stimulerer hjernens naturlige helingsprocesser og reducerer den følelsesmæssige belastning ved mindet.
+                  </p>
                 </div>
-                <p className="sm:w-xl w-sm mt-6">
-                  EMDR er en psykoterapeutisk metode, der hjælper hjernen med at bearbejde traumatiske minder og oplevelser. Under behandlingen følger du terapeutens bevægelser med øjnene, mens du tænker på det belastende emne. Dette stimulerer hjernens naturlige helingsprocesser og reducerer den følelsesmæssige belastning ved mindet.
-                </p>
+                <Help
+                  title="Hvornår kan metoden hjælpe?"
+                  tags={helpAreas}
+                />
               </div>
-              <Help
-                title="Hvornår kan metoden hjælpe?"
-                tags={helpAreas}
-              />
+              <figure className="custom">
+                <Image
+                  src="/img/determind.jpg"
+                  alt="Beskrivelse af billedet"
+                  width={500}
+                  height={300}
+                  className="w-full h-full object-cover"
+                />
+              </figure>
             </div>
-            <figure className="custom">
-              <Image
-                src="/img/determind.jpg"
-                alt="Beskrivelse af billedet"
-                width={500}
-                height={300}
-              />
-            </figure>
           </div>
         </div>
         <div className="bg-[#367067] py-32 text-white">
@@ -78,15 +81,11 @@ export default function EMDR() {
                   </div>
                   <div className="sm:w-xl w-sm mb-8 ">
                     <p>
-                      Et EMDR-forløb starter med en grundig samtale om din historie og nuværende udfordringer. Herefter forbereder vi dig på selve EMDR-processen ved at lære dig forskellige teknikker til selvregulativisering.
+                      Vi starter altid med en indledende samtale, hvor vi afklarer, hvad der fylder mest for dig, og hvordan du ønsker, at dit liv skal se ud fremover. Når du er klar, arbejder vi med EMDR i korte, overskuelige sekvenser. Du styrer selv tempoet, og jeg sørger for, at vi altid vender tilbage til en følelse af ro og tryghed undervejs.
                     </p>
                     <br />
                     <p>
-                      Under EMDR-sessionerne arbejder vi med specifikke minder eller belastninger, mens du følger mine fingerbevægelser med øjnene. Mange oplever en mærkbar lettelse allerede efter få sessioner.
-                    </p>
-                    <br />
-                    <p>
-                      Kontakt mig for en uforpligtende samtale om, hvordan EMDR kan hjælpe dig.
+                      Kontakt mig for en uforpligtende samtale om, hvordan EMDR kan hjælpe dig med at give slip på fortiden og finde ro i nuet.
                     </p>
                   </div>
                   <Button
