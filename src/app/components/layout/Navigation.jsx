@@ -52,8 +52,9 @@ const Navigation = ({ variant = 'default' }) => {
         
         {/* Desktop Navigation links */}
         <div className="hidden xl:flex items-center gap-8">
-          <Link href="/" className="text-[#367067] text-lg font-light hover:underline">
+          <Link href="/" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
             Forside
+            <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
           </Link>
           
           {/* Ydelser dropdown */}
@@ -64,9 +65,10 @@ const Navigation = ({ variant = 'default' }) => {
           >
             <button 
               onClick={toggleDesktopDropdown}
-              className="text-[#367067] text-lg font-light hover:underline flex items-center gap-1"
+              className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group flex items-center gap-1"
             >
               Ydelser
+              <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
               <svg className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
@@ -79,36 +81,41 @@ const Navigation = ({ variant = 'default' }) => {
               onMouseLeave={handleDropdownLeave}
             >
               <div className="py-2">
-                <Link href="/ydelser/emdr" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
+                <Link href="/ydelser/emdr" className="block px-4 py-3 text-[#367067] text-sm hover:text-[#D3D9E5] transition-colors">
                   EMDR Terapi
                 </Link>
-                <Link href="/ydelser/essentiel-integrativ-psykoterapi" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
+                <Link href="/ydelser/essentiel-integrativ-psykoterapi" className="block px-4 py-3 text-[#367067] text-sm hover:text-[#D3D9E5] transition-colors">
                   Essentiel Integrativ Psykoterapi
                 </Link>
-                <Link href="/ydelser/meditation" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
+                <Link href="/ydelser/meditation" className="block px-4 py-3 text-[#367067] text-sm hover:text-[#D3D9E5] transition-colors">
                   Meditation
                 </Link>
-                <Link href="/ydelser/familie-par" className="block px-4 py-3 text-[#367067] text-sm hover:bg-gray-50 transition-colors">
+                <Link href="/ydelser/familie-par" className="block px-4 py-3 text-[#367067] text-sm hover:text-[#D3D9E5] transition-colors">
                   Familie- og parterapi
                 </Link>
               </div>
             </div>
           </div>
           
-          <Link href="/omSusan" className="text-[#367067] text-lg font-light hover:underline">
+          <Link href="/omSusan" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
             Om Susan
+            <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link href="/help" className="text-[#367067] text-lg font-light hover:underline">
+          <Link href="/help" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
             Hjælp
+            <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link href="/pricing" className="text-[#367067] text-lg font-light hover:underline">
+          <Link href="/pricing" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
             Priser
+            <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link href="/contact" className="text-[#367067] text-lg font-light hover:underline">
+          <Link href="/kontakt" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
             Kontakt
+            <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link href="/privacy" className="text-[#367067] text-lg font-light hover:underline">
+          <Link href="/privacy" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
             Privatliv/GDPR
+            <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
           </Link>
         </div>
         
@@ -207,7 +214,7 @@ const Navigation = ({ variant = 'default' }) => {
             Priser
           </Link>
           <Link 
-            href="/contact" 
+            href="/kontakt" 
             className="block text-[#367067] text-lg font-light py-2 hover:bg-gray-50 rounded"
             onClick={() => setIsMenuOpen(false)}
           >

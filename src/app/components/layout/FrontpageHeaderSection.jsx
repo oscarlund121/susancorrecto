@@ -13,7 +13,7 @@ const HeaderSection = ({
   const borderClass = borderColor === "white" ? "border-white" : "border-black";
 
   return (
-    <div className={` ${borderClass} pb-16`}>
+    <div className={` ${borderClass} pb-0`}>
       <div className="content-max">
         <div className="flex justify-between md:flex-row flex-col items-end">
           <div className=" space-y-8">
