@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Archivo, Fraunces, Prata } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/layout/Navigation";
+import Footer from "./components/layout/Footer";
 
 
 
@@ -35,7 +36,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${archivo.variable} ${fraunces.variable} ${prata.variable} antialiased`}
       >
-        {children}
+  
+  {children}
+  <Footer />
       </body>
     </html>
   );

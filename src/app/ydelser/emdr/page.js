@@ -23,7 +23,7 @@ export default function EMDR() {
 
 
       <div className=" bg-[#DBE1F8]/50 md:py-16 py-8 ">
-        <div className="mb-32">
+        <div className="mb-16">
           <HeaderSection
             title="Få ro i krop og sind med EMDR-terapi"
             text="EMDR (Eye Movement Desensitization and Reprocessing) er en evidensbaseret terapiform, der er særligt effektiv til at behandle traumer og post-traumatisk stress. WHO anbefaler EMDR som første behandling af valg ved traumer."
