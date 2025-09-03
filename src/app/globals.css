@@ -139,7 +139,7 @@ h2 {
 
 h3 {
   font-family: var(--font-fraunces), sans-serif;
-  font-size: clamp(20px, 3vw, 60px);
+  font-size: clamp(24px, 3vw, 64px);
   font-weight: 200;
   
 }
