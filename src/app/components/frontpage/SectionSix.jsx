@@ -30,7 +30,7 @@ const SectionSix = () => {
 
           <div className=" flex flex-col justify-center  text-white order-1 md:order-2">
             <div className="mb-6">
-              <h2>Erfaren psykoterapeut i Aarhus</h2>
+              <h2>Psykoterapeut med lokation i hjertet Aarhus</h2>
             </div>
             <div className="mt-2 ">
               <div className="md:text-max ">

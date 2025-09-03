@@ -66,15 +66,15 @@ const SectionTwo = () => {
                   Er relationer eller studieliv blevet en kamp?
                 </span>
               </li>
-            </ul>
-          </div>
-
           {/* Button positioned to the right */}
-          <div className="flex mt-10 justify-end">
+          <div className="flex mt-10 justify-end items-end">
             <Link href="/contact">
               <Button variant="secondary" />
             </Link>
           </div>
+            </ul>
+          </div>
+
         </div>
       </div>
     </div>

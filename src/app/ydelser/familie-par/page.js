@@ -17,8 +17,8 @@ export default function FamiliePar() {
       <div className="relative z-50">
         <Navigation />
       </div>
-      <div className="bg-[#DBE1F8] py-32">
-        <div className="mb-16">
+      <div className="bg-[#DBE1F8]/50 md:py-16 py-8 ">
+        <div className="mb-32">
           <HeaderSection
             title="Fælles forståelse og nye veje i relationerne"
             text="Familie- og parterapi er en mulighed for at få øje på nye perspektiver, bryde fastlåste mønstre og skabe bedre kommunikation. Vi arbejder i trygge rammer, hvor alle parter bliver hørt og set."

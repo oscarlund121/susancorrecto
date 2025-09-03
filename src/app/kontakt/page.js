@@ -19,7 +19,7 @@ export default function KontaktPage() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 justify-between py-16">
           <div>
             <div>
-              <h2 className="text-4xl md:text-xl  text-[#367067] mb-4">
+              <h2 className="text-4xl md:text-xl mb-8">
                 Kontakt
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
@@ -52,7 +52,7 @@ export default function KontaktPage() {
 
 
 
-          <div className=''>
+          <div className='flex justify-center'>
             <ContactForm onSubmit={handleFormSubmit} />
           </div>
         </div>

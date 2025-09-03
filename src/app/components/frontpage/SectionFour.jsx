@@ -22,10 +22,13 @@ const SectionFour = () => {
             <li className="mt-6">
               <Link
                 href="/ydelser/essentiel-integrativ-psykoterapi"
-                className="border-b-2 border-l-1 flex flex-col justify-between  bg-white text-[#367067] hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline rounded-lg"
+                className="border-b-2 border-l-1 flex flex-col justify-between bg-white text-[#367067] hover:bg-[#DBE1F8] transition-colors p-2 lg:p-4 -m-2 lg:-m-4 rounded-lg group"
               >
-                <h3 className="text-left">Essentiel Integrativ Psykoterapi</h3>
-                <div className="flex justify-end ">
+                <h3 className="text-left relative inline-block">
+                  Essentiel Integrativ Psykoterapi
+                  <span className="absolute left-0 bottom-[-1px] w-0 h-[1px] bg-[#367067] transition-all duration-300 group-hover:w-full"></span>
+                </h3>
+                <div className="flex justify-end mt-3">
                   <SeeMoreButton variant="light" />
                 </div>
               </Link>
@@ -33,11 +36,13 @@ const SectionFour = () => {
            <li className="mt-6">
               <Link
                 href="/ydelser/emdr"
-                className="border-b-2 border-l-1 flex flex-col justify-between  bg-white text-[#367067] hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline rounded-lg"
+                className="border-b-2 border-l-1 flex flex-col justify-between bg-white text-[#367067] hover:bg-[#DBE1F8] transition-colors p-2 lg:p-4 -m-2 lg:-m-4 rounded-lg group"
               >
-                <h3 className="text-left">EMDR <span className="font-extralight italic text-xs sm:text-base">(Eye Movement Desensitization and Reprocessing)</span></h3>
-
-                <div className="flex justify-end ">
+                <h3 className="text-left relative inline-block">
+                  EMDR <span className="font-extralight italic text-xs sm:text-base">(Eye Movement Desensitization and Reprocessing)</span>
+                  <span className="absolute left-0 bottom-[-1px] w-0 h-[1px] bg-[#367067] transition-all duration-300 group-hover:w-full"></span>
+                </h3>
+                <div className="flex justify-end mt-3">
                   <SeeMoreButton variant="light" />
                 </div>
               </Link>
@@ -45,10 +50,13 @@ const SectionFour = () => {
            <li className="mt-6">
               <Link
                 href="/ydelser/meditation"
-                className="border-b-2 border-l-1 flex flex-col justify-between  bg-white text-[#367067] hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline rounded-lg"
+                className="border-b-2 border-l-1 flex flex-col justify-between bg-white text-[#367067] hover:bg-[#DBE1F8] transition-colors p-2 lg:p-4 -m-2 lg:-m-4 rounded-lg group"
               >
-                <h3 className="text-left">Meditation</h3>
-                <div className="flex justify-end ">
+                <h3 className="text-left relative inline-block">
+                  Meditation
+                  <span className="absolute left-0 bottom-[-1px] w-0 h-[1px] bg-[#367067] transition-all duration-300 group-hover:w-full"></span>
+                </h3>
+                <div className="flex justify-end mt-3">
                   <SeeMoreButton variant="light" />
                 </div>
               </Link>
@@ -56,10 +64,13 @@ const SectionFour = () => {
            <li className="mt-6">
              <Link
                 href="/ydelser/familie-par"
-                className="border-b-2 border-l-1 flex flex-col justify-between  bg-white text-[#367067] hover:bg-[#d3d9e5] transition-colors p-2 lg:p-4 -m-2 lg:-m-4  hover:underline rounded-lg"
+                className="border-b-2 border-l-1 flex flex-col justify-between bg-white text-[#367067] hover:bg-[#DBE1F8] transition-colors p-2 lg:p-4 -m-2 lg:-m-4 rounded-lg group"
               >
-                <h3 className="text-left">Familie- & parterapi</h3>
-                <div className="flex justify-end ">
+                <h3 className="text-left relative inline-block">
+                  Familie- & parterapi
+                  <span className="absolute left-0 bottom-[-1px] w-0 h-[1px] bg-[#367067] transition-all duration-300 group-hover:w-full"></span>
+                </h3>
+                <div className="flex justify-end mt-3">
                   <SeeMoreButton variant="light" />
                 </div>
               </Link>

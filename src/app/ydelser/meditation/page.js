@@ -18,8 +18,8 @@ export default function Meditation() {
       <div className="relative z-50">
         <Navigation />
       </div>
-      <div className="bg-[#DBE1F8] py-32">
-        <div className="mb-16">
+      <div className="bg-[#DBE1F8]/50 md:py-16 py-8 ">
+        <div className="mb-32">
           <HeaderSection
             title="Find indre ro gennem guidet meditation"
             text="Meditation er et enkelt, men kraftfuldt redskab til at skabe ro, reducere stress og styrke forbindelsen til dig selv. Hos mig får du trygge rammer til at lære teknikker, der kan støtte dig i både hverdag og svære perioder."

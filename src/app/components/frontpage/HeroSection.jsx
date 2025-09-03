@@ -12,11 +12,11 @@ const HeroSection = () => {
         alt="Hero background"
         width={1920}
         height={1080}
-        className="absolute inset-0 w-full h-full object-cover object-[70%_center] sm:object-[30%_center]"
+        className="absolute w-full h-full object-cover object-[72%_center] "
       />
 
       {/* Black overlay with 60% opacity */}
-      <div className="absolute inset-0 bg-black/50 z-10"></div>
+      <div className="absolute inset-0 bg-black/10 z-10"></div>
 
       {/* Navigation on top */}
       <div className="relative z-50">
@@ -24,16 +24,16 @@ const HeroSection = () => {
       </div>
 
       {/* Hero content */}
-        <div className="relative z-20 flex items-start min-h-[60vh] sm:min-h-[70vh] content-max pt-20 md:pt-16 sm:pt-12">
-        <div className="text-left text-white ">
+        <div className="relative z-20 flex items-start min-h-[60vh] sm:min-h-[75vh] content-max sm:pt-12">
+        <div className=" text-white ">
           {/* Add your hero content here */}
-          <h1 className="mb-4  text-hero-max text-left">
+          <h1 className="mb-4 text-hero-max text-left">
             Terapi der giver dig frihed til at leve fuldt ude
           </h1>
         </div>
       </div>
 
-      <div className="absolute bottom-[-3.5rem] right-0 z-20 bg-transparent sm:bg-[#3670674D]/70 sm:border-t-[#367067]  border-t-0 mx-6 sm:mx-0 sm:border-t-2  p-6 ">
+      <div className="absolute bottom-[-3 rem] right-0 z-20 bg-transparent sm:bg-[#3670674D]/70 sm:border-t-[#367067]  border-t-0 mx-6 sm:mx-0 sm:border-t-2  p-6 ">
         {/* Content inside box DOES have max-width constraint */}
         <div className="text-white flex flex-col items-center md:items-start md:w-lg ">
           <p className="md:text-max">
@@ -41,7 +41,7 @@ const HeroSection = () => {
             frustrerende. Jeg hjælper med at håndtere pres, usikkerhed og
             fastlåsthed, så du kan finde ro, fokus og trivsel i hverdagen.
           </p>
-          <div className="mt-4">
+          <div className="mt-6">
             <Button variant="secondary" />
           </div>
         </div>

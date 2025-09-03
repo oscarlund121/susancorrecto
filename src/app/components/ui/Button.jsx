@@ -27,11 +27,11 @@ const Button = ({ children = "Book en samtale", variant = "primary" }) => {
         isPrimary
           ? "bg-[#367067] text-white hover:text-[#367067] hover:bg-[#DBE1F8] "
           : "bg-[#DBE1F8] text-[#367067] hover:text-white hover:bg-[#367067] hover:border-[#DBE1F8]"
-      } pl-3 pr-2 py-2 sm:pl-4 sm:pr-3 sm:py-2 border-2 border-[#367067] rounded-full text-lg sm:text-xl font-light flex items-center gap-2 sm:gap-3 transition-colors group`}
+      } pl-2 pr-1 py-0.5 sm:pl-4 sm:pr-3 sm:py-1 border-2 border-[#367067] rounded-full text-lg sm:text-xl font-light flex items-center gap-2 sm:gap-3 transition-colors group `}
     >
       {children}
       <div
-        className={`w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center ${
+        className={`w-8 h-8 sm:w-12 sm:h-12 rounded-full flex items-center justify-center ${
           isPrimary
             ? "bg-[#DBE1F8] group-hover:bg-[#367067]"
             : "bg-[#367067] group-hover:bg-[#DBE1F8]"

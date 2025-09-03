@@ -28,8 +28,8 @@ const ContactForm = ({ onSubmit }) => {
   };
 
   return (
-    <div >
-      <form onSubmit={handleSubmit} className="space-y-6 xl:w-2xl lg:w-xl   bg-[#367067]/10 p-8 ">
+    <div>
+      <form onSubmit={handleSubmit} className="space-y-6 xl:w-xl lg:w-lg   bg-[#367067]/10 p-8 ">
         <div>
           <label htmlFor="name" className="block text-md font-medium text-[#367067] mb-2">
             Navn *
@@ -95,7 +95,7 @@ const ContactForm = ({ onSubmit }) => {
 
         <button
           type="submit"
-          className="w-full bg-[#D3D9E5] hover:bg-[#367067] hover:text-[#D3D9E5] text-[#367067] border border-[#367067] hover:border-[#D3D9E5] font-medium py-4 px-8 rounded-full transition-all duration-200 transform hover:scale-101 "
+          className="w-full bg-[#DBE1F8] hover:bg-[#367067] hover:text-[#DBE1F8] text-[#367067] border border-[#367067] hover:border-[#DBE1F8] font-medium py-4 px-8 rounded-full transition-all duration-200 transform hover:scale-101 "
         >
           Send besked
         </button>

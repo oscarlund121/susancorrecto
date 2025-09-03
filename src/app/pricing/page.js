@@ -60,8 +60,8 @@ export default function Pricing() {
   return (
     <div>
       <Navigation />
-      <div className="bg-[#DBE1F8] py-32">
-        <div className="mb-16">
+      <div className="bg-white md:py-16 py-8">
+        <div className="mb-32">
           <HeaderSection
             title="Priser & rabatter"
             text="Hos mig kan du vælge mellem enkeltssessioner eller forløb – alt efter hvad der passer bedst til dig. Jeg tilbyder også særlige priser til studerende."
