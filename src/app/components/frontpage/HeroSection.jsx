@@ -24,11 +24,11 @@ const HeroSection = () => {
       </div>
 
       {/* Hero content */}
-        <div className="relative z-20 flex items-start min-h-[75vh] sm:min-h-[75vh] content-max sm:pt-12">
+        <div className="relative z-20 flex items-start min-h-[75vh] sm:min-h-[70vh] content-max sm:pt-12">
         <div className=" text-white ">
           {/* Add your hero content here */}
           <h1 className="mb-4 text-hero-max text-left animate-fadeInUp">
-            Terapi der giver dig frihed til at leve fuldt ude
+            Terapi der giver dig frihed til at leve fuldt ude.
           </h1>
         </div>
       </div>
