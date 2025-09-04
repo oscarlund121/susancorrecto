@@ -132,7 +132,7 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(38px, 6vw, 80px);
+  font-size: clamp(38px, 6vw, 88px);
   font-weight: 100;
   line-height: 1;
 }
