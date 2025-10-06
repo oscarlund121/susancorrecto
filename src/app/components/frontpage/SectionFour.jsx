@@ -22,7 +22,7 @@ const SectionFour = () => {
             <li className="mt-6 group">
               <Link
                 href="/ydelser/essentiel-integrativ-psykoterapi"
-                className="border-b-2 border-l-1 flex flex-col justify-between bg-white text-[#367067] hover:text-black hover:bg-[#DBE1F8] transition-colors p-2 lg:p-4 -m-2 lg:-m-4 "
+                className="border-b-2 border-l-1 flex flex-col justify-between bg-white text-[#367067] hover:text-black  transition-colors p-2 lg:p-4 -m-2 lg:-m-4 "
               >
                 <h3 className="text-left relative inline-block">
                   Essentiel Integrativ Psykoterapi
@@ -36,7 +36,7 @@ const SectionFour = () => {
             <li className="mt-6 group">
               <Link
                 href="/ydelser/emdr"
-                className="border-b-2 border-l-1 flex flex-col justify-between bg-white text-[#367067] hover:text-black hover:bg-[#DBE1F8] transition-colors p-2 lg:p-4 -m-2 lg:-m-4 "
+                className="border-b-2 border-l-1 flex flex-col justify-between bg-white text-[#367067] hover:text-black  transition-colors p-2 lg:p-4 -m-2 lg:-m-4 "
               >
                 <h3 className="text-left relative inline-block">
                   EMDR <span className="font-extralight italic text-xs sm:text-base">(Eye Movement Desensitization and Reprocessing)</span>
@@ -50,7 +50,7 @@ const SectionFour = () => {
             <li className="mt-6 group">
               <Link
                 href="/ydelser/meditation"
-                className="border-b-2 border-l-1 flex flex-col justify-between bg-white text-[#367067] hover:text-black hover:bg-[#DBE1F8] transition-colors p-2 lg:p-4 -m-2 lg:-m-4 "
+                className="border-b-2 border-l-1 flex flex-col justify-between bg-white text-[#367067] hover:text-black  transition-colors p-2 lg:p-4 -m-2 lg:-m-4 "
               >
                 <h3 className="text-left relative inline-block">
                   Meditation
@@ -64,7 +64,7 @@ const SectionFour = () => {
            <li className="mt-6 group">
              <Link
                 href="/ydelser/familie-par"
-                className="border-b-2 border-l-1 flex flex-col justify-between bg-white text-[#367067] hover:text-black hover:bg-[#DBE1F8] transition-colors p-2 lg:p-4 -m-2 lg:-m-4 "
+                className="border-b-2 border-l-1 flex flex-col justify-between bg-white text-[#367067] hover:text-black  transition-colors p-2 lg:p-4 -m-2 lg:-m-4 "
               >
                 <h3 className="text-left relative inline-block">
                   Familie- & parterapi

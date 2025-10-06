@@ -65,7 +65,7 @@ const Navigation = ({ variant = 'default' }) => {
           >
             <button 
               onClick={toggleDesktopDropdown}
-              className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group flex items-center gap-1"
+              className="text-[#367067] text-xl font-light hover:text-[#D3D9E5] transition-all duration-300 relative group flex items-center gap-1"
             >
               Ydelser
               <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
@@ -76,21 +76,21 @@ const Navigation = ({ variant = 'default' }) => {
             
             {/* Dropdown menu */}
             <div 
-              className={`absolute top-full left-0 mt-2 w-64 bg-white rounded-lg shadow-lg border transition-all duration-200 z-50 ${isDropdownOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
+              className={`absolute top-full left-0 mt-2 w-sm bg-white/90 rounded-lg shadow-lg transition-all duration-200 z-50 ${isDropdownOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
               onMouseEnter={handleDropdownEnter}
               onMouseLeave={handleDropdownLeave}
             >
               <div className="py-2">
-                <Link href="/ydelser/emdr" className="block px-4 py-3 text-[#367067] text-sm hover:text-[#D3D9E5] transition-colors">
+                <Link href="/ydelser/emdr" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
                   EMDR Terapi
                 </Link>
-                <Link href="/ydelser/essentiel-integrativ-psykoterapi" className="block px-4 py-3 text-[#367067] text-sm hover:text-[#D3D9E5] transition-colors">
+                <Link href="/ydelser/essentiel-integrativ-psykoterapi" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
                   Essentiel Integrativ Psykoterapi
                 </Link>
-                <Link href="/ydelser/meditation" className="block px-4 py-3 text-[#367067] text-sm hover:text-[#D3D9E5] transition-colors">
+                <Link href="/ydelser/meditation" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
                   Meditation
                 </Link>
-                <Link href="/ydelser/familie-par" className="block px-4 py-3 text-[#367067] text-sm hover:text-[#D3D9E5] transition-colors">
+                <Link href="/ydelser/familie-par" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
                   Familie- og parterapi
                 </Link>
               </div>

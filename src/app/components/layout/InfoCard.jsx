@@ -1,4 +1,5 @@
 import Button from "../ui/Button";
+import Link from "next/link";
 
 const InfoCard = () => {
   return (
@@ -48,7 +49,11 @@ const InfoCard = () => {
         </div>
       </div>
 
-      <Button variant="secondary" />
+      <div className="flex justify-end mt-6">
+        <Link href="/kontakt">
+          <Button variant="secondary" />
+        </Link>
+      </div>
     </div>
   );
 };

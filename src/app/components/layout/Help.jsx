@@ -1,5 +1,6 @@
 import GreenBox from "../ui/GreenBox";
 import SeeMoreButton from "../ui/SeeMoreButton";
+import Link from "next/link";
 
 const Help = ({ title, tags, index = 0 }) => {
   return (
@@ -14,7 +15,9 @@ const Help = ({ title, tags, index = 0 }) => {
         </div>
       </div>
       <div className="flex justify-end mb-12">
-        <SeeMoreButton variant="inverse" />
+        <Link href="/help">
+          <SeeMoreButton variant="inverse" />
+        </Link>
       </div>
     </div>
   );

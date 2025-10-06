@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Navigation from "../layout/Navigation";
 import Button from "../ui/Button";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -44,7 +45,9 @@ const HeroSection = () => {
           </p>
           </div>
           <div className="mt-6">
-            <Button variant="secondary" />
+            <Link href="/kontakt">
+              <Button variant="secondary" />
+            </Link>
           </div>
         </div>
       </div>

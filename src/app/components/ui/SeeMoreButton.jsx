@@ -8,7 +8,7 @@ const SeeMoreButton = ({
   const isLight = variant === "light";
 
   return (
-    <button className={`flex items-center gap-2 sm:gap-3 group-hover:gap-4 transition-all duration-200 ${isLight ? "group-hover:bg-[#DBE1F8]" : "group-hover:bg-[#376067]"} pl-3 pr-2 py-1 rounded-full`}>
+    <button className={`flex items-center gap-2 sm:gap-3 group-hover:gap-4 transition-all duration-200 ${isLight ? "group-hover:bg-[#DBE1F8]" : "group-hover:bg-[#367067]"} pl-3 pr-2 py-1 rounded-full`}>
       <span
         className={`text-sm sm:text-lg lg:text-xl font-light transition-colors ${
           isLight ? "text-[#DBE1F8] group-hover:text-[#367067] " : "text-[#367067] group-hover:text-white"

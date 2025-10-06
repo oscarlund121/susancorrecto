@@ -39,7 +39,7 @@ const SectionTwo = () => {
               </li>
           {/* Button positioned to the right */}
           <div className="flex mt-8">
-            <Link href="/contact">
+            <Link href="/kontakt">
               <Button variant="secondary" />
             </Link>
           </div>

@@ -42,7 +42,7 @@ export default function KontaktPage() {
                 </div>
                 <div className="bg-[#367067] p-6 rounded-full shadow-md text-center">
                   <h4 className="font-semibold text-white mb-2">Telefon</h4>
-                  <p className="text-white">+45 12 34 56 78</p>
+                  <p className="text-white">+45 25 39 25 39</p>
                 </div>
               </div>
                <div className='border-b border-b-[#367067]'></div>
