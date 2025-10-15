@@ -36,13 +36,13 @@ export default function KontaktPage() {
 
               {/* Contact info boxes */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-                <div className="bg-[#367067] p-6 rounded-full shadow-md text-center">
-                  <h4 className="font-semibold text-white mb-2">E-mail</h4>
-                  <p className="text-white">susan@susanterapi.dk</p>
+                <div className="p-6 rounded-full text-center">
+                  <h4 className="font-semibold text-black mb-2">E-mail</h4>
+                  <p className="text-black">susan@susanterapi.dk</p>
                 </div>
-                <div className="bg-[#367067] p-6 rounded-full shadow-md text-center">
-                  <h4 className="font-semibold text-white mb-2">Telefon</h4>
-                  <p className="text-white">+45 25 39 25 39</p>
+                <div className=" p-6 rounded-full text-center">
+                  <h4 className="font-semibold text-black mb-2">Telefon</h4>
+                  <p className="text-black">+45 25 39 25 39</p>
                 </div>
               </div>
                <div className='border-b border-b-[#367067]'></div>

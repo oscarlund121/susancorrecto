@@ -60,32 +60,34 @@ export default function Pricing() {
   return (
     <div className="mb-32">
       <Navigation />
-      <div className="bg-white content-max md:py-16 py-8">
-        <div className="mb-32">
-          <HeaderSection
-            title="Priser & rabatter"
-            text="Hos mig kan du vælge mellem enkeltssessioner eller forløb – alt efter hvad der passer bedst til dig. Jeg tilbyder også særlige priser til studerende."
-            variant="primary"
-            borderColor="black"
-          />
-        </div>
-        
-        <div className="px-6 md:px-0 ">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            {/* Venstre side - Prisliste */}
-            <div className="lg:col-span-2 md:px-16">
-              {priceData.map((section, index) => (
-                <PriceSection 
-                  key={index}
-                  title={section.title}
-                  items={section.items}
-                />
-              ))}
-            </div>
-            
-            {/* Højre side - Info kort */}
-            <div className="lg:col-span-1 md:mt-12 ">
-              <InfoCard />
+      <div className="bg-white md:py-16 py-8">
+        <div className="content-max">
+          <div className="mb-32">
+            <HeaderSection
+              title="Priser & rabatter"
+              text="Hos mig kan du vælge mellem enkeltssessioner eller forløb – alt efter hvad der passer bedst til dig. Jeg tilbyder også særlige priser til studerende."
+              variant="primary"
+              borderColor="black"
+            />
+          </div>
+          
+          <div className="px-6 md:px-0 ">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+              {/* Venstre side - Prisliste */}
+              <div className="lg:col-span-2 md:px-16">
+                {priceData.map((section, index) => (
+                  <PriceSection 
+                    key={index}
+                    title={section.title}
+                    items={section.items}
+                  />
+                ))}
+              </div>
+              
+              {/* Højre side - Info kort */}
+              <div className="lg:col-span-1 md:mt-12 ">
+                <InfoCard />
+              </div>
             </div>
           </div>
         </div>

@@ -48,7 +48,7 @@ export default function Help() {
       <div className="bg-white md:py-16 py-8 ">
         <div className="mb-32">
           <HeaderSection
-            title="Hvad jeg kan hjælpe dig med - fra angst til relationelle udfordringer"
+            title="Hvad jeg kan hjælpe dig med"
             text="Vi møder alle livets udfordringer forskelligt. Hos mig får du et trygt rum, hvor vi sammen finder frem til løsninger, der passer til dig – uanset om det handler om angst, stress, lavt selvværd eller svære relationer."
             buttonHref="/kontakt"
             variant="primary"

@@ -24,7 +24,7 @@ export default function Essentiel() {
       <div className="bg-[#DBE1F8]/50 md:py-16 py-8 ">
         <div className="mb-32">
           <HeaderSection
-            title="Få styrke og klarhed gennem Essentiel Integrativ Psykoterapi."
+            title="Essentiel Integrativ Psykoterapi."
             text="Denne terapiform kombinerer indsigt fra flere metoder for at skabe dybdegående og varige forandringer. Vi arbejder både med tanker, følelser og kropslige reaktioner, så du kan opnå større selvforståelse og handlefrihed."
 
             buttonHref="/kontakt"
