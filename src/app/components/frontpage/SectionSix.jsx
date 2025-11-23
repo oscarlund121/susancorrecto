@@ -12,7 +12,7 @@ const SectionSix = () => {
 
       <div className="content-max mt-12">
         <div className="grid grid-cols-1 text-max md:grid-cols-2 gap-2 mx-auto">
-          <figure className="custom  mt-10 md:mt-0 flex flex-col  justify-center items-center w-full order-2 md:order-1">
+          <figure className="mt-10 md:mt-0 flex flex-col  justify-center items-center w-full order-2 md:order-1">
             <Image
               src="/img/about-front.jpg"
               alt="Om Susan Image"

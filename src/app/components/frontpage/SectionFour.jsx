@@ -12,7 +12,7 @@ const SectionFour = () => {
       <div className="content-max ">
       <HeaderSection
         title="Jeg tilbyder evidensbaseret psykoterapi med fokus på helhedsorienteret behandling og personlig udvikling."
-        text="Psykoterapi handler ikke kun om at fjerne symptomer, men om at styrke dig som menneske. Jeg tilbyder et trygt og respektfuldt rum, hvor du kan udforske dine følelser, bearbejde svære oplevelser og finde nye måder at leve på."
+        text="Psykoterapi handler ikke kun om symptomer – det handler om dig og dit liv. I et trygt og omsorgsfuldt rum kan du udforske dine følelser, bearbejde det, der tynger, og opdage nye måder at være og leve på."
         
         buttonHref="/kontakt"
         variant="secondary"

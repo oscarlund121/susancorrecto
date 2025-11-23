@@ -52,9 +52,9 @@ export default function OmSusan() {
                 <p>Mit mål er altid det samme: At hjælpe dig med at slippe det, der holder dig tilbage, og åbne for mere glæde, frihed og lethed i livet.</p>
 
               </div>
-              
+
               <div>
-                <ul className="space-y-6 bg-[#d3d5e9]/20 inline-block px-8 py-10">
+                <ul className="space-y-4 bg-[#d3d5e9]/20 inline-block px-6 py-6">
 
                   <ListItem>
                     Chok- og traumeforløsning (EMDR) – anerkendt af WHO som en effektiv metode til at bearbejde traumatiske oplevelser.
@@ -72,15 +72,19 @@ export default function OmSusan() {
                     Familie- og parterapi – med fokus på relationer, kommunikation og tryghed.
                   </ListItem>
                   <div className="flex justify-end items-end">
-                    <Link href="/kontakt">
-                      <Button variant="secondary" className="mt-8">
-                        Book en samtale
-                      </Button>
-                    </Link>
                   </div>
                 </ul>
               </div>
             </div>
+            {/* Button moved to bottom of page */}
+            <div className="flex justify-end mt-16">
+              <Link href="/kontakt">
+                <Button variant="secondary" className="mt-8">
+                  Book en samtale
+                </Button>
+              </Link>
+            </div>
+            
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ const SectionSeven = () => {
         buttonHref="/kontakt"
         variant="secondary"
       />
-      <div className="flex flex-col content-max">
+      <div className="flex flex-col ">
         <div className="flex flex-col md:flex-row items-center justify-around gap-1 px-6 md:px-0  mt-16  ">
           <Help
             title="Unge & Studerende"

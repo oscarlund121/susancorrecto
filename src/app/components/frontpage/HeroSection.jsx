@@ -39,9 +39,8 @@ const HeroSection = () => {
         <div className="text-white flex flex-col items-center md:items-end "> 
           <div className="md:w-lg lg:w-xl w-sm">
           <p className="md:text-max">
-            At starte eller være i gang med at skulle kan være både spændende og
-            frustrerende. Jeg hjælper med at håndtere pres, usikkerhed og
-            fastlåsthed, så du kan finde ro, fokus og trivsel i hverdagen.
+           At tage skridtet eller være midt i forandring, kan både føles spændende og udfordrende. Jeg støtter dig i at håndtere pres, usikkerhed og fastlåste mønstre, så du kan finde indre ro, fokus og overskud, og opleve mere glæde og trivsel i hverdagen.
+
           </p>
           </div>
           <div className="mt-6">

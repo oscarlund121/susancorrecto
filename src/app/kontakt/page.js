@@ -38,7 +38,7 @@ export default function KontaktPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
                 <div className="p-6 rounded-full text-center">
                   <h4 className="font-semibold text-black mb-2">E-mail</h4>
-                  <p className="text-black">susan@susanterapi.dk</p>
+                  <p className="text-black">kontakt@psykoterapisusan.dk</p>
                 </div>
                 <div className=" p-6 rounded-full text-center">
                   <h4 className="font-semibold text-black mb-2">Telefon</h4>
