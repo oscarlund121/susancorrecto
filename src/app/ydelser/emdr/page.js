@@ -23,17 +23,17 @@ export default function EMDR() {
 
     
       <div className=" bg-[#DBE1F8]/50 md:py-16 py-8 ">
-        <div className="mb-16">
+        <div className="mb-8">
           <HeaderSection
             title="EMDR-terapi"
             text="EMDR (Eye Movement Desensitization and Reprocessing) er en evidensbaseret terapiform, der er særligt effektiv til at behandle traumer og post-traumatisk stress. WHO anbefaler EMDR som første behandling af valg ved traumer."
             buttonHref="/kontakt"
-            variant="primary"
+            variant={false}
             borderColor="black"
           />
         </div>
       </div>
-      <div className="bg-white py-32">
+      <div className="bg-white py-24">
         <div className="content-max px-6 md:px-0">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
@@ -53,7 +53,7 @@ export default function EMDR() {
            <div className="flex justify-center items-center">
               <figure className="">
                 <Image
-                  src="/img/determind.jpg"
+                  src="/img/emdr-1.jpg"
                   alt="Beskrivelse af billedet"
                   width={500}
                   height={300}

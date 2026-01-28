@@ -27,6 +27,9 @@ const prata = Prata({
 export const metadata = {
   title: "Susan Terapi",
   description: "Psykoterapi v. Susan Albertsen",
+  icons: {
+    icon: "/logo/logo.svg",
+  },
 };
 
 export default function RootLayout({ children }) {

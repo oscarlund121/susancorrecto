@@ -12,7 +12,7 @@ const SectionSeven = () => {
         variant="secondary"
       />
       <div className="flex flex-col ">
-        <div className="flex flex-col md:flex-row items-center justify-around gap-1 px-6 md:px-0  mt-16  ">
+        <div className="flex flex-col md:flex-row items-start justify-around gap-1 px-6 md:px-0  mt-16  ">
           <Help
             title="Unge & Studerende"
             tags={[
@@ -23,6 +23,7 @@ const SectionSeven = () => {
               "Overgang til voksenlivet",
               "Identitetsudvikling",
             ]}
+            index={0}
           />
           <Help
             title="Stress & Udmattelse"
@@ -34,9 +35,10 @@ const SectionSeven = () => {
               "Koncentrationsvanskeligheder",
               "Præstationsangst",
             ]}
+            index={1}
           />
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-around gap-1 px-6 md:px-0  mt-16  ">
+        <div className="flex flex-col md:flex-row items-start justify-around gap-1 px-6 md:px-0  mt-8  ">
           <Help
             title="Følelser & Angst"
             tags={[
@@ -47,6 +49,7 @@ const SectionSeven = () => {
               "Følelsesmæssig ustabilitet",
               "Sorg & tab",
             ]}
+            index={2}
           />
           <Help
             title="Selvværd & Identitet"
@@ -58,9 +61,10 @@ const SectionSeven = () => {
               "Selvkritik & perfektionisme",
               "Usikkerhed & selvtvivl",
             ]}
+            index={3}
           />
         </div>
-        <div className="flex flex-col md:flex-row items-center justify-around gap-1 px-6 md:px-0 mt-16 ">
+        <div className="flex flex-col md:flex-row items-start justify-around gap-1 px-6 md:px-0 mt-8 ">
           <Help
             title="Relationer & Familie"
             tags={[
@@ -71,6 +75,7 @@ const SectionSeven = () => {
               "Parforhold",
               "Familiekonflikter & uro i familien",
             ]}
+            index={4}
           />
           <Help
             title="Traumer & Kriser"
@@ -81,6 +86,7 @@ const SectionSeven = () => {
               "Uforklarlige fysiske reaktioner",
               "Traumer & PTSD",
             ]}
+            index={5}
           />
         </div>
       </div>

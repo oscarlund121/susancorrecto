@@ -22,18 +22,18 @@ export default function Essentiel() {
         <Navigation />
       </div>
       <div className="bg-[#DBE1F8]/50 md:py-16 py-8 ">
-        <div className="mb-32">
+        <div className="mb-8">
           <HeaderSection
             title="Essentiel Integrativ Psykoterapi"
             text="Essentiel Integrativ Psykoterapi kombinerer forskellige krops- og terapeutiske metoder, så behandlingen tilpasses dig og dine behov. Den ser hele mennesket –  kroppen, dine tanker og følelser – og arbejder med at skabe indre ro, balance og tryghed."
 
             buttonHref="/kontakt"
-            variant="primary"
+            variant={false}
             borderColor="black"
           />
         </div>
       </div>
-      <div className="bg-white py-32">
+      <div className="bg-white py-24">
         <div className="content-max px-6 md:px-0">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
@@ -50,15 +50,17 @@ export default function Essentiel() {
                 tags={helpAreas}
               />
             </div>
-            <figure className="custom">
-              <Image
-                src="/img/determind.jpg"
-                alt="Beskrivelse af billedet"
-                width={500}
-                height={300}
-                className="w-full h-full object-cover"
-              />
-            </figure>
+            <div className="flex justify-center items-center">
+              <figure className="">
+                <Image
+                  src="/img/bee.jpg"
+                  alt="Beskrivelse af billedet"
+                  width={500}
+                  height={300}
+                  className="w-[450px] h-auto object-cover"
+                />
+              </figure>
+            </div>
           </div>
         </div>
       </div>

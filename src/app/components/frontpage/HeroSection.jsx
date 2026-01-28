@@ -34,7 +34,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-[-3rem] md:right-0 right-6 md:left-0 left-6 z-20 bg-transparent sm:bg-[#3670674D]/70 sm:border-t-[#367067] border-t-0 mx-6 sm:mx-0 sm:border-t-2 p-6 animate-slideInLeft">
+      <div className="absolute bottom-0 md:right-0 right-6 md:left-0 left-6 z-20 bg-transparent sm:bg-[#3670674D]/70 sm:border-t-[#367067] border-t-0 mx-6 sm:mx-0 sm:border-t-2 p-4 animate-slideInLeft">
         {/* Content inside box DOES have max-width constraint */}
         <div className="text-white flex flex-col items-center md:items-end "> 
           <div className="md:w-lg lg:w-xl w-sm">
@@ -43,7 +43,7 @@ const HeroSection = () => {
 
           </p>
           </div>
-          <div className="mt-6">
+          <div className="">
             <Link href="/kontakt">
               <Button variant="secondary" />
             </Link>

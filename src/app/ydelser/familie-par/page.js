@@ -6,7 +6,7 @@ import Button from "../../components/ui/Button";
 
 const helpAreas = [
   "Ved tilbagevendende konflikter eller misforståelser",
-  "Når kommunikationen føles fastlåst eller fjern", 
+  "Når kommunikationen føles fastlåst eller fjern",
   "Ved kriser som skilsmisse, sygdom eller tab",
   "Når børn eller unge i familien trives dårligt"
 ];
@@ -18,41 +18,62 @@ export default function FamiliePar() {
         <Navigation />
       </div>
       <div className="bg-[#DBE1F8]/50 md:py-16 py-8 ">
-        <div className="mb-32">
+        <div className="mb-16">
           <HeaderSection
-            title="Fælles forståelse og nye veje i relationerne"
-            text="Familie- og parterapi er en mulighed for at få øje på nye perspektiver, bryde fastlåste mønstre og skabe bedre kommunikation. Vi arbejder i trygge rammer, hvor alle parter bliver hørt og set."
+            title="Relationer og familieliv"
+            text="Relationer kan være både kilder til glæde og til udfordringer. Mange oplever konflikter, kommunikationsproblemer eller uro i familien, og det kan være svært at finde ro og forståelse i hverdagen."
             buttonHref="/kontakt"
-            variant="primary"
+            variant={false}
             borderColor="black"
           />
         </div>
-        <div className="bg-white py-32">
+        <div className="bg-white py-24">
           <div className="content-max px-6 md:px-0">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <div>
                   <div className="border-b-1 border-black">
-                    <h3>Hvad er familie- og parterapi?</h3>
+                    <h3>Jeg tilbyder støtte inden for:</h3>
                   </div>
-                  <p className="sm:w-xl w-sm mt-6">
-                    Familie- og parterapi er en mulighed for at få øje på nye perspektiver, bryde fastlåste mønstre og skabe bedre kommunikation. Vi arbejder i trygge rammer, hvor alle parter bliver hørt og set.
-                  </p>
+                  <div className="sm:w-xl w-sm mt-6 space-y-6">
+                    <div>
+                      <h4 className="font-semibold mb-2">Kommunikationsproblemer</h4>
+                      <p>Mange familier og par oplever, at det er svært at blive forstået eller at forstå hinanden. Jeg hjælper med at skabe klarhed, øge gensidig forståelse og finde nye måder at kommunikere på, så relationerne kan blive mere trygge og nærværende.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2">Forældrevejledning</h4>
+                      <p>Forældreskab kan være udfordrende, og der kan opstå usikkerhed, konflikter eller bekymring for børnene. Jeg støtter forældre i at finde ro, overskud, eftertanke og konkrete redskaber til at navigere i familielivet, samtidig med at relationen til barnet styrkes.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2">Social angst & ensomhed</h4>
+                      <p>Følelser af ensomhed eller social angst kan gøre det svært at indgå i relationer. Jeg hjælper dig med at forstå, hvad der ligger bag disse følelser, og støtter dig i at opbygge tryghed, selvtillid og bedre sociale forbindelser.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2">Skilsmisse & separation</h4>
+                      <p>Skilsmisse eller separation kan skabe uro og usikkerhed – både for voksne og børn. Jeg tilbyder støtte til at håndtere sorg, skyld og konflikter, og hjælper med at finde nye måder at skabe balance og samarbejde på efter en forandring.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2">Parforhold</h4>
+                      <p>Parforhold kan møde udfordringer som misforståelser, manglende nærvær eller gentagne konflikter. Jeg arbejder med at styrke dialogen, skabe forståelse og genopbygge nærvær, så par kan opleve mere samhørighed og trivsel sammen.</p>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold mb-2">Familiekonflikter & uro</h4>
+                      <p>Uenigheder og spændinger i familien kan skabe stress og afstand mellem familiemedlemmer. Jeg hjælper med at håndtere konflikter, forstå dynamikker og skabe mere tryghed og samarbejde i familien.</p>
+                    </div>
+                  </div>
                 </div>
-                <Help
-                  title="Hvornår kan metoden hjælpe?"
-                  tags={helpAreas}
-                />
               </div>
-              <figure className="custom">
-                <Image
-                  src="/img/determind.jpg"
-                  alt="Beskrivelse af billedet"
-                  width={500}
-                  height={300}
-                  className="w-full h-full object-cover"
-                />
-              </figure>
+              <div className="flex justify-center items-center">
+                <figure className="">
+                  <Image
+                    src="/img/heart.jpg"
+                    alt="Beskrivelse af billedet"
+                    width={500}
+                    height={300}
+                    className="w-[450px] h-auto object-cover"
+                  />
+                </figure>
+              </div>
             </div>
           </div>
         </div>
@@ -80,11 +101,11 @@ export default function FamiliePar() {
                   </div>
                   <div className="sm:w-xl w-sm mb-8 ">
                     <p>
-                      Vi starter altid med en indledende samtale, hvor vi afklarer, hvad der fylder mest for jer, og hvordan I ønsker, at jeres relation skal se ud fremover. Derefter arbejder vi struktureret med de områder, hvor I ønsker forandring.
+                      Vi starter altid med en indledende samtale, hvor vi afklarer, hvad der fylder mest for dig eller jer, og hvordan du/I ønsker, at livet skal se ud fremover. Derefter arbejder vi struktureret med de områder, hvor du/I ønsker forandring.
                     </p>
                     <br />
                     <p>
-                      Kontakt mig for en uforpligtende samtale om, hvordan familie- og parterapi kan hjælpe jer med at finde nye veje i jeres relation.
+                      Mit mål er at skabe et trygt rum, hvor du kan blive hørt, reflektere over dine relationer og få redskaber til at skabe større balance, forståelse og trivsel – altid i dit tempo og der, hvor du er.
                     </p>
                   </div>
                   <Button

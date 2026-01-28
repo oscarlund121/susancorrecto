@@ -15,12 +15,12 @@ export default function Home() {
       <SectionTwo />
       {/* <SectionThree /> */}
       <Filler title="Vi finder løsningen sammen, skridt for skridt, i dit tempo." />
-      <SectionFour/>
+      <SectionSeven />
       <SectionFive />
       <SectionSix />
            <Filler title="Jeg hjælper dig med at finde styrke, ro og retning, uanset hvor du står." />
+      <SectionFour/>
 
-      <SectionSeven />
       <SectionEight />
     </div>
   );

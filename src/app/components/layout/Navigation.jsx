@@ -43,7 +43,7 @@ const Navigation = ({ variant = 'default' }) => {
         
         {/* Logo section */}
         <Link href="/" className="flex items-center gap-4 cursor-pointer">
-          <div className="w-12 h-12 bg-black rounded"></div>
+          <img src="/logo/logo.svg" alt="Susan Albertsen Logo" className="w-12 h-12" />
           <div className="hidden sm:block">
             <div className="text-black text-sm font-medium">Psykoterapi</div>
             <div className="text-black text-sm font-light">Susan Albertsen</div>
@@ -85,19 +85,25 @@ const Navigation = ({ variant = 'default' }) => {
                   EMDR Terapi
                 </Link>
                 <Link href="/ydelser/essentiel-integrativ-psykoterapi" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
-                  Essentiel Integrativ Psykoterapi
+                Psykoterapi
                 </Link>
                 <Link href="/ydelser/meditation" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
                   Meditation
                 </Link>
+                <Link href="/ydelser/eksamensangst" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
+                  Eksamens- og præstationsangst
+                </Link>
+                <Link href="/ydelser/angst-og-folelser" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
+                  Angst og følelser
+                </Link>
                 <Link href="/ydelser/familie-par" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
-                  Familie- og parterapi
+                  Relationer og familieliv
                 </Link>
               </div>
             </div>
           </div>
           
-          <Link href="/omSusan" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
+          <Link href="/om-susan" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
             Om Susan
             <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
           </Link>
@@ -160,7 +166,7 @@ const Navigation = ({ variant = 'default' }) => {
             </button>
             
             {/* Mobile dropdown items */}
-            <div className={`ml-4 mt-2 space-y-2 transition-all duration-200 ${isMobileDropdownOpen ? 'opacity-100 max-h-48' : 'opacity-0 max-h-0 overflow-hidden'}`}>
+            <div className={`ml-4 mt-2 space-y-2 transition-all duration-200 ${isMobileDropdownOpen ? 'opacity-100 max-h-96' : 'opacity-0 max-h-0 overflow-hidden'}`}>
               <Link 
                 href="/ydelser/emdr" 
                 className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
@@ -183,17 +189,31 @@ const Navigation = ({ variant = 'default' }) => {
                 Meditation
               </Link>
               <Link 
+                href="/ydelser/eksamensangst" 
+                className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Eksamens- og præstationsangst
+              </Link>
+              <Link 
+                href="/ydelser/angst-og-folelser" 
+                className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Angst og følelser
+              </Link>
+              <Link 
                 href="/ydelser/familie-par" 
                 className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Familie- og parterapi
+                Relationer og familieliv
               </Link>
             </div>
           </div>
           
           <Link 
-            href="/omSusan" 
+            href="/om-susan" 
             className="block text-[#367067] text-lg font-light py-2 hover:bg-gray-50 rounded"
             onClick={() => setIsMenuOpen(false)}
           >
