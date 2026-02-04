@@ -29,18 +29,18 @@ const testimonialData = [
   {
     id: 4,
     quote:
-      "Da jeg startede i terapi hos Susan, var det min første gang i terapi nogensinde...",
-    fullQuote: "Den fulde lange tekst her...",
-    name: "Emilie, 26 år",
-    issue: "Eksamensangst & livskriser",
+      "Jeg kan ikke forklarer hvad det er Susan kan , men hun er med sin varme og dejlige udstråling en terapeut man føler sig tryg ved",
+    fullQuote: "Jeg har haft den glæde at stifte bekendtskab med Essens terapi gennem Susan Albertsen. jeg har haft psoriasis siden jeg var 14 år gammel , jeg er i dag 57 år og har kæmpet hele mit liv med de gener det giver at have psoriasis Jeg har forsøgt rigtig mange ting for at slippe af med denne hudsygdom, har været ved Dødehavet 3 gange på ophold, smurt mig med alverdens cremer , spist og drukket mange mærkelige ting - men intet har hjulpet. Jeg kom i terapi hos Susan og da vi fandt frem til hvilke CHOK det var skyld i at jeg som 14 årige fik psoriasis, og fik det bearbejdet gik der ikke lang tid før jeg var fri for denne sygdom. Jeg er blevet hjulpet med mange ting gennem denne enestående terapi form. Vi komme alle ud for sorg/bekymringer og disse ting lagres i kroppen og vi reagerer alle forskelligt på disse hændelser - men med Essens terapi kan man få løst op for disse CHOK. Jeg kan ikke forklarer hvad det er Susan kan , men hun er med sin varme og dejlige udstråling en terapeut man føler sig tryg ved Hun har en fantastisk evne til at guide en gennem terapien. Og man har let ved at åbne sig for hende Jeg kan kun varmt anbefale Susan hvis du vil have bearbejdet ting der kan gøre livet svært for dig.",
+    name: "Birthe, 57 år",
+    issue: "Psoriasis & hudsygdom",
   },
   {
     id: 5,
     quote:
-      "Da jeg startede i terapi hos Susan, var det min første gang i terapi nogensinde...",
-    fullQuote: "Den fulde lange tekst her...",
-    name: "Emilie, 26 år",
-    issue: "Eksamensangst & livskriser",
+      "Det er så svært at forklare, hvordan terapien er, men det giver SÅ MEGET mening, når Susan fortæller om tankerne bag. Psyke og fysik hænger sammen.",
+    fullQuote: "Susan er utrolig meget tillidsvækkende. Føler sig lethed i kroppen efter besøg hos Susan. Susan har fjernet et chok fra min 5 årige datter, som ikke turde bevæge sig alene rundt i huset. Min teenagerdatter går også hos Susan en gang imellem, bare for at lufte ud i systemet. Det er så svært at forklare, hvordan terapien er, men det giver SÅ MEGET mening, når Susan fortæller om tankerne bag. Psyke og fysik hænger sammen. Susan mærker én og man skal ikke fortælle ret meget førend at hun griber den og selv finder ind til kernen.",
+    name: "Dorte, Region Midtjylland",
+    issue: "Familie & chokbehandling",
   },
 ];
 

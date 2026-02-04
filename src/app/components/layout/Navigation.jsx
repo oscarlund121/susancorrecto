@@ -44,7 +44,7 @@ const Navigation = ({ variant = 'default' }) => {
         {/* Logo section */}
         <Link href="/" className="flex items-center gap-4 cursor-pointer">
           <img src="/logo/logo.svg" alt="Susan Albertsen Logo" className="w-12 h-12" />
-          <div className="hidden sm:block">
+          <div className="block">
             <div className="text-black text-sm font-medium">Psykoterapi</div>
             <div className="text-black text-sm font-light">Susan Albertsen</div>
           </div>

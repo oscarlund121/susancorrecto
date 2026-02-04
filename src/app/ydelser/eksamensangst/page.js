@@ -92,12 +92,12 @@ export default function Eksamensangst() {
             <div className="flex justify-center items-center order-2 md:order-1">
               <figure className="">
                 <Image
-                  src="/img/determind.jpg"
+                  src="/img/purple-flower.jpg"
                   alt="Behandling af eksamensangst"
                   width={500}
                   height={300}
                   className="w-[450px] h-auto object-cover"
-                />
+/>
               </figure>
             </div>
             <div className="order-1 md:order-2">
@@ -150,9 +150,7 @@ export default function Eksamensangst() {
         </div>
       </div>
 
-      <CTAContent
-        imageSrc="/img/emdr-1.jpg"
-      />
+      <CTAContent />
     </div>
   );
 }

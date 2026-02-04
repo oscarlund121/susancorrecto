@@ -93,12 +93,12 @@ export default function AngstOgFolelser() {
             <div className="flex justify-center items-center order-2 md:order-1">
               <figure className="">
                 <Image
-                  src="/img/determind.jpg"
+                  src="/img/bee.jpg"
                   alt="Depression og sorg"
                   width={500}
                   height={300}
                   className="w-[450px] h-auto object-cover"
-                />
+/>
               </figure>
             </div>
             <div className="order-1 md:order-2">

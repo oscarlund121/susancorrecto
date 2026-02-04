@@ -64,7 +64,10 @@ const Footer = ({ coords = { lat: 56.1629, lng: 10.2039 } }) => {
 
         {/* Bottom section with copyright and socials */}
         <div className="mt-12 border-t border-zinc-800 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-zinc-500">© {new Date().getFullYear()} Susan Albertsen. Alle rettigheder forbeholdes.</p>
+          <div className="text-sm text-zinc-500 text-center sm:text-left">
+            <p>© {new Date().getFullYear()} Susan Albertsen. Alle rettigheder forbeholdes.</p>
+            <p className="mt-1">Fotos: Christina Vasby</p>
+          </div>
           <div className="flex items-center gap-6">
             <SocialIcon href="https://www.facebook.com/susancorrecto">
               <FaFacebookF className="w-5 h-5" />

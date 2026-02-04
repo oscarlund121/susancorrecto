@@ -8,7 +8,7 @@ const HeroSection = () => {
     <div className="relative section min-h-screen pb-16 lg:pb-16 md:pb-8 sm:pb-4">
       {/* Background image */}
       <Image
-        src="/img/hero-img.jpg"
+        src="/img/hero-img-blue-bright.jpg"
         alt="Hero background"
         width={1920}
         height={1080}
@@ -24,7 +24,7 @@ const HeroSection = () => {
       </div>
 
       {/* Hero content */}
-        <div className="relative z-20 flex items-start min-h-[75vh] sm:min-h-[70vh] content-max sm:pt-12">
+        <div className="relative z-20 flex items-start min-h-[75vh] sm:min-h-[70vh] content-max sm:pt-12 pt-0">
         <div className=" text-white ">
           {/* Add your hero content here */}
           <h1 className="mb-4 text-hero-max text-left animate-fadeInUp">
@@ -33,7 +33,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 z-20 bg-transparent sm:bg-[#3670674D]/70 sm:border-t-[#367067] border-t-0 sm:border-t-2 p-4 animate-slideInLeft">
+      <div className="absolute bottom-0 left-0 right-0 z-20 bg-transparent sm:bg-[#3670674D]/70 sm:border-t-[#367067] border-t-0 sm:border-t-2 px-4 py-8 md:py-4 animate-slideInLeft w-full">
         {/* Content inside box DOES have max-width constraint */}
         <div className="text-white flex flex-col items-center md:items-end content-max"> 
           <div className="w-full md:w-lg lg:w-xl">
@@ -42,9 +42,9 @@ const HeroSection = () => {
 
           </p>
           </div>
-          <div className="sm:mt-0 mt-2">
+         {/*  <div className="sm:mt-0 my-4">
             <Button variant="secondary" />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
