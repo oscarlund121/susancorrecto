@@ -2,7 +2,7 @@ import HeaderSection from "@/app/components/layout/FrontpageHeaderSection";
 import Navigation from "../../components/layout/Navigation";
 import Image from "next/image";
 import Help from "../../components/layout/UnderHelp";
-import Button from "../../components/ui/Button";
+import CTAContent from "../../components/layout/CTAContent";
 
 const helpAreas = [
   "Ved tilbagevendende konflikter eller misforståelser",
@@ -77,44 +77,7 @@ export default function FamiliePar() {
             </div>
           </div>
         </div>
-        <div className="bg-[#367067] py-32 text-white">
-          <div className="content-max px-6 md:px-0">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="flex justify-center items-center">
-                <figure className="">
-                  <Image
-                    src="/img/determind.jpg"
-                    alt="Beskrivelse af billedet"
-                    width={500}
-                    height={300}
-                    className="w-[450px] h-auto object-cover"
-                  />
-                </figure>
-              </div>
-              <div>
-                <div className="pb-8">
-                  <h2>Klar til at tage det næste skridt?</h2>
-                </div>
-                <div className="mt-8">
-                  <div className="mb-6 border-b-2 border-white">
-                    <h3>Sådan forgår et forløb</h3>
-                  </div>
-                  <div className="sm:w-xl w-sm mb-8 ">
-                    <p>
-                      Vi starter altid med en indledende samtale, hvor vi afklarer, hvad der fylder mest for dig eller jer, og hvordan du/I ønsker, at livet skal se ud fremover. Derefter arbejder vi struktureret med de områder, hvor du/I ønsker forandring.
-                    </p>
-                    <br />
-                    <p>
-                      Mit mål er at skabe et trygt rum, hvor du kan blive hørt, reflektere over dine relationer og få redskaber til at skabe større balance, forståelse og trivsel – altid i dit tempo og der, hvor du er.
-                    </p>
-                  </div>
-                  <Button
-                    variant="secondary" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <CTAContent />
       </div>
     </div>
   );
