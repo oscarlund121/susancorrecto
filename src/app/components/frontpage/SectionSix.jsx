@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const SectionSix = () => {
   return (
-    <div className="py-32 flex flex-col items-center text-white bg-[#367067]">
+    <div className="py-16 md:py-24 lg:py-32 flex flex-col items-center text-white bg-[#367067]">
       {/* HeaderSection får fuld bredde */}
 
       <div className="content-max mt-12">

@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import Button from "../ui/Button";
 
 const HeaderSection = ({
@@ -27,9 +26,7 @@ const HeaderSection = ({
           </div>
               {variant !== false && (
                 <div className=" items-end flex-shrink-0 mt-6 sm:mt-2">
-                  <Link href={buttonHref}>
-                    <Button variant={variant}>{buttonText}</Button>
-                  </Link>
+                  <Button variant={variant} href={buttonHref}>{buttonText}</Button>
                 </div>
               )}
         </div>

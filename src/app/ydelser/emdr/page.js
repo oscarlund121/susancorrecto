@@ -9,7 +9,7 @@ const helpAreas = [
   "Ved vedvarende angst eller fobier",
   "Ved tab og sorg",
   "Efter fysiske eller psykiske overgreb",
-  "Når gamle oplevelser bliver ved med at påvirke dit liv i nutiden"
+
 ];
 
 export default function EMDR() {
@@ -32,15 +32,15 @@ export default function EMDR() {
           />
         </div>
       </div>
-      <div className="bg-white py-24">
-        <div className="content-max px-6 md:px-0">
+      <div className="bg-white py-12 md:py-16 lg:py-24">
+        <div className="content-max">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <div>
                 <div className="border-b-1 border-black">
                   <h3>Hvad er EMDR terapi?</h3>
                 </div>
-                <p className="sm:w-xl w-sm mt-6">
+                <p className="w-full max-w-xl mt-6">
                   EMDR er en psykoterapeutisk metode, der hjælper hjernen med at bearbejde traumatiske minder og oplevelser. Under behandlingen følger du terapeutens bevægelser med øjnene, mens du tænker på det belastende emne. Dette stimulerer hjernens naturlige helingsprocesser og reducerer den følelsesmæssige belastning ved mindet.
                 </p>
               </div>

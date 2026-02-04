@@ -8,15 +8,15 @@ import Link from "next/link";
 
 const SectionFour = () => {
   return (
-    <div className="py-32 bg-white ">
-      <div className="content-max ">
-        <HeaderSection
-          title="Jeg tilbyder evidensbaseret psykoterapi med fokus på helhedsorienteret behandling og personlig udvikling."
-          text="Psykoterapi handler ikke kun om symptomer – det handler om dig og dit liv. I et trygt og omsorgsfuldt rum kan du udforske dine følelser, bearbejde det, der tynger, og opdage nye måder at være og leve på."
-          buttonHref="/kontakt"
-          variant="secondary"
-        />
-        <div className="grid px-6 grid-cols-1 md:grid-cols-3 mt-25 items-center gap-8 lg:gap-4">
+    <div className="py-16 md:py-24 lg:py-32 bg-white ">
+      <HeaderSection
+        title="Jeg tilbyder evidensbaseret psykoterapi med fokus på helhedsorienteret behandling og personlig udvikling."
+        text="Psykoterapi handler ikke kun om symptomer – det handler om dig og dit liv. I et trygt og omsorgsfuldt rum kan du udforske dine følelser, bearbejde det, der tynger, og opdage nye måder at være og leve på."
+        buttonHref="/kontakt"
+        variant="secondary"
+      />
+      <div className="content-max">
+        <div className="grid grid-cols-1 md:grid-cols-3 mt-25 items-center gap-8 lg:gap-4 mx-4">
           <ul className="flex col-span-3 flex-col gap-8 lg:gap-16 ">
             <li className="mt-6 group">
               <Link

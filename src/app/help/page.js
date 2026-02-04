@@ -1,6 +1,7 @@
 import HeaderSection from "../components/layout/FrontpageHeaderSection";
 import Navigation from "../components/layout/Navigation";
 import CategorySection from "../components/layout/CategorySection";
+import Button from "../components/ui/Button";
 
 const categories = [
   {
@@ -45,18 +46,20 @@ export default function Help() {
   return (
     <div>
       <Navigation />
-      <div className="bg-white md:py-16 py-8 ">
-        <div className="mb-32">
+      <div className="bg-[#DBE1F8]/50 md:py-16 py-8">
+        <div className="mb-8">
           <HeaderSection
             title="Hvad jeg kan hjælpe dig med"
             text="Vi møder alle livets udfordringer forskelligt. Hos mig får du et trygt rum, hvor vi sammen finder frem til løsninger, der passer til dig – uanset om det handler om angst, stress, lavt selvværd eller svære relationer."
             buttonHref="/kontakt"
-            variant="primary"
+            variant={false}
             borderColor="black"
           />
         </div>
+      </div>
 
-        <div className="content-max px-6 md:px-0">
+      <div className="bg-white py-12 md:py-16 ">
+        <div className="content-max">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {categories.map((category, index) => (
               <CategorySection 
@@ -67,6 +70,9 @@ export default function Help() {
                 index={index}
               />
             ))}
+          </div>
+          <div className="flex justify-center my-8">
+            <Button variant="secondary">Book en samtale</Button>
           </div>
         </div>
       </div>

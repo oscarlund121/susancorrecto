@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Navigation from "../layout/Navigation";
 import Button from "../ui/Button";
-import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -34,19 +33,17 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 md:right-0 right-6 md:left-0 left-6 z-20 bg-transparent sm:bg-[#3670674D]/70 sm:border-t-[#367067] border-t-0 mx-6 sm:mx-0 sm:border-t-2 p-4 animate-slideInLeft">
+      <div className="absolute bottom-0 left-0 right-0 z-20 bg-transparent sm:bg-[#3670674D]/70 sm:border-t-[#367067] border-t-0 sm:border-t-2 p-4 animate-slideInLeft">
         {/* Content inside box DOES have max-width constraint */}
-        <div className="text-white flex flex-col items-center md:items-end "> 
-          <div className="md:w-lg lg:w-xl w-sm">
+        <div className="text-white flex flex-col items-center md:items-end content-max"> 
+          <div className="w-full md:w-lg lg:w-xl">
           <p className="md:text-max">
            At tage skridtet eller være midt i forandring, kan både føles spændende og udfordrende. Jeg støtter dig i at håndtere pres, usikkerhed og fastlåste mønstre, så du kan finde indre ro, fokus og overskud, og opleve mere glæde og trivsel i hverdagen.
 
           </p>
           </div>
-          <div className="">
-            <Link href="/kontakt">
-              <Button variant="secondary" />
-            </Link>
+          <div className="sm:mt-0 mt-2">
+            <Button variant="secondary" />
           </div>
         </div>
       </div>

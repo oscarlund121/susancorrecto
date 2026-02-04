@@ -20,7 +20,7 @@ const SectionFive = () => {
     
 
 
-      <div className="relative flex flex-col items-center justify-center z-100 py-32 text-white">
+      <div className="relative flex flex-col items-center justify-center z-100 py-16 md:py-24 lg:py-32 text-white">
         <blockquote className="text-max text-center">
           “Vi kan kun skabe varige transformationer i os selv, hvis vi gør det
           ud fra ren ubetinget kærlighed. Kan vi ikke skabe ændringer ud fra

@@ -4,7 +4,7 @@ import Help from "../layout/Help";
 
 const SectionSeven = () => {
   return (
-    <div className="py-32 bg-white">
+    <div className="py-16 md:py-24 lg:py-32 bg-white">
       <HeaderSection
         title="Hjælp til angst, stress, lavt selvværd og relationelle udfordringer."
         text="Psykoterapi handler ikke kun om at fjerne symptomer, men om at styrke dig som menneske. Jeg tilbyder et trygt og respektfuldt rum, hvor du kan udforske dine følelser, bearbejde svære oplevelser og finde nye måder at leve på."
@@ -12,7 +12,7 @@ const SectionSeven = () => {
         variant="secondary"
       />
       <div className="flex flex-col ">
-        <div className="flex flex-col md:flex-row items-start justify-around gap-1 px-6 md:px-0  mt-16  ">
+        <div className="flex flex-col md:flex-row items-start justify-around gap-1 mt-16">
           <Help
             title="Unge & Studerende"
             tags={[
@@ -38,7 +38,7 @@ const SectionSeven = () => {
             index={1}
           />
         </div>
-        <div className="flex flex-col md:flex-row items-start justify-around gap-1 px-6 md:px-0  mt-8  ">
+        <div className="flex flex-col md:flex-row items-start justify-around gap-1 mt-8">
           <Help
             title="Følelser & Angst"
             tags={[
@@ -64,7 +64,7 @@ const SectionSeven = () => {
             index={3}
           />
         </div>
-        <div className="flex flex-col md:flex-row items-start justify-around gap-1 px-6 md:px-0 mt-8 ">
+        <div className="flex flex-col md:flex-row items-start justify-around gap-1 mt-8">
           <Help
             title="Relationer & Familie"
             tags={[

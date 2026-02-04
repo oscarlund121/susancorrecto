@@ -6,10 +6,10 @@ import { ChevronDownIcon } from "@radix-ui/react-icons";
 
 const Help = ({ title, tags, index = 0 }) => {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-full md:w-auto">
       <Accordion.Root type="single" collapsible>
         <Accordion.Item value={title}>
-          <div className="xl:w-[600px] lg:w-[500px] px-6 md:w-[350px] w-full mb-4 bg-white p-6 rounded-lg t cursor-pointer opacity-0 animate-fade-in-up"
+          <div className="xl:w-[600px] lg:w-[500px] md:w-[350px] w-full mb-4 bg-white p-6 rounded-lg t cursor-pointer opacity-0 animate-fade-in-up"
                style={{ animationDelay: `${index * 150}ms` }}>
             <Accordion.Trigger className="flex justify-between items-center w-full text-left group border-b border-black pb-2 mb-6">
               <h3>{title}</h3>

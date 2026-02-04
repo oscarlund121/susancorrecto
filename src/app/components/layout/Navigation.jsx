@@ -63,20 +63,20 @@ const Navigation = ({ variant = 'default' }) => {
             onMouseEnter={handleDropdownEnter}
             onMouseLeave={handleDropdownLeave}
           >
-            <button 
+            <span 
               onClick={toggleDesktopDropdown}
-              className="text-[#367067] text-xl font-light hover:text-[#D3D9E5] transition-all duration-300 relative group flex items-center gap-1"
+              className="w-full text-left text-[#367067] text-lg  font-light hover:text-[#D3D9E5] transition-all duration-300 relative group flex items-center gap-1"
             >
               Ydelser
-              <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all text-lg duration-300 group-hover:w-full"></span>
               <svg className={`w-4 h-4 transition-transform duration-200 ${isDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
-            </button>
+            </span>
             
             {/* Dropdown menu */}
             <div 
-              className={`absolute top-full left-0 mt-2 w-sm bg-white/90 rounded-lg shadow-lg transition-all duration-200 z-50 ${isDropdownOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
+              className={`absolute top-full left-0 mt-2 w-sm bg-white rounded-lg shadow-lg transition-all duration-200 z-50 ${isDropdownOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
               onMouseEnter={handleDropdownEnter}
               onMouseLeave={handleDropdownLeave}
             >
@@ -155,15 +155,15 @@ const Navigation = ({ variant = 'default' }) => {
           
           {/* Mobile Ydelser dropdown */}
           <div>
-            <button 
+            <span 
               onClick={toggleMobileDropdown}
-              className="w-full text-left text-[#367067] text-lg font-light py-2 hover:bg-gray-50 rounded flex items-center justify-between"
+              className="w-full text-left text-[#367067] text-lg font-light py-2 hover:bg-gray-50 rounded flex items-center justify-between cursor-pointer"
             >
               Ydelser
               <svg className={`w-3 h-3 transition-transform duration-200 ${isMobileDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
               </svg>
-            </button>
+            </span>
             
             {/* Mobile dropdown items */}
             <div className={`ml-4 mt-2 space-y-2 transition-all duration-200 ${isMobileDropdownOpen ? 'opacity-100 max-h-96' : 'opacity-0 max-h-0 overflow-hidden'}`}>

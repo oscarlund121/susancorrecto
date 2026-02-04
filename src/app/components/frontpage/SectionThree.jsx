@@ -4,7 +4,7 @@ import Button from "../ui/Button";
 
 const SectionThree = () => {
   return (
-    <div className="bg-[#DBE1F8] py-32">
+    <div className="bg-[#DBE1F8] py-16 md:py-24 lg:py-32">
       <div className="content-max flex flex-col items-center justify-center gap-12">
         <div className="text-center max-w-4xl">
           <h2 className="text-max mb-6">

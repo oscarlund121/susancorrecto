@@ -2,7 +2,7 @@ import GreenBox from "../ui/GreenBox";
 
 const CategorySection = ({ title, description, tags, index = 0 }) => {
   return (
-    <div className="p-6">
+    <div className="p-0 md:p-6">
       <div className=" pb-4 h-full">
         <h3 className="mb-4 border-b border-black">{title}</h3>
         <div className="mb-6">

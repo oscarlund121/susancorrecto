@@ -24,8 +24,8 @@ export default function Essentiel() {
       <div className="bg-[#DBE1F8]/50 md:py-16 py-8 ">
         <div className="mb-8">
           <HeaderSection
-            title="Essentiel Integrativ Psykoterapi"
-            text="Essentiel Integrativ Psykoterapi kombinerer forskellige krops- og terapeutiske metoder, så behandlingen tilpasses dig og dine behov. Den ser hele mennesket –  kroppen, dine tanker og følelser – og arbejder med at skabe indre ro, balance og tryghed."
+            title="Psykoterapi"
+            text="Psykoterapi kombinerer forskellige krops- og terapeutiske metoder, så behandlingen tilpasses dig og dine behov. Den ser hele mennesket –  kroppen, dine tanker og følelser – og arbejder med at skabe indre ro, balance og tryghed."
 
             buttonHref="/kontakt"
             variant={false}
@@ -33,15 +33,15 @@ export default function Essentiel() {
           />
         </div>
       </div>
-      <div className="bg-white py-24">
-        <div className="content-max px-6 md:px-0">
+      <div className="bg-white py-12 md:py-16 lg:py-24">
+        <div className="content-max">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
               <div>
                 <div className="border-b-1 border-black">
                   <h3>Hvad er Essentiel Integrativ Psykoterapi?</h3>
                 </div>
-                <p className="sm:w-xl w-sm mt-6">
+                <p className="w-full max-w-xl mt-6">
                   Essentiel Integrativ Psykoterapi er en helhedsorienteret tilgang, hvor vi kombinerer forskellige evidensbaserede metoder. Det betyder, at vi kan arbejde fleksibelt  med det, du har brug for, uanset om det handler om gamle mønstre, nye udfordringer eller akutte livskriser. Målet er at styrke både din indre ro og din evne til at handle på det, der er vigtigt for dig.
                 </p>
               </div>

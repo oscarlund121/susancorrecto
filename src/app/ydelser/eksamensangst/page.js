@@ -32,18 +32,18 @@ export default function Eksamensangst() {
       </div>
 
       {/* Når angsten tager styringen sektion */}
-      <div className="bg-white py-24">
-        <div className="content-max px-6 md:px-0">
+      <div className="bg-white py-12 md:py-16 lg:py-24">
+        <div className="content-max">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <div>
                 <div className="border-b-1 border-black">
                   <h3>Når angsten tager styringen</h3>
                 </div>
-                <p className="sm:w-xl w-sm mt-6">
+                <p className="w-full max-w-xl mt-6">
                   Mange oplever, at stemmen svigter, tankerne går i stå, eller at de føler sig helt væk i situationer, hvor de ellers havde forberedt sig godt.
                 </p>
-                <p className="sm:w-xl w-sm mt-4">
+                <p className="w-full max-w-xl mt-4">
                   At være nervøs før en eksamen, en præsentation eller en anden præstationssituation er helt normalt. Men for nogle bliver nervøsiteten så voldsom, at den spænder ben i stedet for at hjælpe. Når angsten tager styringen, kan det resultere i præstationer, der slet ikke afspejler ens evner – eller i at man helt undgår situationerne.
                 </p>
               </div>
@@ -68,8 +68,8 @@ export default function Eksamensangst() {
       </div>
 
       {/* Hvordan kan terapi hjælpe sektion */}
-      <div className="bg-[#367067] py-32 text-white">
-        <div className="content-max px-6 md:px-0">
+      <div className="bg-[#367067] py-16 md:py-24 lg:py-32 text-white">
+        <div className="content-max">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="flex justify-center items-center order-2 md:order-1">
               <figure className="">
@@ -87,7 +87,7 @@ export default function Eksamensangst() {
                 <div className="mb-6 border-b-2 border-white">
                   <h3>Hvordan kan terapi hjælpe?</h3>
                 </div>
-                <div className="sm:w-xl w-sm space-y-4">
+                <div className="w-full max-w-xl space-y-4">
                   <p>
                     Med psykoterapi og meditation (indadvendt fokuseret opmærksomhed) er det muligt at arbejde målrettet med eksamens- og præstationsangst. I behandlingen går vi tilbage til de oplevelser, hvor angsten oprindeligt opstod, og som stadig får dit nervesystem til at reagere, som om du er i fare.
                   </p>
@@ -102,15 +102,15 @@ export default function Eksamensangst() {
       </div>
 
       {/* Bryd mønstret sektion */}
-      <div className="bg-white py-24">
-        <div className="content-max px-6 md:px-0">
+      <div className="bg-white py-12 md:py-16 lg:py-24">
+        <div className="content-max">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <div className="pb-8">
                 <div className="border-b-1 border-black">
                   <h3>Bryd mønstret</h3>
                 </div>
-                <div className="sm:w-xl w-sm mt-6 space-y-4">
+                <div className="w-full max-w-xl mt-6 space-y-4">
                   <p>
                     Psykoterapien og meditationen hjælper dig med at chok-forløse og bryde dette mønster, så kroppen kan falde til ro, og du igen kan føle dig tryg i præstationssituationer.
                   </p>

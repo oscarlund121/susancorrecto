@@ -5,10 +5,10 @@ import Help from "../../components/layout/UnderHelp";
 import CTAContent from "../../components/layout/CTAContent";
 
 const helpAreas = [
-  "Ved tilbagevendende konflikter eller misforståelser",
-  "Når kommunikationen føles fastlåst eller fjern",
-  "Ved kriser som skilsmisse, sygdom eller tab",
-  "Når børn eller unge i familien trives dårligt"
+  "Konflikter & misforståelser",
+  "Fastlåst kommunikation",
+  "Skilsmisse, sygdom & tab",
+  "Børn & unges trivsel"
 ];
 
 export default function FamiliePar() {
@@ -27,15 +27,15 @@ export default function FamiliePar() {
             borderColor="black"
           />
         </div>
-        <div className="bg-white py-24">
-          <div className="content-max px-6 md:px-0">
+        <div className="bg-white py-12 md:py-16 lg:py-24">
+          <div className="content-max">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <div>
                   <div className="border-b-1 border-black">
                     <h3>Jeg tilbyder støtte inden for:</h3>
                   </div>
-                  <div className="sm:w-xl w-sm mt-6 space-y-6">
+                  <div className="w-full max-w-xl mt-6 space-y-6">
                     <div>
                       <h4 className="font-semibold mb-2">Kommunikationsproblemer</h4>
                       <p>Mange familier og par oplever, at det er svært at blive forstået eller at forstå hinanden. Jeg hjælper med at skabe klarhed, øge gensidig forståelse og finde nye måder at kommunikere på, så relationerne kan blive mere trygge og nærværende.</p>

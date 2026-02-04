@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Archivo, Fraunces, Prata } from "next/font/google";
+import { Geist, Geist_Mono, Archivo, Fraunces, Prata, Domine, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/layout/Navigation";
 import Footer from "./components/layout/Footer";
@@ -24,6 +24,19 @@ const prata = Prata({
   weight: ["400"],
 });
 
+const domine = Domine({
+  variable: "--font-domine",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
+
+const sourceSerif = Source_Serif_4({
+  variable: "--font-source-serif",
+  subsets: ["latin"],
+  weight: ["200", "300", "400", "500", "600", "700"],
+  style: ["normal"],
+});
+
 export const metadata = {
   title: "Susan Terapi",
   description: "Psykoterapi v. Susan Albertsen",
@@ -37,7 +50,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
          
       <body
-        className={`${archivo.variable} ${fraunces.variable} ${prata.variable} antialiased`}
+        className={`${archivo.variable} ${fraunces.variable} ${prata.variable} ${domine.variable} ${sourceSerif.variable} antialiased`}
       >
   
   {children}

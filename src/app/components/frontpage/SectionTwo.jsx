@@ -1,11 +1,10 @@
 "use client";
 import Button from "../ui/Button";
 import CheckIcon from "../ui/CheckIcon";
-import Link from "next/link";
 
 const SectionTwo = () => {
   return (
-    <div className="bg-[#367067] section py-32">
+    <div className="bg-[#367067] section py-16 md:py-24 lg:py-32">
       <div className="content-max">
         <div className=" text-white">
           <h2 >
@@ -39,9 +38,7 @@ const SectionTwo = () => {
               </li>
           {/* Button positioned to the right */}
           <div className="flex mt-8">
-            <Link href="/kontakt">
-              <Button variant="secondary" />
-            </Link>
+            <Button variant="secondary" />
           </div>
             </ul>
           </div>

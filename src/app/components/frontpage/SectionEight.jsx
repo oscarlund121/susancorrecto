@@ -46,7 +46,7 @@ const testimonialData = [
 
 const SectionEight = () => {
   return (
-    <div className="app relative min-h-screen py-32">
+    <div className="app relative min-h-screen py-16 md:py-24 lg:py-32">
       {/* Background image */}
       <Image
         src="/img/many-flowers.jpg"

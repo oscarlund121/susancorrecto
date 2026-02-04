@@ -32,18 +32,18 @@ export default function AngstOgFolelser() {
       </div>
       
       {/* Angst sektion */}
-      <div className="bg-white py-24">
-        <div className="content-max px-6 md:px-0">
+      <div className="bg-white py-12 md:py-16 lg:py-24">
+        <div className="content-max">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <div>
                 <div className="border-b-1 border-black">
                   <h3>Hvad er angst?</h3>
                 </div>
-                <p className="sm:w-xl w-sm mt-6">
+                <p className="w-full max-w-xl mt-6">
                   Angst er kroppens måde at beskytte dig på. Den opstår, når hjernen tror, at der er fare på færde, så kroppen kan reagere hurtigt og passe på dig. Problemet opstår, når kroppen reagerer, selvom der ikke er nogen reel fare.
                 </p>
-                <p className="sm:w-xl w-sm mt-4">
+                <p className="w-full max-w-xl mt-4">
                   Det kan fx ske i sociale situationer, ved præstationer eller i hverdagsoplevelser, der føles ubehagelige. Denne form for angst kan føles skræmmende og frustrerende, men det er vigtigt at vide, at kroppen blot forsøger at hjælpe dig.
                 </p>
               </div>
@@ -68,8 +68,8 @@ export default function AngstOgFolelser() {
       </div>
 
       {/* Depression og Sorg sektion */}
-      <div className="bg-[#367067] py-32 text-white">
-        <div className="content-max px-6 md:px-0">
+      <div className="bg-[#367067] py-16 md:py-24 lg:py-32 text-white">
+        <div className="content-max">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="flex justify-center items-center order-2 md:order-1">
               <figure className="">
@@ -87,7 +87,7 @@ export default function AngstOgFolelser() {
                 <div className="mb-6 border-b-2 border-white">
                   <h3>Depression & sorg</h3>
                 </div>
-                <div className="sm:w-xl w-sm space-y-4">
+                <div className="w-full max-w-xl space-y-4">
                   <p>
                     Depression kan vise sig som tristhed, tomhed, manglende energi, tab af interesse for ting man ellers holder af. For nogle kan det føles, som om livet har mistet mening.
                   </p>
@@ -105,15 +105,15 @@ export default function AngstOgFolelser() {
       </div>
 
       {/* Hvordan kan terapi hjælpe sektion */}
-      <div className="bg-white py-24">
-        <div className="content-max px-6 md:px-0">
+      <div className="bg-white py-12 md:py-16 lg:py-24">
+        <div className="content-max">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <div className="pb-8">
                 <div className="border-b-1 border-black">
                   <h3>Hvordan kan terapi hjælpe?</h3>
                 </div>
-                <div className="sm:w-xl w-sm mt-6 space-y-4">
+                <div className="w-full max-w-xl mt-6 space-y-4">
                   <p>
                     Angst har ofte rod i tidligere oplevelser, hvor kroppen har følt sig utryg eller truet. Gennem psykoterapi, chok-forløsning og meditation kan vi:
                   </p>

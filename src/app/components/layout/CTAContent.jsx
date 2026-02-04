@@ -10,8 +10,8 @@ const CTAContent = ({
   imageAlt = "Kontakt",
 }) => {
   return (
-    <div className="bg-[#367067] py-32 text-white">
-      <div className="content-max px-6 md:px-0">
+    <div className="bg-[#367067] py-16 md:py-24 lg:py-32 text-white">
+      <div className="content-max">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           <div className="flex justify-center items-center order-2 md:order-1">
             <figure>
@@ -32,7 +32,7 @@ const CTAContent = ({
               <div className="mb-6 border-b-2 border-white">
                 <h3>{subtitle}</h3>
               </div>
-              <div className="sm:w-xl w-sm mb-8">
+              <div className="w-full max-w-xl mb-8">
                 <p>{description}</p>
                 {ctaText && (
                   <>
