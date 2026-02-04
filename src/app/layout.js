@@ -38,16 +38,66 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata = {
-  title: "Susan Terapi",
-  description: "Psykoterapi v. Susan Albertsen",
+  metadataBase: new URL('https://psykoterapisusan.dk'),
+  title: {
+    default: 'Psykoterapeut Susan Albertsen | Psykoterapi i Aarhus',
+    template: '%s | Psykoterapeut Susan Albertsen',
+  },
+  description: 'Professionel psykoterapi i Aarhus. Få hjælp til angst, stress, traumer, lavt selvværd og relationer. EMDR-behandling, meditation og integrativ psykoterapi. Book en samtale i dag.',
+  keywords: ['psykoterapeut', 'psykoterapi', 'terapi', 'Aarhus', 'angst', 'stress', 'EMDR', 'traumer', 'parterapi', 'familieterapi', 'meditation', 'selvværd', 'depression'],
+  authors: [{ name: 'Susan Albertsen' }],
+  creator: 'Susan Albertsen',
+  publisher: 'Susan Albertsen',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  openGraph: {
+    title: 'Psykoterapeut Susan Albertsen | Psykoterapi i Aarhus',
+    description: 'Professionel psykoterapi i Aarhus. Få hjælp til angst, stress, traumer, lavt selvværd og relationer. Book en samtale i dag.',
+    url: 'https://psykoterapisusan.dk',
+    siteName: 'Psykoterapeut Susan Albertsen',
+    locale: 'da_DK',
+    type: 'website',
+    images: [
+      {
+        url: '/img/about-front.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Psykoterapeut Susan Albertsen',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Psykoterapeut Susan Albertsen | Psykoterapi i Aarhus',
+    description: 'Professionel psykoterapi i Aarhus. Få hjælp til angst, stress, traumer og relationer.',
+    images: ['/img/about-front.jpg'],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: "/logo/logo.svg",
+  },
+  verification: {
+    // Tilføj din Google Search Console verification kode her når du har den
+    // google: 'din-verification-kode',
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="da">
          
       <body
         className={`${archivo.variable} ${fraunces.variable} ${prata.variable} ${domine.variable} ${sourceSerif.variable} antialiased`}

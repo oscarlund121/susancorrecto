@@ -4,6 +4,9 @@ import Navigation from '../components/layout/Navigation';
 import HeaderSection from '../components/layout/FrontpageHeaderSection';
 import ContactForm from '../components/ui/ContactForm';
 
+// Metadata skal eksporteres fra en separat fil for client components
+// Se kontakt/layout.js for metadata
+
 export default function KontaktPage() {
   const handleFormSubmit = (formData) => {
     // Custom form submission logic

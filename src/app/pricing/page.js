@@ -3,6 +3,24 @@ import Navigation from "../components/layout/Navigation";
 import PriceSection from "../components/layout/PriceSection";
 import InfoCard from "../components/layout/InfoCard";
 
+export const metadata = {
+  title: 'Priser på Psykoterapi',
+  description: 'Se priser på psykoterapi hos Susan Albertsen. Individuel terapi, pakkeforløb, parterapi og familieterapi. Særlige priser for studerende. Book en samtale i dag.',
+  keywords: ['psykoterapi priser', 'terapi priser Aarhus', 'parterapi pris', 'familieterapi pris', 'studerende rabat terapi'],
+  openGraph: {
+    title: 'Priser på Psykoterapi | Susan Albertsen',
+    description: 'Se priser på psykoterapi. Individuel terapi, pakkeforløb og særlige priser for studerende.',
+    url: 'https://psykoterapisusan.dk/pricing',
+  },
+  twitter: {
+    title: 'Priser på Psykoterapi',
+    description: 'Se priser på psykoterapi hos Susan Albertsen.',
+  },
+  alternates: {
+    canonical: 'https://psykoterapisusan.dk/pricing',
+  },
+};
+
 const priceData = [
   {
     title: "Individuel terapi",

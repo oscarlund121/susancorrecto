@@ -4,6 +4,25 @@ import Image from "next/image";
 import Help from "../../components/layout/UnderHelp";
 import CTAContent from "../../components/layout/CTAContent";
 
+export const metadata = {
+  title: 'EMDR-terapi - Traumebehandling',
+  description: 'EMDR-terapi til behandling af traumer og PTSD i Aarhus. WHO-anbefalet metode til chok, ulykker, angst og sorg. Book en tid hos psykoterapeut Susan Albertsen.',
+  keywords: ['EMDR terapi', 'EMDR Aarhus', 'traumebehandling', 'PTSD behandling', 'chok behandling', 'WHO anbefalet terapi'],
+  openGraph: {
+    title: 'EMDR-terapi - Traumebehandling | Susan Albertsen',
+    description: 'EMDR-terapi til behandling af traumer og PTSD. WHO-anbefalet metode.',
+    url: 'https://psykoterapisusan.dk/ydelser/emdr',
+    images: [{ url: '/img/emdr-1.jpg', width: 1200, height: 630, alt: 'EMDR-terapi hos Susan Albertsen' }],
+  },
+  twitter: {
+    title: 'EMDR-terapi - Traumebehandling',
+    description: 'EMDR-terapi til behandling af traumer og PTSD.',
+  },
+  alternates: {
+    canonical: 'https://psykoterapisusan.dk/ydelser/emdr',
+  },
+};
+
 const helpAreas = [
   "Efter chok eller ulykker",
   "Ved vedvarende angst eller fobier",

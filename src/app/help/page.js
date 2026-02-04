@@ -3,6 +3,24 @@ import Navigation from "../components/layout/Navigation";
 import CategorySection from "../components/layout/CategorySection";
 import Button from "../components/ui/Button";
 
+export const metadata = {
+  title: 'Hvad Kan Jeg Hjælpe Med',
+  description: 'Få hjælp til stress, angst, lavt selvværd, relationer, traumer og kriser. Psykoterapi for unge, studerende, par og familier i Aarhus.',
+  keywords: ['hjælp til angst', 'hjælp til stress', 'lavt selvværd terapi', 'relationsudfordringer', 'traumer behandling', 'terapi for unge'],
+  openGraph: {
+    title: 'Hvad Kan Jeg Hjælpe Med | Psykoterapeut Susan Albertsen',
+    description: 'Få hjælp til stress, angst, lavt selvværd, relationer og traumer hos psykoterapeut Susan Albertsen.',
+    url: 'https://psykoterapisusan.dk/help',
+  },
+  twitter: {
+    title: 'Hvad Kan Jeg Hjælpe Med',
+    description: 'Få hjælp til stress, angst, lavt selvværd og relationer.',
+  },
+  alternates: {
+    canonical: 'https://psykoterapisusan.dk/help',
+  },
+};
+
 const categories = [
   {
     id: 1,

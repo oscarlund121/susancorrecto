@@ -4,6 +4,25 @@ import Image from "next/image";
 import Help from "../../components/layout/UnderHelp";
 import CTAContent from "../../components/layout/CTAContent";
 
+export const metadata = {
+  title: 'Par- og Familieterapi',
+  description: 'Parterapi og familieterapi i Aarhus. Få hjælp til kommunikationsproblemer, konflikter, skilsmisse og forældreskab hos psykoterapeut Susan Albertsen.',
+  keywords: ['parterapi Aarhus', 'familieterapi', 'parforhold hjælp', 'kommunikationsproblemer', 'skilsmisse terapi', 'forældreterapi'],
+  openGraph: {
+    title: 'Par- og Familieterapi | Susan Albertsen',
+    description: 'Parterapi og familieterapi i Aarhus. Hjælp til relationer og kommunikation.',
+    url: 'https://psykoterapisusan.dk/ydelser/familie-par',
+    images: [{ url: '/img/heart.jpg', width: 1200, height: 630, alt: 'Par- og familieterapi' }],
+  },
+  twitter: {
+    title: 'Par- og Familieterapi',
+    description: 'Parterapi og familieterapi hos Susan Albertsen.',
+  },
+  alternates: {
+    canonical: 'https://psykoterapisusan.dk/ydelser/familie-par',
+  },
+};
+
 const helpAreas = [
   "Konflikter & misforståelser",
   "Fastlåst kommunikation",

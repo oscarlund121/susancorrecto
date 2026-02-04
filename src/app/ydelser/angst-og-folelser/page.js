@@ -4,6 +4,25 @@ import Image from "next/image";
 import Help from "../../components/layout/UnderHelp";
 import CTAContent from "../../components/layout/CTAContent";
 
+export const metadata = {
+  title: 'Behandling af Angst og Følelser',
+  description: 'Få professionel hjælp til angst, panikangst, social angst, depression og sorg hos psykoterapeut Susan Albertsen i Aarhus. Tryg og nænsom behandling.',
+  keywords: ['angst behandling', 'panikangst terapi', 'social angst', 'depression behandling', 'sorg terapi', 'fobier behandling', 'angst Aarhus'],
+  openGraph: {
+    title: 'Behandling af Angst og Følelser | Susan Albertsen',
+    description: 'Få professionel hjælp til angst, depression og sorg hos psykoterapeut Susan Albertsen.',
+    url: 'https://psykoterapisusan.dk/ydelser/angst-og-folelser',
+    images: [{ url: '/img/heart.jpg', width: 1200, height: 630, alt: 'Angstbehandling hos Susan Albertsen' }],
+  },
+  twitter: {
+    title: 'Behandling af Angst og Følelser',
+    description: 'Professionel hjælp til angst og følelser.',
+  },
+  alternates: {
+    canonical: 'https://psykoterapisusan.dk/ydelser/angst-og-folelser',
+  },
+};
+
 const helpAreas = [
   "Angst & fobier",
   "Panikangst",

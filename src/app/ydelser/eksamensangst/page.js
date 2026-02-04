@@ -4,6 +4,24 @@ import Image from "next/image";
 import Help from "../../components/layout/UnderHelp";
 import CTAContent from "../../components/layout/CTAContent";
 
+export const metadata = {
+  title: 'Eksamens- og Præstationsangst',
+  description: 'Slip af med eksamensangst og præstationsangst. Få professionel hjælp til mundtlige eksaminer, fremlæggelser og jobsamtaler hos psykoterapeut Susan Albertsen.',
+  keywords: ['eksamensangst', 'præstationsangst', 'nervøsitet eksamen', 'mundtlig eksamen angst', 'fremlæggelse angst', 'blackout eksamen'],
+  openGraph: {
+    title: 'Eksamens- og Præstationsangst | Susan Albertsen',
+    description: 'Slip af med eksamensangst og præstationsangst. Professionel hjælp hos Susan Albertsen.',
+    url: 'https://psykoterapisusan.dk/ydelser/eksamensangst',
+  },
+  twitter: {
+    title: 'Eksamens- og Præstationsangst',
+    description: 'Få hjælp til eksamensangst og præstationsangst.',
+  },
+  alternates: {
+    canonical: 'https://psykoterapisusan.dk/ydelser/eksamensangst',
+  },
+};
+
 const helpAreas = [
   "Eksamensangst",
   "Præstationsangst",

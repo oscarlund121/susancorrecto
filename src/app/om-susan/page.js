@@ -4,6 +4,25 @@ import Image from "next/image";
 import Button from "../components/ui/Button";
 import ListItem from "../components/ui/ListItem";
 
+export const metadata = {
+  title: 'Om Susan Albertsen',
+  description: 'Mød psykoterapeut Susan Albertsen. Uddannet fra Essentiel Integrativ Essens med over 20 års erfaring. Specialiseret i EMDR, integrativ psykoterapi, meditation og familieterapi.',
+  keywords: ['Susan Albertsen', 'psykoterapeut Aarhus', 'EMDR terapeut', 'integrativ psykoterapi', 'familieterapi'],
+  openGraph: {
+    title: 'Om Susan Albertsen | Psykoterapeut i Aarhus',
+    description: 'Mød psykoterapeut Susan Albertsen. Uddannet fra Essentiel Integrativ Essens med over 20 års erfaring.',
+    url: 'https://psykoterapisusan.dk/om-susan',
+    images: [{ url: '/img/about-front.jpg', width: 1200, height: 630, alt: 'Susan Albertsen - Psykoterapeut' }],
+  },
+  twitter: {
+    title: 'Om Susan Albertsen | Psykoterapeut',
+    description: 'Mød psykoterapeut Susan Albertsen med over 20 års erfaring.',
+  },
+  alternates: {
+    canonical: 'https://psykoterapisusan.dk/om-susan',
+  },
+};
+
 export default function OmSusan() {
   return (
     <div>

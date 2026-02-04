@@ -4,6 +4,25 @@ import Image from "next/image";
 import Help from "../../components/layout/UnderHelp";
 import CTAContent from "../../components/layout/CTAContent";
 
+export const metadata = {
+  title: 'Essentiel Integrativ Psykoterapi',
+  description: 'Essentiel Integrativ Psykoterapi kombinerer flere terapeutiske metoder for helhedsorienteret behandling. Få hjælp til angst, stress, traumer og personlig udvikling.',
+  keywords: ['integrativ psykoterapi', 'helhedsorienteret terapi', 'psykoterapi Aarhus', 'personlig udvikling', 'krops og sind terapi'],
+  openGraph: {
+    title: 'Essentiel Integrativ Psykoterapi | Susan Albertsen',
+    description: 'Helhedsorienteret psykoterapi der kombinerer flere terapeutiske metoder.',
+    url: 'https://psykoterapisusan.dk/ydelser/essentiel-integrativ-psykoterapi',
+    images: [{ url: '/img/bee.jpg', width: 1200, height: 630, alt: 'Integrativ psykoterapi' }],
+  },
+  twitter: {
+    title: 'Essentiel Integrativ Psykoterapi',
+    description: 'Helhedsorienteret psykoterapi hos Susan Albertsen.',
+  },
+  alternates: {
+    canonical: 'https://psykoterapisusan.dk/ydelser/essentiel-integrativ-psykoterapi',
+  },
+};
+
 const helpAreas = [
   "Angst & bekymringer",
   "Stress & udbrændthed",
