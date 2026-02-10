@@ -137,6 +137,9 @@ export default function Eksamensangst() {
                   <p>
                     Psykoterapien og meditationen hjælper dig med at chok-forløse og bryde dette mønster, så kroppen kan falde til ro, og du igen kan føle dig tryg i præstationssituationer.
                   </p>
+                  <p>
+                    Mange oplever øget selvtillid, større ro, klarhed, lethed og bedre fokus – og for de fleste er 1–3 sessioner tilstrækkeligt til at skabe en mærkbar forandring.
+                  </p>
                 </div>
               </div>
             </div>

@@ -29,6 +29,7 @@ const Footer = () => {
               <li><Link href="/ydelser/emdr" className="hover:text-white transition-colors">EMDR</Link></li>
               <li><Link href="/ydelser/meditation" className="hover:text-white transition-colors">Meditation</Link></li>
               <li><Link href="/ydelser/angst-og-folelser" className="hover:text-white transition-colors">Angst & følelser</Link></li>
+              <li><Link href="/ydelser/depression-og-sorg" className="hover:text-white transition-colors">Depression & sorg</Link></li>
               <li><Link href="/ydelser/eksamensangst" className="hover:text-white transition-colors">Eksamensangst</Link></li>
             </ul>
           </div>

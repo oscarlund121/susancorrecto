@@ -96,6 +96,9 @@ const Navigation = ({ variant = 'default' }) => {
                 <Link href="/ydelser/angst-og-folelser" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
                   Angst og følelser
                 </Link>
+                <Link href="/ydelser/depression-og-sorg" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
+                  Depression og sorg
+                </Link>
                 <Link href="/ydelser/familie-par" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
                   Relationer og familieliv
                 </Link>
@@ -197,6 +200,13 @@ const Navigation = ({ variant = 'default' }) => {
                 onClick={() => setIsMenuOpen(false)}
               >
                 Angst og følelser
+              </Link>
+              <Link 
+                href="/ydelser/depression-og-sorg" 
+                className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Depression og sorg
               </Link>
               <Link 
                 href="/ydelser/familie-par" 

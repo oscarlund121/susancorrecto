@@ -62,7 +62,7 @@ export default function Meditation() {
                   </p>
                   <br />
                   <p className="w-full max-w-xl">
-                    Meditation og dyb afslapning er en måde at koble "hovedet" fra på – at slippe tankemylderet og de konstante mentale forklaringer. Formålet er at komme bag det bevidste sind og arbejde med det ubevidste, hvor alle vores oplevelser og erfaringer er lagret.
+                    Meditation og dyb afslapning er en måde at koble “hovedet” fra på – at slippe tankemylderet og de konstante mentale forklaringer. Formålet er at komme bag det bevidste sind og arbejde med det ubevidste, hvor alle vores oplevelser og erfaringer er lagret.
                   </p>
                   <br />
                   <p className="w-full max-w-xl">

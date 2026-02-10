@@ -6,11 +6,11 @@ import CTAContent from "../../components/layout/CTAContent";
 
 export const metadata = {
   title: 'Behandling af Angst og Følelser',
-  description: 'Få professionel hjælp til angst, panikangst, social angst, depression og sorg hos psykoterapeut Susan Albertsen i Aarhus. Tryg og nænsom behandling.',
-  keywords: ['angst behandling', 'panikangst terapi', 'social angst', 'depression behandling', 'sorg terapi', 'fobier behandling', 'angst Aarhus'],
+  description: 'Få professionel hjælp til angst, panikangst, social angst og fobier hos psykoterapeut Susan Albertsen i Aarhus. Tryg og nænsom behandling.',
+  keywords: ['angst behandling', 'panikangst terapi', 'social angst', 'fobier behandling', 'angst Aarhus', 'klaustrofobi', 'højdeskræk'],
   openGraph: {
     title: 'Behandling af Angst og Følelser | Susan Albertsen',
-    description: 'Få professionel hjælp til angst, depression og sorg hos psykoterapeut Susan Albertsen.',
+    description: 'Få professionel hjælp til angst, panikangst og fobier hos psykoterapeut Susan Albertsen.',
     url: 'https://psykoterapisusan.dk/ydelser/angst-og-folelser',
     images: [{ url: '/img/heart.jpg', width: 1200, height: 630, alt: 'Angstbehandling hos Susan Albertsen' }],
   },
@@ -27,8 +27,8 @@ const helpAreas = [
   "Angst & fobier",
   "Panikangst",
   "Social angst",
-  "Depression & tristhed",
-  "Sorg & tab",
+  "Klaustrofobi",
+  "Højdeskræk",
   "Følelsesmæssig ustabilitet"
 ];
 
@@ -42,7 +42,7 @@ export default function AngstOgFolelser() {
         <div className="mb-8">
           <HeaderSection
             title="Angst og følelser"
-            text="Angst kan være ubehagelig og overvældende – men du behøver ikke leve med den alene. Hos mig kan du få professionel hjælp til at forstå og håndtere din angst på en tryg og nænsom måde."
+            text="Angst (eks. panikangst, socialangst og fobier som klaustrofobi eller højdeskræk) kan være ubehagelig og overvældende – men du behøver ikke leve med den alene. Hos mig kan du få professionel hjælp til at forstå og håndtere din angst på en tryg og nænsom måde."
             buttonHref="/kontakt"
             variant={false}
             borderColor="black"
@@ -50,7 +50,7 @@ export default function AngstOgFolelser() {
         </div>
       </div>
       
-      {/* Angst sektion */}
+      {/* Hvad er angst */}
       <div className="bg-white py-12 md:py-24 lg:py-32">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
@@ -60,12 +60,14 @@ export default function AngstOgFolelser() {
                 <div className="border-b-1 border-black">
                   <h3>Hvad er angst?</h3>
                 </div>
-                <p className="w-full max-w-xl mt-6">
-                  Angst er kroppens måde at beskytte dig på. Den opstår, når hjernen tror, at der er fare på færde, så kroppen kan reagere hurtigt og passe på dig. Problemet opstår, når kroppen reagerer, selvom der ikke er nogen reel fare.
-                </p>
-                <p className="w-full max-w-xl mt-4">
-                  Det kan fx ske i sociale situationer, ved præstationer eller i hverdagsoplevelser, der føles ubehagelige. Denne form for angst kan føles skræmmende og frustrerende, men det er vigtigt at vide, at kroppen blot forsøger at hjælpe dig.
-                </p>
+                <div className="w-full max-w-xl mt-6 space-y-4">
+                  <p>
+                    Angst er kroppens måde at beskytte dig på. Den opstår, når hjernen tror, at der er fare på færde, så kroppen kan reagere hurtigt og passe på dig.
+                  </p>
+                  <p>
+                    Problemet opstår, når kroppen reagerer, selvom der ikke er nogen reel fare. Det kan fx ske i sociale situationer, ved præstationer eller i hverdagsoplevelser, der føles ubehagelige. Denne form for angst kan føles skræmmende og frustrerende, men det er vigtigt at vide, at kroppen blot forsøger at hjælpe dig.
+                  </p>
+                </div>
               </div>
               <Help
                 title="Hvornår kan jeg hjælpe?"
@@ -88,7 +90,7 @@ export default function AngstOgFolelser() {
         </div>
       </div>
 
-      {/* Depression og Sorg sektion */}
+      {/* Hvordan mærkes angst + Hvorfor får man angst */}
       <div className="bg-[#367067] py-16 md:py-24 lg:py-32 text-white">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
@@ -97,27 +99,38 @@ export default function AngstOgFolelser() {
               <figure className="">
                 <Image
                   src="/img/bee.jpg"
-                  alt="Depression og sorg"
+                  alt="Hvordan mærkes angst"
                   width={500}
                   height={300}
                   className="w-[450px] h-auto object-cover"
-/>
+                />
               </figure>
             </div>
             <div className="order-1 md:order-2">
               <div className="pb-8">
                 <div className="mb-6 border-b-2 border-white">
-                  <h3>Depression & Sorg</h3>
+                  <h3>Hvordan mærkes angst?</h3>
+                </div>
+                <div className="w-full max-w-xl space-y-4">
+                  <p>Angst opleves forskelligt fra person til person. Du kan fx mærke:</p>
+                  <ul className="list-disc ml-6 space-y-1">
+                    <li>Hjertebanken eller svedige hænder</li>
+                    <li>Spændinger i kroppen eller uro</li>
+                    <li>Svimmelhed eller kvalme</li>
+                    <li>Følelse af at miste kontrollen</li>
+                  </ul>
+                  <p>
+                    For nogle bliver angsten så ubehagelig, at de begynder at undgå bestemte situationer. Dette kan gøre, at angsten fylder mere og mere i hverdagen.
+                  </p>
+                </div>
+              </div>
+              <div className="pb-8">
+                <div className="mb-6 border-b-2 border-white">
+                  <h3>Hvorfor får man angst?</h3>
                 </div>
                 <div className="w-full max-w-xl space-y-4">
                   <p>
-                    Depression kan vise sig som tristhed, tomhed, manglende energi, tab af interesse for ting man ellers holder af. For nogle kan det føles, som om livet har mistet mening.
-                  </p>
-                  <p>
-                    Sorg er en naturlig reaktion, når vi mister noget eller nogen, der har betydning. Det kan være tab af en elsket, et forhold, et job eller en vigtig livssituation.
-                  </p>
-                  <p>
-                    Jeg støtter dig i at forstå, hvad der ligger bag følelserne, og hjælper dig med at bearbejde uforløste oplevelser – altid i dit tempo.
+                    Angst har ofte rod i tidligere oplevelser, hvor kroppen har følt sig utryg eller truet. Selvom den oprindelige situation er ovre, kan kroppen reagere på lignende situationer igen – som om faren stadig er til stede. Det sker helt automatisk, og ofte kan man ikke selv huske den oprindelige oplevelse.
                   </p>
                 </div>
               </div>
@@ -127,7 +140,7 @@ export default function AngstOgFolelser() {
         </div>
       </div>
 
-      {/* Hvordan kan terapi hjælpe sektion */}
+      {/* Hvordan kan terapi hjælpe */}
       <div className="bg-white py-12 md:py-24 lg:py-32">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
@@ -135,11 +148,11 @@ export default function AngstOgFolelser() {
             <div>
               <div className="pb-8">
                 <div className="border-b-1 border-black">
-                  <h3>Hvordan kan terapi hjælpe?</h3>
+                  <h3>Hvordan kan terapi, chok-forløsning og meditation hjælpe?</h3>
                 </div>
                 <div className="w-full max-w-xl mt-6 space-y-4">
                   <p>
-                    Angst har ofte rod i tidligere oplevelser, hvor kroppen har følt sig utryg eller truet. Gennem psykoterapi, chok-forløsning og meditation kan vi:
+                    Gennem psykoterapi, chok-forløsning og meditation (indadvendt fokuseret opmærksomhed) kan vi:
                   </p>
                   <ul className="list-disc ml-6 space-y-1">
                     <li>Identificere, hvad der har sat din angst i gang</li>
@@ -147,7 +160,7 @@ export default function AngstOgFolelser() {
                     <li>Hjælpe dig med at slippe gamle mønstre</li>
                   </ul>
                   <p>
-                    Når kroppen ikke længere er i konstant alarmberedskab, vil angsten gradvist fylde mindre, og du vil opleve mere ro, lethed og tryghed.
+                    Når kroppen ikke længere er i konstant alarmberedskab, vil angsten gradvist fylde mindre, og du vil opleve mere ro, lethed, tryghed og kontrol.
                   </p>
                 </div>
               </div>
