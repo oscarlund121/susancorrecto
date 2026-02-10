@@ -40,7 +40,7 @@ const SectionSeven = () => {
             index={1}
           />
         </div>
-        <div className="flex flex-col md:flex-row items-start justify-around gap-1 mt-8">
+        <div className="flex flex-col md:flex-row items-start justify-around gap-1 mt-0 md:mt-8">
           <Help
             title="Følelser & Angst"
             tags={[
@@ -66,7 +66,7 @@ const SectionSeven = () => {
             index={3}
           />
         </div>
-        <div className="flex flex-col md:flex-row items-start justify-around gap-1 mt-8">
+        <div className="flex flex-col md:flex-row items-start justify-around gap-1 mt-0 md:mt-8">
           <Help
             title="Relationer & Familie"
             tags={[
