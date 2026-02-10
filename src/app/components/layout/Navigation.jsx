@@ -119,10 +119,6 @@ const Navigation = ({ variant = 'default' }) => {
             Kontakt
             <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
           </Link>
-          <Link href="/privacy" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
-            Privatliv/GDPR
-            <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
         </div>
         
         {/* Desktop Book button */}
@@ -239,13 +235,6 @@ const Navigation = ({ variant = 'default' }) => {
             onClick={() => setIsMenuOpen(false)}
           >
             Kontakt
-          </Link>
-          <Link 
-            href="/privacy" 
-            className="block text-[#367067] text-lg font-light py-2 hover:bg-gray-50 rounded"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Privatliv/GDPR
           </Link>
           
           <div className="pt-4 border-t border-gray-200">
