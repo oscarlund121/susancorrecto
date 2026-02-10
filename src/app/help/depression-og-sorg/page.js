@@ -3,6 +3,7 @@ import Navigation from "../../components/layout/Navigation";
 import Image from "next/image";
 import Help from "../../components/layout/UnderHelp";
 import CTAContent from "../../components/layout/CTAContent";
+import BackToHelp from "../../components/ui/BackToHelp";
 
 export const metadata = {
   title: 'Behandling af Depression og Sorg',
@@ -11,7 +12,7 @@ export const metadata = {
   openGraph: {
     title: 'Behandling af Depression og Sorg | Susan Albertsen',
     description: 'Få professionel hjælp til depression, sorg og tab hos psykoterapeut Susan Albertsen.',
-    url: 'https://psykoterapisusan.dk/ydelser/depression-og-sorg',
+    url: 'https://psykoterapisusan.dk/help/depression-og-sorg',
     images: [{ url: '/img/purple-flower.jpg', width: 1200, height: 630, alt: 'Behandling af depression og sorg hos Susan Albertsen' }],
   },
   twitter: {
@@ -19,7 +20,7 @@ export const metadata = {
     description: 'Professionel hjælp til depression, sorg og tab.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/ydelser/depression-og-sorg',
+    canonical: 'https://psykoterapisusan.dk/help/depression-og-sorg',
   },
 };
 
@@ -49,9 +50,13 @@ export default function DepressionOgSorg() {
           />
         </div>
       </div>
+
+      <div className="pt-8 md:pt-12">
+        <BackToHelp />
+      </div>
       
       {/* Depression sektion */}
-      <div className="bg-white py-12 md:py-24 lg:py-32">
+      <div className="bg-white pb-12 md:pb-24 lg:pb-32 pt-4 md:pt-8">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

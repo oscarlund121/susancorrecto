@@ -38,13 +38,13 @@ export default function sitemap() {
   // Ydelser/behandlinger
   const ydelser = [
     {
-      url: `${baseUrl}/ydelser/angst-og-folelser`,
+      url: `${baseUrl}/help/angst-og-folelser`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/ydelser/eksamensangst`,
+      url: `${baseUrl}/help/eksamensangst`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,
@@ -62,7 +62,13 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/ydelser/familie-par`,
+      url: `${baseUrl}/help/familie-par`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.9,
+    },
+    {
+      url: `${baseUrl}/help/depression-og-sorg`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.9,

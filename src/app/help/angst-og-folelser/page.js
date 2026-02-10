@@ -3,6 +3,7 @@ import Navigation from "../../components/layout/Navigation";
 import Image from "next/image";
 import Help from "../../components/layout/UnderHelp";
 import CTAContent from "../../components/layout/CTAContent";
+import BackToHelp from "../../components/ui/BackToHelp";
 
 export const metadata = {
   title: 'Behandling af Angst og Følelser',
@@ -11,7 +12,7 @@ export const metadata = {
   openGraph: {
     title: 'Behandling af Angst og Følelser | Susan Albertsen',
     description: 'Få professionel hjælp til angst, panikangst og fobier hos psykoterapeut Susan Albertsen.',
-    url: 'https://psykoterapisusan.dk/ydelser/angst-og-folelser',
+    url: 'https://psykoterapisusan.dk/help/angst-og-folelser',
     images: [{ url: '/img/heart.jpg', width: 1200, height: 630, alt: 'Angstbehandling hos Susan Albertsen' }],
   },
   twitter: {
@@ -19,7 +20,7 @@ export const metadata = {
     description: 'Professionel hjælp til angst og følelser.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/ydelser/angst-og-folelser',
+    canonical: 'https://psykoterapisusan.dk/help/angst-og-folelser',
   },
 };
 
@@ -49,9 +50,13 @@ export default function AngstOgFolelser() {
           />
         </div>
       </div>
+
+      <div className="pt-8 md:pt-12">
+        <BackToHelp />
+      </div>
       
       {/* Hvad er angst */}
-      <div className="bg-white py-12 md:py-24 lg:py-32">
+     <div className="bg-white pb-12 md:pb-24 lg:pb-32 pt-4 md:pt-8">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">

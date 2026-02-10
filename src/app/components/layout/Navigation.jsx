@@ -6,8 +6,11 @@ import { useState } from 'react'
 const Navigation = ({ variant = 'default' }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const [isHelpDropdownOpen, setIsHelpDropdownOpen] = useState(false)
   const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false)
+  const [isMobileHelpDropdownOpen, setIsMobileHelpDropdownOpen] = useState(false)
   const [dropdownTimeout, setDropdownTimeout] = useState(null)
+  const [helpDropdownTimeout, setHelpDropdownTimeout] = useState(null)
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
@@ -32,8 +35,31 @@ const Navigation = ({ variant = 'default' }) => {
     setIsDropdownOpen(!isDropdownOpen)
   }
 
+  const handleHelpDropdownEnter = () => {
+    if (helpDropdownTimeout) {
+      clearTimeout(helpDropdownTimeout)
+      setHelpDropdownTimeout(null)
+    }
+    setIsHelpDropdownOpen(true)
+  }
+
+  const handleHelpDropdownLeave = () => {
+    const timeout = setTimeout(() => {
+      setIsHelpDropdownOpen(false)
+    }, 150)
+    setHelpDropdownTimeout(timeout)
+  }
+
+  const toggleDesktopHelpDropdown = () => {
+    setIsHelpDropdownOpen(!isHelpDropdownOpen)
+  }
+
   const toggleMobileDropdown = () => {
     setIsMobileDropdownOpen(!isMobileDropdownOpen)
+  }
+
+  const toggleMobileHelpDropdown = () => {
+    setIsMobileHelpDropdownOpen(!isMobileHelpDropdownOpen)
   }
 
   return (
@@ -90,25 +116,52 @@ const Navigation = ({ variant = 'default' }) => {
                 <Link href="/ydelser/meditation" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
                   Meditation
                 </Link>
-                <Link href="/ydelser/eksamensangst" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
-                  Eksamens- og præstationsangst
+              </div>
+            </div>
+          </div>
+
+          {/* Hjælp dropdown */}
+          <div 
+            className="relative"
+            onMouseEnter={handleHelpDropdownEnter}
+            onMouseLeave={handleHelpDropdownLeave}
+          >
+            <span 
+              onClick={toggleDesktopHelpDropdown}
+              className="w-full text-left text-[#367067] text-lg  font-light hover:text-[#D3D9E5] transition-all duration-300 relative group flex items-center gap-1"
+            >
+              Hjælp
+              <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all text-lg duration-300 group-hover:w-full"></span>
+              <svg className={`w-4 h-4 transition-transform duration-200 ${isHelpDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+            
+            {/* Dropdown menu */}
+            <div 
+              className={`absolute top-full left-0 mt-2 w-sm bg-white rounded-lg shadow-lg transition-all duration-200 z-50 ${isHelpDropdownOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}
+              onMouseEnter={handleHelpDropdownEnter}
+              onMouseLeave={handleHelpDropdownLeave}
+            >
+              <div className="py-2">
+                <Link href="/help" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
+                  Oversigt
                 </Link>
-                <Link href="/ydelser/angst-og-folelser" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
-                  Angst og følelser
+                <Link href="/help/eksamensangst" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
+                  Unge & Studerende
                 </Link>
-                <Link href="/ydelser/depression-og-sorg" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
-                  Depression og sorg
+                <Link href="/help/angst-og-folelser" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
+                  Angst & følelser
                 </Link>
-                <Link href="/ydelser/familie-par" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
-                  Relationer og familieliv
+                <Link href="/help/depression-og-sorg" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
+                  Depression & sorg
+                </Link>
+                <Link href="/help/familie-par" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
+                  Relationer & familieliv
                 </Link>
               </div>
             </div>
           </div>
-          <Link href="/help" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
-            Hjælp
-            <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
           
           <Link href="/om-susan" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
             Om Susan
@@ -187,43 +240,59 @@ const Navigation = ({ variant = 'default' }) => {
               >
                 Meditation
               </Link>
+            </div>
+          </div>
+
+          {/* Mobile Hjælp dropdown */}
+          <div>
+            <span 
+              onClick={toggleMobileHelpDropdown}
+              className="w-full text-left text-[#367067] text-lg font-light py-2 hover:bg-gray-50 rounded flex items-center justify-between cursor-pointer"
+            >
+              Hjælp
+              <svg className={`w-3 h-3 transition-transform duration-200 ${isMobileHelpDropdownOpen ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+              </svg>
+            </span>
+            
+            <div className={`ml-4 mt-2 space-y-2 transition-all duration-200 ${isMobileHelpDropdownOpen ? 'opacity-100 max-h-96' : 'opacity-0 max-h-0 overflow-hidden'}`}>
               <Link 
-                href="/ydelser/eksamensangst" 
+                href="/help" 
                 className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Eksamens- og præstationsangst
+                Oversigt
               </Link>
               <Link 
-                href="/ydelser/angst-og-folelser" 
+                href="/help/eksamensangst" 
                 className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Angst og følelser
+                Unge & Studerende
               </Link>
               <Link 
-                href="/ydelser/depression-og-sorg" 
+                href="/help/angst-og-folelser" 
                 className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Depression og sorg
+                Angst & følelser
               </Link>
               <Link 
-                href="/ydelser/familie-par" 
+                href="/help/depression-og-sorg" 
                 className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Relationer og familieliv
+                Depression & sorg
+              </Link>
+              <Link 
+                href="/help/familie-par" 
+                className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Relationer & familieliv
               </Link>
             </div>
           </div>
-          <Link 
-            href="/help" 
-            className="block text-[#367067] text-lg font-light py-2 hover:bg-gray-50 rounded"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Hjælp
-          </Link>
           
           <Link 
             href="/om-susan" 

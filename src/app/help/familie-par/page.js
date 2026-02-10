@@ -3,6 +3,7 @@ import Navigation from "../../components/layout/Navigation";
 import Image from "next/image";
 import Help from "../../components/layout/UnderHelp";
 import CTAContent from "../../components/layout/CTAContent";
+import BackToHelp from "../../components/ui/BackToHelp";
 
 export const metadata = {
   title: 'Par- og Familieterapi',
@@ -11,7 +12,7 @@ export const metadata = {
   openGraph: {
     title: 'Par- og Familieterapi | Susan Albertsen',
     description: 'Parterapi og familieterapi i Aarhus. Hjælp til relationer og kommunikation.',
-    url: 'https://psykoterapisusan.dk/ydelser/familie-par',
+    url: 'https://psykoterapisusan.dk/help/familie-par',
     images: [{ url: '/img/heart.jpg', width: 1200, height: 630, alt: 'Par- og familieterapi' }],
   },
   twitter: {
@@ -19,7 +20,7 @@ export const metadata = {
     description: 'Parterapi og familieterapi hos Susan Albertsen.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/ydelser/familie-par',
+    canonical: 'https://psykoterapisusan.dk/help/familie-par',
   },
 };
 
@@ -47,7 +48,12 @@ export default function FamiliePar() {
           />
         </div>
       </div>
-        <div className="bg-white py-12 md:py-24 lg:py-32">
+
+      <div className="pt-8 md:pt-12">
+        <BackToHelp />
+      </div>
+
+        <div className="bg-white pb-12 md:pb-24 lg:pb-32 pt-4 md:pt-8">
           <div className="content-max">
             <div className="md:px-[20px] lg:px-[60px]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">

@@ -11,7 +11,7 @@ const SectionTwo = () => {
           <h2 >
             “Mange af mine klienter beskriver, at de i lang tid har gået med en
             følelse af uro, usikkerhed eller fastlåsthed. Måske genkender du
-            noget af dette:”
+            noget af dette”
           </h2>
 
           {/* Checkmark box */}

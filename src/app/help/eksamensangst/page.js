@@ -3,6 +3,7 @@ import Navigation from "../../components/layout/Navigation";
 import Image from "next/image";
 import Help from "../../components/layout/UnderHelp";
 import CTAContent from "../../components/layout/CTAContent";
+import BackToHelp from "../../components/ui/BackToHelp";
 
 export const metadata = {
   title: 'Eksamens- og Præstationsangst',
@@ -11,14 +12,14 @@ export const metadata = {
   openGraph: {
     title: 'Eksamens- og Præstationsangst | Susan Albertsen',
     description: 'Slip af med eksamensangst og præstationsangst. Professionel hjælp hos Susan Albertsen.',
-    url: 'https://psykoterapisusan.dk/ydelser/eksamensangst',
+    url: 'https://psykoterapisusan.dk/help/eksamensangst',
   },
   twitter: {
     title: 'Eksamens- og Præstationsangst',
     description: 'Få hjælp til eksamensangst og præstationsangst.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/ydelser/eksamensangst',
+    canonical: 'https://psykoterapisusan.dk/help/eksamensangst',
   },
 };
 
@@ -49,8 +50,12 @@ export default function Eksamensangst() {
         </div>
       </div>
 
+      <div className="pt-8 md:pt-12">
+        <BackToHelp />
+      </div>
+
       {/* Når angsten tager styringen sektion */}
-      <div className="bg-white py-12 md:py-24 lg:py-32">
+      <div className="bg-white pb-12 md:pb-24 lg:pb-32 pt-4 md:pt-8">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
