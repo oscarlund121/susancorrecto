@@ -50,8 +50,9 @@ export default function Eksamensangst() {
       </div>
 
       {/* Når angsten tager styringen sektion */}
-      <div className="bg-white py-12 md:py-16 lg:py-24">
+      <div className="bg-white py-12 md:py-24 lg:py-32">
         <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <div>
@@ -82,12 +83,14 @@ export default function Eksamensangst() {
               </figure>
             </div>
           </div>
+          </div>
         </div>
       </div>
 
       {/* Hvordan kan terapi hjælpe sektion */}
       <div className="bg-[#367067] py-16 md:py-24 lg:py-32 text-white">
         <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="flex justify-center items-center order-2 md:order-1">
               <figure className="">
@@ -116,12 +119,14 @@ export default function Eksamensangst() {
               </div>
             </div>
           </div>
+          </div>
         </div>
       </div>
 
       {/* Bryd mønstret sektion */}
-      <div className="bg-white py-12 md:py-16 lg:py-24">
+      <div className="bg-white py-12 md:py-24 lg:py-32">
         <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <div className="pb-8">
@@ -146,6 +151,7 @@ export default function Eksamensangst() {
                 />
               </figure>
             </div>
+          </div>
           </div>
         </div>
       </div>

@@ -6,6 +6,7 @@ const SectionTwo = () => {
   return (
     <div className="bg-[#367067] section py-16 md:py-24 lg:py-32">
       <div className="content-max">
+        <div className="md:px-[20px] lg:px-[60px]">
         <div className=" text-white">
           <h2 >
             “Mange af mine klienter beskriver, at de i lang tid har gået med en
@@ -43,6 +44,7 @@ const SectionTwo = () => {
             </ul>
           </div>
 
+        </div>
         </div>
       </div>
     </div>

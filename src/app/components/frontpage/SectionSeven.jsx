@@ -11,6 +11,8 @@ const SectionSeven = () => {
         buttonHref="/kontakt"
         variant="secondary"
       />
+  
+      <div className="md:px-[20px] lg:px-[60px]">
       <div className="flex flex-col ">
         <div className="flex flex-col md:flex-row items-start justify-around gap-1 mt-16">
           <Help
@@ -71,8 +73,6 @@ const SectionSeven = () => {
               "Kommunikationsproblemer",
               "Forældrevejledning",
               "Social angst & ensomhed",
-              "Skilsmisse & separation",
-              "Parforhold",
               "Familiekonflikter & uro i familien",
             ]}
             index={4}
@@ -90,6 +90,8 @@ const SectionSeven = () => {
           />
         </div>
       </div>
+      </div>
+      
     </div>
   );
 };

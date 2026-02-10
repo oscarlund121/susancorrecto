@@ -16,6 +16,7 @@ const SectionFour = () => {
         variant="secondary"
       />
       <div className="content-max">
+        <div className="md:px-[20px] lg:px-[60px]">
         <div className="grid grid-cols-1 md:grid-cols-3 mt-25 items-center gap-8 lg:gap-4 mx-4">
           <ul className="flex col-span-3 flex-col gap-8 lg:gap-16 ">
             <li className="mt-6 group">
@@ -102,6 +103,7 @@ const SectionFour = () => {
               
             />
           </figure> */}
+        </div>
         </div>
       </div>
     </div>

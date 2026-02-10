@@ -47,8 +47,10 @@ export default function Meditation() {
             borderColor="black"
           />
         </div>
-        <div className="bg-white py-12 md:py-16 lg:py-24">
+      </div>
+        <div className="bg-white py-12 md:py-24 lg:py-32">
           <div className="content-max">
+            <div className="md:px-[20px] lg:px-[60px]">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div>
                 <div>
@@ -88,10 +90,11 @@ export default function Meditation() {
                 </figure>
               </div>
             </div>
+            </div>
           </div>
         </div>
+        </div>
         <CTAContent />
-      </div>
     </div>
   );
 }

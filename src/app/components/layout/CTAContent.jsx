@@ -25,10 +25,10 @@ const CTAContent = ({
             </figure>
           </div>
           <div className="order-1 md:order-2">
-            <div className="pb-8">
+            <div className="pb-4 md:pb-8">
               <h2>{title}</h2>
             </div>
-            <div className="mt-8">
+            <div className="mt-2 md:mt-8">
               <div className="mb-6 border-b-2 border-white">
                 <h3>{subtitle}</h3>
               </div>

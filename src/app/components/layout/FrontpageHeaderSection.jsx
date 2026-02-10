@@ -14,6 +14,7 @@ const HeaderSection = ({
   return (
     <div className={` ${borderClass} pb-0`}>
       <div className="content-max">
+        <div className="md:px-[20px] lg:px-[60px]">
         <div className="flex justify-between md:flex-row flex-col items-end">
           <div className=" space-y-8">
             <div className="w-full ">
@@ -29,6 +30,7 @@ const HeaderSection = ({
                   <Button variant={variant} href={buttonHref}>{buttonText}</Button>
                 </div>
               )}
+        </div>
         </div>
       </div>
     </div>

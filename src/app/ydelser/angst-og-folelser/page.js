@@ -51,8 +51,9 @@ export default function AngstOgFolelser() {
       </div>
       
       {/* Angst sektion */}
-      <div className="bg-white py-12 md:py-16 lg:py-24">
+      <div className="bg-white py-12 md:py-24 lg:py-32">
         <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <div>
@@ -83,12 +84,14 @@ export default function AngstOgFolelser() {
               </figure>
             </div>
           </div>
+          </div>
         </div>
       </div>
 
       {/* Depression og Sorg sektion */}
       <div className="bg-[#367067] py-16 md:py-24 lg:py-32 text-white">
         <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div className="flex justify-center items-center order-2 md:order-1">
               <figure className="">
@@ -104,7 +107,7 @@ export default function AngstOgFolelser() {
             <div className="order-1 md:order-2">
               <div className="pb-8">
                 <div className="mb-6 border-b-2 border-white">
-                  <h3>Depression & sorg</h3>
+                  <h3>Depression & Sorg</h3>
                 </div>
                 <div className="w-full max-w-xl space-y-4">
                   <p>
@@ -120,12 +123,14 @@ export default function AngstOgFolelser() {
               </div>
             </div>
           </div>
+          </div>
         </div>
       </div>
 
       {/* Hvordan kan terapi hjælpe sektion */}
-      <div className="bg-white py-12 md:py-16 lg:py-24">
+      <div className="bg-white py-12 md:py-24 lg:py-32">
         <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <div>
               <div className="pb-8">
@@ -159,11 +164,11 @@ export default function AngstOgFolelser() {
               </figure>
             </div>
           </div>
+          </div>
         </div>
       </div>
 
       <CTAContent
-        imageSrc="/img/emdr-1.jpg"
       />
     </div>
   );

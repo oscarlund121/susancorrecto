@@ -27,7 +27,7 @@ const HeroSection = () => {
         <div className="relative z-20 flex items-start min-h-[75vh] sm:min-h-[70vh] content-max sm:pt-12 pt-0">
         <div className=" text-white ">
           {/* Add your hero content here */}
-          <h1 className="mb-4 text-hero-max text-left animate-fadeInUp">
+          <h1 className="mb-0 md:mb-4 text-hero-max text-left animate-fadeInUp">
             Terapi der giver dig frihed til at leve fuldt ud
           </h1>
         </div>
