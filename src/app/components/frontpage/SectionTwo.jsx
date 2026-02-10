@@ -17,29 +17,29 @@ const SectionTwo = () => {
           {/* Checkmark box */}
           <div className=" ">
             <ul className="space-y-6 bg-[#d3d5e9]/20 inline-block mt-10 px-8 py-10">
-              <li className="flex items-start gap-4">
+              <li className="flex items-center gap-4">
                 <CheckIcon />
                 <span className="text-white text-lg md:text-xl lg:text-2xl font-light leading-relaxed">
                   Føler du dig fastlåst og uden retning?
                 </span>
               </li>
 
-              <li className="flex items-start gap-4">
+              <li className="flex items-center gap-4">
                 <CheckIcon />
                 <span className="text-white text-lg md:text-xl lg:text-2xl font-light leading-relaxed">
                   Har du svært ved at finde ro i kroppen?
                 </span>
               </li>
 
-              <li className="flex items-start gap-4">
+              <li className="flex items-center gap-4">
                 <CheckIcon />
                 <span className="text-white text-lg md:text-xl lg:text-2xl font-light leading-relaxed">
                   Er relationer eller studieliv blevet en kamp?
                 </span>
               </li>
           {/* Button positioned to the right */}
-          <div className="flex mt-8">
-            <Button variant="secondary" />
+          <div className="flex justify-end mt-8">
+            <Button variant="light" href="/help">Det kan du få hjælp til</Button>
           </div>
             </ul>
           </div>

@@ -185,6 +185,18 @@ h3 {
   
 }
 
+h4 {
+  font-family: var(--font-archivo), sans-serif;
+  font-size: clamp(18px, 2.5vw, 32px);
+  font-weight: 300;
+}
+
+h5 {
+  font-family: var(--font-archivo), sans-serif;
+  font-size: clamp(16px, 2vw, 18px);
+  font-weight: 300;
+}
+
 p {
   font-family: var(--font-archivo), sans-serif;
   font-weight: 200;
@@ -209,7 +221,7 @@ blockquote {
 button {
   font-family: var(--font-archivo), sans-serif;
   cursor: pointer;
-  font-size: clamp(12px, 2vw, 16px);
+  font-size: clamp(14px, 2vw, 18px);
 }
 
 

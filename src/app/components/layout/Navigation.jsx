@@ -105,13 +105,13 @@ const Navigation = ({ variant = 'default' }) => {
               </div>
             </div>
           </div>
+          <Link href="/help" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
+            Hjælp
+            <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
+          </Link>
           
           <Link href="/om-susan" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
             Om Susan
-            <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
-          </Link>
-          <Link href="/help" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
-            Hjælp
             <span className="absolute left-0 bottom-[-4px] w-0 h-0.5 bg-[#D3D9E5] transition-all duration-300 group-hover:w-full"></span>
           </Link>
           <Link href="/pricing" className="text-[#367067] text-lg font-light hover:text-[#D3D9E5] transition-all duration-300 relative group">
@@ -217,6 +217,13 @@ const Navigation = ({ variant = 'default' }) => {
               </Link>
             </div>
           </div>
+          <Link 
+            href="/help" 
+            className="block text-[#367067] text-lg font-light py-2 hover:bg-gray-50 rounded"
+            onClick={() => setIsMenuOpen(false)}
+          >
+            Hjælp
+          </Link>
           
           <Link 
             href="/om-susan" 
@@ -224,13 +231,6 @@ const Navigation = ({ variant = 'default' }) => {
             onClick={() => setIsMenuOpen(false)}
           >
             Om Susan
-          </Link>
-          <Link 
-            href="/help" 
-            className="block text-[#367067] text-lg font-light py-2 hover:bg-gray-50 rounded"
-            onClick={() => setIsMenuOpen(false)}
-          >
-            Hjælp
           </Link>
           <Link 
             href="/pricing" 
