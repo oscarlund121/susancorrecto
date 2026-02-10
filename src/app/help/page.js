@@ -76,7 +76,7 @@ export default function Help() {
         </div>
       </div>
 
-      <div className="bg-white py-12 md:py-16 ">
+      <div className="bg-white py-0 md:py-16 ">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
