@@ -4,16 +4,16 @@ import CategorySection from "../components/layout/CategorySection";
 import Button from "../components/ui/Button";
 
 export const metadata = {
-  title: 'Hvad Kan Jeg Hjælpe Med',
+  title: 'Hjælp',
   description: 'Få hjælp til stress, angst, lavt selvværd, relationer, traumer og kriser. Psykoterapi for unge, studerende, par og familier i Aarhus.',
   keywords: ['hjælp til angst', 'hjælp til stress', 'lavt selvværd terapi', 'relationsudfordringer', 'traumer behandling', 'terapi for unge'],
   openGraph: {
-    title: 'Hvad Kan Jeg Hjælpe Med | Psykoterapeut Susan Albertsen',
+    title: 'Hjælp | Psykoterapeut Susan Albertsen',
     description: 'Få hjælp til stress, angst, lavt selvværd, relationer og traumer hos psykoterapeut Susan Albertsen.',
     url: 'https://psykoterapisusan.dk/help',
   },
   twitter: {
-    title: 'Hvad Kan Jeg Hjælpe Med',
+    title: 'Hjælp',
     description: 'Få hjælp til stress, angst, lavt selvværd og relationer.',
   },
   alternates: {
@@ -76,7 +76,7 @@ export default function Help() {
         </div>
       </div>
 
-      <div className="bg-white py-0 md:py-16 ">
+      <div className="bg-white py-12 md:py-24 lg:py-32">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
