@@ -43,6 +43,7 @@ export default function OmSusan() {
 
       <div className="bg-white py-12 md:py-16 lg:py-24">
         <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
           <div className="mb-6 border-b-2 border-black">
             <h3>Min baggrund</h3>
           </div>
@@ -96,6 +97,7 @@ export default function OmSusan() {
               </ul>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>

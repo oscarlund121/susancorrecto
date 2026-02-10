@@ -31,6 +31,7 @@ export default function KontaktPage() {
 
       <div className="bg-white py-12 md:py-16 lg:py-24">
         <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 justify-between">
             <div>
               <div className="mb-6 border-b-2 border-black">
@@ -58,6 +59,7 @@ export default function KontaktPage() {
               <ContactForm onSubmit={handleFormSubmit} />
             </div>
             */}
+          </div>
           </div>
         </div>
       </div>

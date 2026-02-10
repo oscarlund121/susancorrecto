@@ -91,6 +91,7 @@ export default function Pricing() {
       
       <div className="bg-white py-12 md:py-16 lg:py-24">
         <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Venstre side - Prisliste */}
             <div className="lg:col-span-2">
@@ -107,6 +108,7 @@ export default function Pricing() {
             <div className="lg:col-span-1 md:mt-12 ">
               <InfoCard />
             </div>
+          </div>
           </div>
         </div>
       </div>

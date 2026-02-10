@@ -78,6 +78,7 @@ export default function Help() {
 
       <div className="bg-white py-12 md:py-16 ">
         <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {categories.map((category, index) => (
               <CategorySection 
@@ -91,6 +92,7 @@ export default function Help() {
           </div>
           <div className="flex justify-center my-8">
             <Button variant="secondary">Book en samtale</Button>
+          </div>
           </div>
         </div>
       </div>
