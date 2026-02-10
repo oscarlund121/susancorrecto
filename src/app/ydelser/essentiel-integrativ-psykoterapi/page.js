@@ -59,10 +59,10 @@ export default function Essentiel() {
             <div>
               <div>
                 <div className="border-b-1 border-black">
-                  <h3>Hvad er Essentiel Integrativ Psykoterapi?</h3>
+                  <h3>Hvad er Psykoterapi?</h3>
                 </div>
                 <p className="w-full max-w-xl mt-6">
-                  Essentiel Integrativ Psykoterapi er en helhedsorienteret tilgang, hvor vi kombinerer forskellige evidensbaserede metoder. Det betyder, at vi kan arbejde fleksibelt  med det, du har brug for, uanset om det handler om gamle mønstre, nye udfordringer eller akutte livskriser. Målet er at styrke både din indre ro og din evne til at handle på det, der er vigtigt for dig.
+                  Psykoterapi er en helhedsorienteret tilgang, hvor vi kombinerer forskellige evidensbaserede metoder. Det betyder, at vi kan arbejde fleksibelt  med det, du har brug for, uanset om det handler om gamle mønstre, nye udfordringer eller akutte livskriser. Målet er at styrke både din indre ro og din evne til at handle på det, der er vigtigt for dig.
                 </p>
               </div>
               <Help
