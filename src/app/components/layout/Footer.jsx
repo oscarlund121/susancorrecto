@@ -50,7 +50,7 @@ const Footer = ({ coords = { lat: 56.1629, lng: 10.2039 } }) => {
             <h4 className="font-semibold text-white">Kontakt</h4>
             <ul className="mt-4 space-y-2 text-sm">
               <li>Skolebakken 7 st th, 8000 Aarhus</li>
-              <li><a href="mailto:susan@susanterapi.dk" className="hover:underline transition-colors">susan@susanterapi.dk</a></li>
+              <li><a href="mailto:kontakt@psykoterapisusan.dk" className="hover:underline transition-colors">kontakt@psykoterapisusan.dk</a></li>
               <li><a href="tel:+45253925 39" className="hover:underline transition-colors">+45 25 39 25 39</a></li>
             </ul>
           </div>

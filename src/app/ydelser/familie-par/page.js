@@ -67,14 +67,7 @@ export default function FamiliePar() {
                       <h4 className="font-semibold mb-2">Social angst & ensomhed</h4>
                       <p>Følelser af ensomhed eller social angst kan gøre det svært at indgå i relationer. Jeg hjælper dig med at forstå, hvad der ligger bag disse følelser, og støtter dig i at opbygge tryghed, selvtillid og bedre sociale forbindelser.</p>
                     </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">Skilsmisse & separation</h4>
-                      <p>Skilsmisse eller separation kan skabe uro og usikkerhed – både for voksne og børn. Jeg tilbyder støtte til at håndtere sorg, skyld og konflikter, og hjælper med at finde nye måder at skabe balance og samarbejde på efter en forandring.</p>
-                    </div>
-                    <div>
-                      <h4 className="font-semibold mb-2">Parforhold</h4>
-                      <p>Parforhold kan møde udfordringer som misforståelser, manglende nærvær eller gentagne konflikter. Jeg arbejder med at styrke dialogen, skabe forståelse og genopbygge nærvær, så par kan opleve mere samhørighed og trivsel sammen.</p>
-                    </div>
+                   
                     <div>
                       <h4 className="font-semibold mb-2">Familiekonflikter & uro</h4>
                       <p>Uenigheder og spændinger i familien kan skabe stress og afstand mellem familiemedlemmer. Jeg hjælper med at håndtere konflikter, forstå dynamikker og skabe mere tryghed og samarbejde i familien.</p>
