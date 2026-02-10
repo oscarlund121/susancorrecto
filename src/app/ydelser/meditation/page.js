@@ -93,7 +93,6 @@ export default function Meditation() {
             </div>
           </div>
         </div>
-        </div>
         <CTAContent />
     </div>
   );
