@@ -38,7 +38,7 @@ const Testimonials = ({ testimonials }) => {
 
             {/* Author info */}
             <div className="mb-4">
-              <h4 className="font-semibold  text-sm">{testimonial.name}</h4>
+              <h5 className="font-semibold  text-sm">{testimonial.name}</h5>
               <p className=" text-xs">{testimonial.issue}</p>
             </div>
 
@@ -93,9 +93,9 @@ const Testimonials = ({ testimonials }) => {
 
             {/* Author info */}
             <div>
-              <h4 className="font-semibold text-gray-800 text-lg mb-2">
+              <h5 className="font-semibold text-gray-800 text-lg mb-2">
                 {selectedTestimonial.name}
-              </h4>
+              </h5>
               <p className="text-gray-600">{selectedTestimonial.issue}</p>
             </div>
           </div>
