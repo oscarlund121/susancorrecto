@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono, Archivo, Fraunces, Prata, Domine, Source_Serif_4 } from "next/font/google";
+import { Geist, Geist_Mono, Open_Sans, Fraunces, Prata, Domine, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import Navigation from "./components/layout/Navigation";
 import Footer from "./components/layout/Footer";
@@ -6,10 +6,10 @@ import Footer from "./components/layout/Footer";
 
 
 
-const archivo = Archivo({
-  variable: "--font-archivo",
+const openSans = Open_Sans({
+  variable: "--font-open-sans",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700", "800"],
 });
 
 const fraunces = Fraunces({
@@ -100,7 +100,7 @@ export default function RootLayout({ children }) {
     <html lang="da">
          
       <body
-        className={`${archivo.variable} ${fraunces.variable} ${prata.variable} ${domine.variable} ${sourceSerif.variable} antialiased`}
+        className={`${openSans.variable} ${fraunces.variable} ${prata.variable} ${domine.variable} ${sourceSerif.variable} antialiased`}
       >
   
   {children}

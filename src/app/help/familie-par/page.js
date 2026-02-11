@@ -40,7 +40,7 @@ export default function FamiliePar() {
       <div className="bg-[#DBE1F8]/50 md:py-16 py-8 ">
         <div className="mb-16">
           <HeaderSection
-            title="Relationer og familieliv"
+            title="Relationer & familieliv"
             text="Relationer kan være både kilder til glæde og til udfordringer. Mange oplever konflikter, kommunikationsproblemer eller uro i familien, og det kan være svært at finde ro og forståelse i hverdagen."
             buttonHref="/kontakt"
             variant={false}
@@ -64,20 +64,20 @@ export default function FamiliePar() {
                   </div>
                   <div className="w-full max-w-xl mt-6 space-y-6">
                     <div>
-                      <h4 className="font-semibold mb-2">Kommunikationsproblemer</h4>
+                      <h5 className="font-semibold mb-2">Kommunikationsproblemer</h5>
                       <p>Mange familier og par oplever, at det er svært at blive forstået eller at forstå hinanden. Jeg hjælper med at skabe klarhed, øge gensidig forståelse og finde nye måder at kommunikere på, så relationerne kan blive mere trygge og nærværende.</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">Forældrevejledning</h4>
+                      <h5 className="font-semibold mb-2">Forældrevejledning</h5>
                       <p>Forældreskab kan være udfordrende, og der kan opstå usikkerhed, konflikter eller bekymring for børnene. Jeg støtter forældre i at finde ro, overskud, eftertanke og konkrete redskaber til at navigere i familielivet, samtidig med at relationen til barnet styrkes.</p>
                     </div>
                     <div>
-                      <h4 className="font-semibold mb-2">Social angst & ensomhed</h4>
+                      <h5 className="font-semibold mb-2">Social angst & ensomhed</h5>
                       <p>Følelser af ensomhed eller social angst kan gøre det svært at indgå i relationer. Jeg hjælper dig med at forstå, hvad der ligger bag disse følelser, og støtter dig i at opbygge tryghed, selvtillid og bedre sociale forbindelser.</p>
                     </div>
                    
                     <div>
-                      <h4 className="font-semibold mb-2">Familiekonflikter & uro</h4>
+                      <h5 className="font-semibold mb-2">Familiekonflikter & uro</h5>
                       <p>Uenigheder og spændinger i familien kan skabe stress og afstand mellem familiemedlemmer. Jeg hjælper med at håndtere konflikter, forstå dynamikker og skabe mere tryghed og samarbejde i familien.</p>
                     </div>
                   </div>

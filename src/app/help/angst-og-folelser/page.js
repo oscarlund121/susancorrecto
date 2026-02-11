@@ -42,7 +42,7 @@ export default function AngstOgFolelser() {
       <div className="bg-[#DBE1F8]/50 md:py-16 py-8 ">
         <div className="mb-8">
           <HeaderSection
-            title="Angst og følelser"
+            title="Angst & følelser"
             text="Angst (eks. panikangst, socialangst og fobier som klaustrofobi eller højdeskræk) kan være ubehagelig og overvældende – men du behøver ikke leve med den alene. Hos mig kan du få professionel hjælp til at forstå og håndtere din angst på en tryg og nænsom måde."
             buttonHref="/kontakt"
             variant={false}

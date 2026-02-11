@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const services = [
-  { title: "Unge & Studerende", href: "/help/eksamensangst" },
+  { title: "Eksamens- & præstationsangst", href: "/help/eksamensangst" },
   { title: "Angst & følelser", href: "/help/angst-og-folelser" },
   { title: "Depression & sorg", href: "/help/depression-og-sorg" },
   { title: "Relationer & familieliv", href: "/help/familie-par" },

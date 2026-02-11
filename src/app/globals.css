@@ -186,40 +186,44 @@ h3 {
 }
 
 h4 {
-  font-family: var(--font-archivo), sans-serif;
-  font-size: clamp(18px, 2.5vw, 32px);
-  font-weight: 300;
+  font-family: var(--font-open-sans), sans-serif;
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 500;
 }
 
 h5 {
-  font-family: var(--font-archivo), sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   font-size: clamp(16px, 2vw, 18px);
-  font-weight: 300;
+  font-weight: 400;
+}
+
+nav {
+  font-family: var(--font-open-sans), sans-serif;
 }
 
 p {
-  font-family: var(--font-archivo), sans-serif;
-  font-weight: 200;
+  font-family: var(--font-open-sans), sans-serif;
+  font-weight: 300;
   font-size: clamp(16px, 2vw, 18px);
   line-height: 1.6;
 }
 li {
-  font-family: var(--font-archivo), sans-serif;
-  font-weight: 200;
+  font-family: var(--font-open-sans), sans-serif;
+  font-weight: 300;
   font-size: clamp(16px, 2vw, 18px);
   line-height: 1.6;
 }
 
 blockquote {
-  font-family: var(--font-archivo), sans-serif;
-  font-weight: 200;
+  font-family: var(--font-open-sans), sans-serif;
+  font-weight: 300;
   font-style: italic;
   font-size: clamp(20px, 3vw, 28px);
   line-height: 1.4;
 }
 
 button {
-  font-family: var(--font-archivo), sans-serif;
+  font-family: var(--font-open-sans), sans-serif;
   cursor: pointer;
   font-size: clamp(14px, 2vw, 18px);
 }

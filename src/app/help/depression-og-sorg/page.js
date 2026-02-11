@@ -42,7 +42,7 @@ export default function DepressionOgSorg() {
       <div className="bg-[#DBE1F8]/50 md:py-16 py-8 ">
         <div className="mb-8">
           <HeaderSection
-            title="Depression og sorg"
+            title="Depression & sorg"
             text="Depression og sorg kan føles overvældende og ensomt – men du behøver ikke bære det alene. Hos mig kan du få professionel hjælp til at forstå og bearbejde dine følelser i et trygt og nænsomt rum."
             buttonHref="/kontakt"
             variant={false}

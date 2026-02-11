@@ -7,7 +7,7 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
-        'archivo': ['var(--font-archivo)', 'sans-serif'],
+        'open-sans': ['var(--font-open-sans)', 'sans-serif'],
       },
       colors: {
         'susan-green': '#367067',

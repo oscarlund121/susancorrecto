@@ -41,7 +41,7 @@ export default function Eksamensangst() {
       <div className="bg-[#DBE1F8]/50 md:py-16 py-8 ">
         <div className="mb-8">
           <HeaderSection
-            title="Eksamens- og præstationsangst"
+            title="Eksamens- & præstationsangst"
             text="Når kroppen pludselig tager over med hjertebanken, svedige hænder, kvalme, svimmelhed eller en fornemmelse af at 'lukke ned', kan det være svært at forstå, hvad der sker."
             buttonHref="/kontakt"
             variant={false}

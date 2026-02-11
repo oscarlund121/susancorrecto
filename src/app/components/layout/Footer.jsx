@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="bg-zinc-900 text-white py-16 md:py-24 lg:py-32">
       <div className="content-max">
         <div className="md:px-[20px] lg:px-[60px]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-12 md:gap-8">
           {/* Column 1: Branding */}
           <div className="sm:col-span-2 md:col-span-1">
             <h5 className="text-white">Susan Albertsen</h5>
@@ -25,16 +25,25 @@ const Footer = () => {
           <div>
             <h5 className="font-semibold text-white">Ydelser</h5>
             <ul className="mt-4 space-y-2 text-sm text-zinc-300">
+              <li><Link href="/ydelser/emdr" className="hover:text-white transition-colors">EMDR Terapi</Link></li>
               <li><Link href="/ydelser/essentiel-integrativ-psykoterapi" className="hover:text-white transition-colors">Psykoterapi</Link></li>
-              <li><Link href="/ydelser/emdr" className="hover:text-white transition-colors">EMDR</Link></li>
               <li><Link href="/ydelser/meditation" className="hover:text-white transition-colors">Meditation</Link></li>
-              <li><Link href="/help/angst-og-folelser" className="hover:text-white transition-colors">Angst & følelser</Link></li>
-              <li><Link href="/help/depression-og-sorg" className="hover:text-white transition-colors">Depression & sorg</Link></li>
-              <li><Link href="/help/eksamensangst" className="hover:text-white transition-colors">Eksamensangst</Link></li>
             </ul>
           </div>
 
-          {/* Column 3: Navigation */}
+          {/* Column 3: Hjælp */}
+          <div>
+            <h5 className="font-semibold text-white">Hjælp</h5>
+            <ul className="mt-4 space-y-2 text-sm text-zinc-300">
+              <li><Link href="/help" className="hover:text-white transition-colors">Oversigt</Link></li>
+              <li><Link href="/help/eksamensangst" className="hover:text-white transition-colors">Unge & Studerende</Link></li>
+              <li><Link href="/help/angst-og-folelser" className="hover:text-white transition-colors">Angst & følelser</Link></li>
+              <li><Link href="/help/depression-og-sorg" className="hover:text-white transition-colors">Depression & sorg</Link></li>
+              <li><Link href="/help/familie-par" className="hover:text-white transition-colors">Relationer & familieliv</Link></li>
+            </ul>
+          </div>
+
+          {/* Column 4: Navigation */}
           <div>
             <h5 className="font-semibold text-white">Sider</h5>
             <ul className="mt-4 space-y-2 text-sm text-zinc-300">
@@ -44,7 +53,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Column 4: Kontakt */}
+          {/* Column 5: Kontakt */}
           <div>
             <h5 className="font-semibold text-white">Kontakt</h5>
             <ul className="mt-4 space-y-2 text-sm text-zinc-300">
