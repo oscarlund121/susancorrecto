@@ -36,7 +36,7 @@ const Footer = () => {
             <h5 className="font-semibold text-white">Hjælp</h5>
             <ul className="mt-4 space-y-2 text-sm text-zinc-300">
               <li><Link href="/help" className="hover:text-white transition-colors">Oversigt</Link></li>
-              <li><Link href="/help/eksamensangst" className="hover:text-white transition-colors">Unge & Studerende</Link></li>
+              <li><Link href="/help/eksamensangst" className="hover:text-white transition-colors">Eksamens- & præstationsangst</Link></li>
               <li><Link href="/help/angst-og-folelser" className="hover:text-white transition-colors">Angst & følelser</Link></li>
               <li><Link href="/help/depression-og-sorg" className="hover:text-white transition-colors">Depression & sorg</Link></li>
               <li><Link href="/help/familie-par" className="hover:text-white transition-colors">Relationer & familieliv</Link></li>

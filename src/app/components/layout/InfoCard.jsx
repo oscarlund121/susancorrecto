@@ -1,4 +1,5 @@
 import Button from "../ui/Button";
+import Link from "next/link";
 
 const InfoCard = () => {
   return (
@@ -8,9 +9,10 @@ const InfoCard = () => {
       </div>
       
       <div className="mb-8">
-        <p className="mb-4">Du er altid velkommen til at ringe på <strong>22 23 25 39</strong></p>
+        <p className="mb-1">Du er altid velkommen til at ringe på</p>
+        <p className="mb-4"><Link href="tel:+4522232539" className="font-bold underline hover:text-[#DBE1F8] transition-colors">22 23 25 39</Link></p>
         <p className="mb-6">Hvis jeg ikke tager telefonen, så læg en besked – jeg vender tilbage hurtigst muligt.</p>
-        <p>Du kan også skrive en mail til <strong>psykoterapisusan.dk</strong></p>
+        <p>Du kan også skrive en mail til <Link href="mailto:kontakt@psykoterapisusan.dk" className="font-bold underline hover:text-[#DBE1F8] transition-colors">kontakt@psykoterapisusan.dk</Link></p>
       </div>
 
       <div className="mb-8">

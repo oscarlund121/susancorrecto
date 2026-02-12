@@ -148,7 +148,7 @@ const Navigation = ({ variant = 'default' }) => {
                   Oversigt
                 </Link>
                 <Link href="/help/eksamensangst" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
-                  Unge & Studerende
+                  Eksamens- & præstationsangst
                 </Link>
                 <Link href="/help/angst-og-folelser" className="block px-4 py-3 text-[#367067] text-md hover:text-[#D3D9E5] transition-colors">
                   Angst & følelser
@@ -268,7 +268,7 @@ const Navigation = ({ variant = 'default' }) => {
                 className="block text-[#367067] text-sm py-2 pl-4 hover:bg-gray-50 rounded"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Unge & Studerende
+                Eksamens- & præstationsangst
               </Link>
               <Link 
                 href="/help/angst-og-folelser" 
