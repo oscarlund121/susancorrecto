@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: 'Psykoterapi | Susan Albertsen',
     description: 'Helhedsorienteret psykoterapi der kombinerer flere terapeutiske metoder.',
-    url: 'https://psykoterapisusan.dk/ydelser/essentiel-integrativ-psykoterapi',
+    url: 'https://www.psykoterapisusan.dk/ydelser/essentiel-integrativ-psykoterapi',
     images: [{ url: '/img/bee.jpg', width: 1200, height: 630, alt: 'Integrativ psykoterapi' }],
   },
   twitter: {
@@ -19,7 +19,7 @@ export const metadata = {
     description: 'Helhedsorienteret psykoterapi hos Susan Albertsen.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/ydelser/essentiel-integrativ-psykoterapi',
+    canonical: 'https://www.psykoterapisusan.dk/ydelser/essentiel-integrativ-psykoterapi',
   },
 };
 

@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: 'Om Susan Albertsen | Psykoterapeut i Aarhus',
     description: 'Mød psykoterapeut Susan Albertsen. Uddannet fra Essentiel Integrativ Essens med over 20 års erfaring.',
-    url: 'https://psykoterapisusan.dk/om-susan',
+    url: 'https://www.psykoterapisusan.dk/om-susan',
     images: [{ url: '/img/about-front.jpg', width: 1200, height: 630, alt: 'Susan Albertsen - Psykoterapeut' }],
   },
   twitter: {
@@ -19,7 +19,7 @@ export const metadata = {
     description: 'Mød psykoterapeut Susan Albertsen med over 20 års erfaring.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/om-susan',
+    canonical: 'https://www.psykoterapisusan.dk/om-susan',
   },
 };
 

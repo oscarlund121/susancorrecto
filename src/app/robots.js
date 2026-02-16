@@ -5,6 +5,6 @@ export default function robots() {
       allow: '/',
       disallow: '/api/',
     },
-    sitemap: 'https://psykoterapisusan.dk/sitemap.xml',
+    sitemap: 'https://www.psykoterapisusan.dk/sitemap.xml',
   };
 }

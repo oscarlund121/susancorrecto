@@ -12,14 +12,14 @@ export const metadata = {
   openGraph: {
     title: 'Eksamens- og Præstationsangst | Susan Albertsen',
     description: 'Slip af med eksamensangst og præstationsangst. Professionel hjælp hos Susan Albertsen.',
-    url: 'https://psykoterapisusan.dk/help/eksamensangst',
+    url: 'https://www.psykoterapisusan.dk/help/eksamensangst',
   },
   twitter: {
     title: 'Eksamens- og Præstationsangst',
     description: 'Få hjælp til eksamensangst og præstationsangst.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/help/eksamensangst',
+    canonical: 'https://www.psykoterapisusan.dk/help/eksamensangst',
   },
 };
 

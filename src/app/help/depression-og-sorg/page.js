@@ -12,7 +12,7 @@ export const metadata = {
   openGraph: {
     title: 'Behandling af Depression og Sorg | Susan Albertsen',
     description: 'Få professionel hjælp til depression, sorg og tab hos psykoterapeut Susan Albertsen.',
-    url: 'https://psykoterapisusan.dk/help/depression-og-sorg',
+    url: 'https://www.psykoterapisusan.dk/help/depression-og-sorg',
     images: [{ url: '/img/purple-flower.jpg', width: 1200, height: 630, alt: 'Behandling af depression og sorg hos Susan Albertsen' }],
   },
   twitter: {
@@ -20,7 +20,7 @@ export const metadata = {
     description: 'Professionel hjælp til depression, sorg og tab.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/help/depression-og-sorg',
+    canonical: 'https://www.psykoterapisusan.dk/help/depression-og-sorg',
   },
 };
 

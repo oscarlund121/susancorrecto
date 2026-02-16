@@ -12,7 +12,7 @@ export const metadata = {
   openGraph: {
     title: 'Behandling af Angst og Følelser | Susan Albertsen',
     description: 'Få professionel hjælp til angst, panikangst og fobier hos psykoterapeut Susan Albertsen.',
-    url: 'https://psykoterapisusan.dk/help/angst-og-folelser',
+    url: 'https://www.psykoterapisusan.dk/help/angst-og-folelser',
     images: [{ url: '/img/heart.jpg', width: 1200, height: 630, alt: 'Angstbehandling hos Susan Albertsen' }],
   },
   twitter: {
@@ -20,7 +20,7 @@ export const metadata = {
     description: 'Professionel hjælp til angst og følelser.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/help/angst-og-folelser',
+    canonical: 'https://www.psykoterapisusan.dk/help/angst-og-folelser',
   },
 };
 

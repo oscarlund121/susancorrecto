@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: 'EMDR-terapi - Traumebehandling | Susan Albertsen',
     description: 'EMDR-terapi til behandling af traumer og PTSD. WHO-anbefalet metode.',
-    url: 'https://psykoterapisusan.dk/ydelser/emdr',
+    url: 'https://www.psykoterapisusan.dk/ydelser/emdr',
     images: [{ url: '/img/emdr-1.jpg', width: 1200, height: 630, alt: 'EMDR-terapi hos Susan Albertsen' }],
   },
   twitter: {
@@ -19,7 +19,7 @@ export const metadata = {
     description: 'EMDR-terapi til behandling af traumer og PTSD.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/ydelser/emdr',
+    canonical: 'https://www.psykoterapisusan.dk/ydelser/emdr',
   },
 };
 

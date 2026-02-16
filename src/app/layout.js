@@ -38,7 +38,7 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata = {
-  metadataBase: new URL('https://psykoterapisusan.dk'),
+  metadataBase: new URL('https://www.psykoterapisusan.dk'),
   title: {
     default: 'Psykoterapeut Susan Albertsen | Psykoterapi i Aarhus',
     template: '%s | Psykoterapeut Susan Albertsen',
@@ -56,7 +56,7 @@ export const metadata = {
   openGraph: {
     title: 'Psykoterapeut Susan Albertsen | Psykoterapi i Aarhus',
     description: 'Professionel psykoterapi i Aarhus. Få hjælp til angst, stress, traumer, lavt selvværd og relationer. Book en samtale i dag.',
-    url: 'https://psykoterapisusan.dk',
+    url: 'https://www.psykoterapisusan.dk',
     siteName: 'Psykoterapeut Susan Albertsen',
     locale: 'da_DK',
     type: 'website',

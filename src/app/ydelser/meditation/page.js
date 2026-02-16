@@ -11,7 +11,7 @@ export const metadata = {
   openGraph: {
     title: 'Meditation og Dyb Afslapning | Susan Albertsen',
     description: 'Lær meditation og dyb afslapning. Reducer stress og skab indre ro.',
-    url: 'https://psykoterapisusan.dk/ydelser/meditation',
+    url: 'https://www.psykoterapisusan.dk/ydelser/meditation',
     images: [{ url: '/img/meditation.jpg', width: 1200, height: 630, alt: 'Meditation hos Susan Albertsen' }],
   },
   twitter: {
@@ -19,7 +19,7 @@ export const metadata = {
     description: 'Lær meditation og skab indre ro hos Susan Albertsen.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/ydelser/meditation',
+    canonical: 'https://www.psykoterapisusan.dk/ydelser/meditation',
   },
 };
 

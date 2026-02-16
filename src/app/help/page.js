@@ -11,14 +11,14 @@ export const metadata = {
   openGraph: {
     title: 'Hjælp | Psykoterapeut Susan Albertsen',
     description: 'Få hjælp til stress, angst, lavt selvværd, relationer og traumer hos psykoterapeut Susan Albertsen.',
-    url: 'https://psykoterapisusan.dk/help',
+    url: 'https://www.psykoterapisusan.dk/help',
   },
   twitter: {
     title: 'Hjælp',
     description: 'Få hjælp til stress, angst, lavt selvværd og relationer.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/help',
+    canonical: 'https://www.psykoterapisusan.dk/help',
   },
 };
 

@@ -12,7 +12,7 @@ export const metadata = {
   openGraph: {
     title: 'Par- og Familieterapi | Susan Albertsen',
     description: 'Parterapi og familieterapi i Aarhus. Hjælp til relationer og kommunikation.',
-    url: 'https://psykoterapisusan.dk/help/familie-par',
+    url: 'https://www.psykoterapisusan.dk/help/familie-par',
     images: [{ url: '/img/heart.jpg', width: 1200, height: 630, alt: 'Par- og familieterapi' }],
   },
   twitter: {
@@ -20,7 +20,7 @@ export const metadata = {
     description: 'Parterapi og familieterapi hos Susan Albertsen.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/help/familie-par',
+    canonical: 'https://www.psykoterapisusan.dk/help/familie-par',
   },
 };
 

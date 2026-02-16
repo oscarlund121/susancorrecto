@@ -10,14 +10,14 @@ export const metadata = {
   openGraph: {
     title: 'Priser på Psykoterapi | Susan Albertsen',
     description: 'Se priser på psykoterapi. Individuel terapi, pakkeforløb og særlige priser for studerende.',
-    url: 'https://psykoterapisusan.dk/pricing',
+    url: 'https://www.psykoterapisusan.dk/pricing',
   },
   twitter: {
     title: 'Priser på Psykoterapi',
     description: 'Se priser på psykoterapi hos Susan Albertsen.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/pricing',
+    canonical: 'https://www.psykoterapisusan.dk/pricing',
   },
 };
 

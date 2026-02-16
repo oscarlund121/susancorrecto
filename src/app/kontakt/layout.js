@@ -5,14 +5,14 @@ export const metadata = {
   openGraph: {
     title: 'Kontakt Susan Albertsen | Psykoterapeut',
     description: 'Kontakt psykoterapeut Susan Albertsen. Book en samtale eller stil spørgsmål.',
-    url: 'https://psykoterapisusan.dk/kontakt',
+    url: 'https://www.psykoterapisusan.dk/kontakt',
   },
   twitter: {
     title: 'Kontakt Susan Albertsen',
     description: 'Book en samtale hos psykoterapeut Susan Albertsen.',
   },
   alternates: {
-    canonical: 'https://psykoterapisusan.dk/kontakt',
+    canonical: 'https://www.psykoterapisusan.dk/kontakt',
   },
 };
 

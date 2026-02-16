@@ -1,5 +1,5 @@
 export default function sitemap() {
-  const baseUrl = 'https://psykoterapisusan.dk';
+  const baseUrl = 'https://www.psykoterapisusan.dk';
 
   // Hovedsider
   const mainPages = [
