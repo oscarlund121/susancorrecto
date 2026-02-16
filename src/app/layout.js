@@ -89,10 +89,6 @@ export const metadata = {
   icons: {
     icon: "/logo/logo.svg",
   },
-  verification: {
-    // Tilføj din Google Search Console verification kode her når du har den
-    // google: 'din-verification-kode',
-  },
 };
 
 export default function RootLayout({ children }) {

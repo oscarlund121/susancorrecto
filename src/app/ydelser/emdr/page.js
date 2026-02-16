@@ -58,11 +58,14 @@ export default function EMDR() {
             <div>
               <div>
                 <div className="border-b-1 border-black">
-                  <h3>Hvad er EMDR terapi?</h3>
+                  <h3>Hvad er EMDR-terapi (chok- og traumeforløsning)?</h3>
                 </div>
                 <p className="w-full max-w-xl mt-6">
                   EMDR er en psykoterapeutisk metode, der hjælper hjernen med at bearbejde traumatiske minder og oplevelser. Under behandlingen følger du terapeutens bevægelser med øjnene, mens du tænker på det belastende emne. Dette stimulerer hjernens naturlige helingsprocesser og reducerer den følelsesmæssige belastning ved mindet.
                 </p>
+                <a href="#uddybning" className="inline-block mt-4 text-[#4A5568] underline hover:text-[#2D3748] transition-colors">
+                  Læs mere om hvordan EMDR-terapi virker →
+                </a>
               </div>
               <Help
                 title="Hvornår kan metoden hjælpe?"
@@ -84,6 +87,37 @@ export default function EMDR() {
           </div>
         </div>
       </div>
+
+      {/* Uddybende sektion */}
+      <div id="uddybning" className="bg-[#DBE1F8]/50 py-12 md:py-24 lg:py-32">
+        <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
+            <div className="max-w-2xl mx-auto">
+              <div className="border-b-1 border-black mb-6">
+                <h3>Hvordan chok og traumer påvirker os</h3>
+              </div>
+              <div className="space-y-6">
+                <p>
+                  Når vi i livet møder oplevelser, der overvælder os, kan de sætte sig som chok eller traume i kroppen og nervesystemet. Det kan vise sig som indre uro, angst, spændinger eller en følelse af at være ved siden af sig selv. Måske oplever du at være fastlåst eller ude af balance – som om noget stadig holder dig tilbage.
+                </p>
+                <p>
+                  Kroppen husker det, vi har været igennem. Selv når vi forsøger at lægge en oplevelse bag os, kan nervesystemet fortsat reagere, som om situationen stadig er aktuel.
+                </p>
+                <p>
+                  Gennem EMDR-terapi (chok- og traumeforløsning) støttes hjernen og kroppen i nænsomt at bearbejde det, der har sat sig fast. Behandlingen hjælper nervesystemet med at regulere sig selv og vende tilbage til sin naturlige tilstand af ro og balance.
+                </p>
+                <p>
+                  Mange oplever en mærkbar lettelse allerede efter 1.-3. behandlinger. Forløbets varighed afhænger af oplevelsens karakter og dybde samt af, hvordan den har påvirket dig.
+                </p>
+                <p className="font-medium">
+                  Målet er at genskabe følelsen af indre sammenhæng, tryghed og at være hjemme i dig selv igen.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <CTAContent />
 
     </div>

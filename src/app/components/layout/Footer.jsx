@@ -1,12 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import dynamic from "next/dynamic";
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
-const MapLeaflet = dynamic(() => import("../ui/MapLeaflet"), { ssr: false });
-
-const Footer = ({ coords = { lat: 56.1629, lng: 10.2039 } }) => {
+const Footer = () => {
   const SocialIcon = ({ href, children }) => (
     <a href={href} target="_blank" rel="noopener noreferrer" className="text-white hover:underline transition-colors">
       {children}
@@ -54,12 +51,6 @@ const Footer = ({ coords = { lat: 56.1629, lng: 10.2039 } }) => {
               <li><a href="tel:+45253925 39" className="hover:underline transition-colors">+45 25 39 25 39</a></li>
             </ul>
           </div>
-        </div>
-
-        {/* Map Section */}
-        <div className="mt-12">
-          <h4 className="font-semibold text-white mb-4">Find vej</h4>
-          <MapLeaflet lat={coords.lat} lng={coords.lng} zoom={15} />
         </div>
 
         {/* Bottom section with copyright and socials */}

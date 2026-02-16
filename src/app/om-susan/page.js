@@ -86,7 +86,7 @@ export default function OmSusan() {
                 </ListItem>
 
                 <ListItem>
-                  Familie- og parterapi – med fokus på relationer, kommunikation og tryghed.
+                  Relationer og familieliv
                 </ListItem>
           {/* Button moved to bottom of page */}
           <div className="flex justify-end mt-16">

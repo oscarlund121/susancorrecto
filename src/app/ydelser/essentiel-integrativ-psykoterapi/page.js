@@ -62,7 +62,19 @@ export default function Essentiel() {
                   <h3>Hvad er Psykoterapi?</h3>
                 </div>
                 <p className="w-full max-w-xl mt-6">
-                  Psykoterapi er en helhedsorienteret tilgang, hvor vi kombinerer forskellige evidensbaserede metoder. Det betyder, at vi kan arbejde fleksibelt  med det, du har brug for, uanset om det handler om gamle mønstre, nye udfordringer eller akutte livskriser. Målet er at styrke både din indre ro og din evne til at handle på det, der er vigtigt for dig.
+                  Psykoterapien bygger på en helhedsorienteret forståelse af mennesket, hvor flere krops- og psykoterapeutiske tilgange kombineres og understøtter hinanden. Metoderne kan anvendes enkeltvis eller i samspil – altid med udgangspunkt i det, der giver mest mening og værdi for dig.
+                </p>
+                <p className="w-full max-w-xl mt-4">
+                  I terapien mærker og vurderer jeg løbende, hvilken tilgang der bedst støtter din proces. Ingen mennesker er ens, og derfor tilpasses forløbet individuelt.
+                </p>
+                <p className="w-full max-w-xl mt-4">
+                  Udgangspunktet for denne form for terapi er, at du er unik og ekspert på dig selv og dit liv. Du bærer allerede en indre viden om, hvad der er rigtigt for dig. Sammen skaber vi et rum, hvor du kan udfolde dig autentisk og i dit eget tempo.
+                </p>
+                <p className="w-full max-w-xl mt-4">
+                  Psykoterapien giver mulighed for at arbejde fleksibelt og målrettet – uanset om det handler om at forløse gamle mønstre, håndtere nye udfordringer eller stå midt i en akut livskrise.
+                </p>
+                <p className="w-full max-w-xl mt-4">
+                  Målet er at styrke din indre ro, øge din selvforståelse og støtte dig i at handle i overensstemmelse med det, der er vigtigt for dig.
                 </p>
               </div>
               <Help

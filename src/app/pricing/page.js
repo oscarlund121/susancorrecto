@@ -58,16 +58,16 @@ const priceData = [
     ]
   },
   {
-    title: "Par- og familieterapi",
+    title: "Relations- og familieterapi",
     items: [
       {
-        title: "Par-session",
-        subtitle: "á - 2 timer",
+        title: "Enkeltvis",
+        subtitle: "á - 1,5 time",
         price: "1900"
       },
       {
-        title: "Familieterapi",
-        subtitle: "á - 2 timer",
+        title: "Familien samlet",
+        subtitle: "Op til 5 personer á - 2 timer",
         price: "6000"
       }
     ]
