@@ -8,7 +8,8 @@ const SectionSeven = () => {
       <HeaderSection
         title="Hjælp til angst, stress, lavt selvværd og relationelle udfordringer."
         text="Psykoterapi handler ikke kun om at fjerne symptomer, men om at styrke dig som menneske. Jeg tilbyder et trygt og respektfuldt rum, hvor du kan udforske dine følelser, bearbejde svære oplevelser og finde nye måder at leve på."
-        buttonHref="/kontakt"
+        buttonHref="/help"
+        buttonText="Læs mere om hjælp"
         variant="secondary"
       />
   

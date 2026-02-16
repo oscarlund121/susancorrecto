@@ -14,11 +14,11 @@ const SectionSix = () => {
         <div className="grid grid-cols-1 text-max md:grid-cols-2 gap-2 mx-auto">
           <figure className="mt-10 md:mt-0 flex flex-col  justify-center items-center w-full order-2 md:order-1">
             <Image
-              src="/img/about-front.jpg"
+              src="/img/about-susan-correct.jpg"
               alt="Om Susan Image"
               width={500}
-              height={450}
-              className="w-[350px] md:w-[500px] h-auto object-cover"
+              height={600}
+              className="w-[350px] md:w-[500px] aspect-[5/6] object-cover object-bottom"
             />
             <span className="text-white italic font-extralight text-xs mt-2 text-left max-w-[350px] md:max-w-[500px]">
               “Min vision er, sammen med klienten/klienterne at skabe en

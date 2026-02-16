@@ -21,11 +21,11 @@ const Help = ({ title, tags, index = 0 }) => {
                   <GreenBox key={tagIndex} text={tag} />
                 ))}
               </div>
-              <div className="flex justify-end mt-6">
+            {/*   <div className="flex justify-end mt-6">
                 <Link href="/help">
                   <SeeMoreButton variant="inverse" />
                 </Link>
-              </div>
+              </div> */}
             </Accordion.Content>
           </div>
         </Accordion.Item>
