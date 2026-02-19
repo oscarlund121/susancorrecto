@@ -1,17 +1,5 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -51,17 +39,6 @@ body {
   }
 }
 
-@keyframes zoomIn {
-  from {
-    opacity: 0;
-    transform: scale(1.05);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
 @keyframes slideDown {
   from {
     height: 0;
@@ -96,11 +73,6 @@ body {
 
 .animate-fadeInUp {
   animation: fadeInUp 1.2s ease-out forwards;
-  opacity: 0;
-}
-
-.animate-zoomIn {
-  animation: zoomIn 1.5s ease-out forwards;
   opacity: 0;
 }
 
@@ -142,22 +114,6 @@ body {
   margin: 0 auto;
   padding: 0 clamp(16px, 4vw, 20px);
 }
-
-.list-max {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 0 clamp(16px, 4vw, 20px);
-} 
-
-/* Section spacing */
-section {
-  margin-bottom: clamp(60px, 10vw, 100px);
-}
-
-section:last-child {
-  margin-bottom: 0;
-}
-
 
 h1,
 h2, h3 {
@@ -230,89 +186,8 @@ button {
 
 
 
-/* Image with background shape */
-figure.custom {
-  position: relative;
-  display: flex;
-  margin-inline: 0 0 auto auto;
-  max-inline-size: min(400px, 90vw);
-  margin: clamp(2rem, 5vw, 3rem);
-  display: block;
-  margin-left: auto;
-  
-  /* CSS variabler */
-  --bg-color: #D3D9E5;
-  --bg-opacity: 0.8;
-  --offset-x: clamp(-2rem, -5vw, -4rem);
-  --offset-y: clamp(-2rem, -5vw, -4rem);
-}
-
-figure.custom::before {
-  content: '';
-  background: var(--bg-color);
-  opacity: var(--bg-opacity);
-  height: clamp(200px, 50vw, 300px);
-  width: clamp(200px, 45vw, 300px);
-  position: absolute;
-  top: var(--offset-y);  /* Default position */
-  left: var(--offset-x);
-  z-index: 1;
-}
-
-figure.custom img {
-  inline-size: 100%;
-  display: block;
-  position: relative;
-  z-index: 2;
-  object-fit: cover;
-}
-
-/* Position variants */
-.custom--top {
-  top: var(--offset-y);
-  bottom: auto;
-}
-
-.custom--bottom {
-  bottom: var(--offset-y);
-  top: auto;
-}
-
-.custom--bottom::before {
-  bottom: var(--offset-y);
-  top: auto;
-}
-
-/* Color variants */
-.custom--green {
-  --bg-color: #367067;
-}
-
-.custom--blue {
-  --bg-color: #D3D9E5;
-}
-
-/* Offset variants */
-.custom--left {
-  --offset-x: clamp(-2rem, -5vw, -4rem);
-}
-
-.custom--right {
-  --offset-x: clamp(2rem, 5vw, 4rem);
-}
-
-
-
 /* Mobile adjustments */
 @media (max-width: 768px) {
-  figure.custom {
-    margin-inline: auto
-    
-  }
-  
-    figure.custom::before {
-    content: none;
-    }
   h1 {
     line-height: 0.95;
     width: 350px;
@@ -364,15 +239,6 @@ figure.custom img {
   justify-content: space-between;
   border-radius: 8px;
 }
-
-/* Hide scrollbar */
-/* .hs {
-  scrollbar-width: none;
-}
-
-.hs::-webkit-scrollbar {
-  display: none;
-} */
 
 /* Custom scrollbar styling */
 .hs {
