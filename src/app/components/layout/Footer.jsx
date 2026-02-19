@@ -14,7 +14,7 @@ const Footer = () => {
     <footer className="bg-zinc-900 text-white py-16">
       <div className="content-max">
         {/* Top section with navigation and contact */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
           {/* Column 1: Branding */}
           <div className="sm:col-span-2 md:col-span-1">
             <h4 className=" text-white">Susan Albertsen</h4>
@@ -28,27 +28,37 @@ const Footer = () => {
               <li><Link href="/ydelser/emdr" className="hover:underline transition-colors">EMDR</Link></li>
               <li><Link href="/ydelser/essentiel-integrativ-psykoterapi" className="hover:underline transition-colors">Essentiel Integrativ Psykoterapi</Link></li>
               <li><Link href="/ydelser/meditation" className="hover:underline transition-colors">Meditation</Link></li>
-              <li><Link href="/ydelser/familie-par" className="hover:underline transition-colors">Familie- & parterapi</Link></li>
             </ul>
           </div>
 
-          {/* Column 3: Navigation */}
+          {/* Column 3: Hjælp */}
+          <div>
+            <h4 className="font-semibold text-white">Hjælp</h4>
+            <ul className="mt-4 space-y-2 text-sm">
+              <li><Link href="/help/angst-og-folelser" className="hover:underline transition-colors">Angst & Følelser</Link></li>
+              <li><Link href="/help/depression-og-sorg" className="hover:underline transition-colors">Depression & Sorg</Link></li>
+              <li><Link href="/help/eksamensangst" className="hover:underline transition-colors">Eksamensangst</Link></li>
+              <li><Link href="/help/familie-par" className="hover:underline transition-colors">Familie & Par</Link></li>
+            </ul>
+          </div>
+
+          {/* Column 4: Navigation */}
           <div>
             <h4 className="font-semibold text-white">Navigation</h4>
             <ul className="mt-4 space-y-2 text-sm">
-              <li><Link href="/omSusan" className="hover:underline transition-colors">Om Susan</Link></li>
+              <li><Link href="/om-susan" className="hover:underline transition-colors">Om Susan</Link></li>
               <li><Link href="/pricing" className="hover:underline transition-colors">Priser</Link></li>
               <li><Link href="/kontakt" className="hover:underline transition-colors">Kontakt</Link></li>
             </ul>
           </div>
 
-          {/* Column 4: Kontakt */}
+          {/* Column 5: Kontakt */}
           <div>
             <h4 className="font-semibold text-white">Kontakt</h4>
             <ul className="mt-4 space-y-2 text-sm">
               <li>Skolebakken 7 st th, 8000 Aarhus</li>
               <li><a href="mailto:susan@susanterapi.dk" className="hover:underline transition-colors">susan@susanterapi.dk</a></li>
-              <li><a href="tel:+45253925 39" className="hover:underline transition-colors">+45 25 39 25 39</a></li>
+              <li><a href="tel:+4525392539" className="hover:underline transition-colors">+45 25 39 25 39</a></li>
             </ul>
           </div>
         </div>
