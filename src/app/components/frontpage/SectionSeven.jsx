@@ -17,7 +17,7 @@ const SectionSeven = () => {
       <div className="flex flex-col ">
         <div className="flex flex-col md:flex-row items-start justify-around gap-1 mt-16">
           <Help
-            title="Unge & Studerende"
+            title="Unge & studerende"
             tags={[
               "Eksamensangst & studieproblemer",
               "Relationer",
@@ -29,7 +29,7 @@ const SectionSeven = () => {
             index={0}
           />
           <Help
-            title="Stress & Udmattelse"
+            title="Stress & udmattelse"
             tags={[
               "Stress & udbrændthed",
               "Søvnproblemer",
@@ -43,7 +43,7 @@ const SectionSeven = () => {
         </div>
         <div className="flex flex-col md:flex-row items-start justify-around gap-1 mt-0 md:mt-8">
           <Help
-            title="Følelser & Angst"
+            title="Følelser & angst"
             tags={[
               "Angst & fobier",
               "Panikangst & sociale angste",
@@ -55,7 +55,7 @@ const SectionSeven = () => {
             index={2}
           />
           <Help
-            title="Selvværd & Identitet"
+            title="Selvværd & identitet"
             tags={[
               "Lavt selvværd & selvtillid",
               "Følelse af at være forkert",
@@ -69,7 +69,7 @@ const SectionSeven = () => {
         </div>
         <div className="flex flex-col md:flex-row items-start justify-around gap-1 mt-0 md:mt-8">
           <Help
-            title="Relationer & Familie"
+            title="Relationer & familie"
             tags={[
               "Kommunikationsproblemer",
               "Forældrevejledning",
@@ -79,7 +79,7 @@ const SectionSeven = () => {
             index={4}
           />
           <Help
-            title="Traumer & Kriser"
+            title="Traumer & kriser"
             tags={[
               "ADHD & neuropsykiatriske udfordringer",
               "Misbrug & afhængighed",

@@ -13,7 +13,7 @@ const Button = ({
   const buttonStyles = isPrimary
     ? "bg-[#367067] text-white hover:text-[#367067] hover:bg-[#DBE1F8] border-[#367067]"
     : isLight
-      ? "bg-transparent text-[#DBE1F8] hover:text-[#DBE1F8] border-transparent  hover:underline "
+      ? "bg-transparent text-[#DBE1F8] hover:text-[#DBE1F8] border-transparent underline"
       : "bg-[#DBE1F8] text-[#367067] hover:text-white hover:bg-[#367067] hover:border-[#DBE1F8] border-[#367067]";
 
   const circleStyles = isPrimary
