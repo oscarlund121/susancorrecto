@@ -79,10 +79,10 @@ export default function AngstOgFolelser() {
                 tags={helpAreas}
               />
             </div>
-            <div className="flex justify-center items-center">
+            <div className="hidden md:flex justify-center items-center">
               <figure className="">
                 <Image
-                  src="/img/heart.webp"
+                  src="/img/wheat.webp"
                   alt="Angst"
                   width={500}
                   height={300}
@@ -100,10 +100,10 @@ export default function AngstOgFolelser() {
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="flex justify-center items-center order-2 md:order-1">
+            <div className="hidden md:flex justify-center items-center order-2 md:order-1">
               <figure className="">
                 <Image
-                  src="/img/bee.webp"
+                  src="/img/sand.webp"
                   alt="Hvordan mærkes angst"
                   width={500}
                   height={300}
@@ -170,14 +170,14 @@ export default function AngstOgFolelser() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="hidden md:flex justify-center items-center">
               <figure className="">
                 <Image
-                  src="/img/meditation.webp"
+                  src="/img/wheat-2.webp"
                   alt="Behandling af angst"
                   width={500}
                   height={300}
-                  className="w-[450px] h-auto object-cover"
+                  className="w-full h-auto object-cover"
                 />
               </figure>
             </div>

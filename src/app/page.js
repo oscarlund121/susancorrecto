@@ -7,12 +7,14 @@ import SectionFive from "./components/frontpage/SectionFive";
 import SectionSix from "./components/frontpage/SectionSix";
 import SectionSeven from "./components/frontpage/SectionSeven";
 import SectionEight from "./components/frontpage/SectionEight";
+import YoungSection from "./components/frontpage/YoungSection";
 
 export default function Home() {
   return (
     <div>
       <HeroSection />
-      <SectionTwo />
+      <YoungSection />
+      {/* <SectionTwo /> */}
       {/* <SectionThree /> */}
       <Filler title="Vi finder løsningen sammen, skridt for skridt, i dit tempo." />
       <SectionSeven />

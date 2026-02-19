@@ -10,9 +10,10 @@ const HeaderSection = ({
   borderColor = "black", // Ny prop for border farve
 }) => {
   const borderClass = borderColor === "white" ? "border-white" : "border-black";
+  const textClass = borderColor === "white" ? "text-white" : "";
 
   return (
-    <div className={` ${borderClass} pb-0`}>
+    <div className={`${borderClass} ${textClass} pb-0`}>
       <div className="content-max">
         <div className="md:px-[20px] lg:px-[60px]">
         <div className="flex justify-between md:flex-row flex-col items-end">

@@ -83,7 +83,7 @@ export default function FamiliePar() {
                   </div>
                 </div>
               </div>
-              <div className="flex justify-center items-center">
+              <div className="hidden md:flex justify-center items-center">
                 <figure className="">
                   <Image
                     src="/img/heart.webp"

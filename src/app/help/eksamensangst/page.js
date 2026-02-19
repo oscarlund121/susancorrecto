@@ -76,10 +76,10 @@ export default function Eksamensangst() {
                 tags={helpAreas}
               />
             </div>
-            <div className="flex justify-center items-center">
+            <div className="hidden md:flex justify-center items-center">
               <figure className="">
                 <Image
-                  src="/img/meditation.webp"
+                  src="/img/bee.webp"
                   alt="Eksamensangst"
                   width={500}
                   height={300}
@@ -97,7 +97,7 @@ export default function Eksamensangst() {
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="flex justify-center items-center order-2 md:order-1">
+            <div className="hidden md:flex justify-center items-center order-2 md:order-1">
               <figure className="">
                 <Image
                   src="/img/purple-flower.webp"
@@ -148,7 +148,7 @@ export default function Eksamensangst() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="hidden md:flex justify-center items-center">
               <figure className="">
                 <Image
                   src="/img/heart.webp"

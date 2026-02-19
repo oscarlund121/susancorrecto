@@ -72,7 +72,7 @@ export default function EMDR() {
                 tags={helpAreas}
               />
             </div>
-           <div className="flex justify-center items-center">
+           <div className="hidden md:flex justify-center items-center">
               <figure className="">
                 <Image
                   src="/img/emdr-1.webp"

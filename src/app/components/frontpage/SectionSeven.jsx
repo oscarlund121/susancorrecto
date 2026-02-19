@@ -1,16 +1,12 @@
 "use client";
 import HeaderSection from "../layout/FrontpageHeaderSection";
 import Help from "../layout/Help";
-import SectionLabel from "../ui/SectionLabel";
+
 
 const SectionSeven = () => {
   return (
     <div className="py-16 md:py-24 lg:py-32 bg-white">
-      <div className="content-max">
-        <div className="md:px-[20px] lg:px-[60px] mb-4 md:mb-10">
-          <SectionLabel>Fokusområder</SectionLabel>
-        </div>
-      </div>
+  
       <HeaderSection
         title="Hjælp til angst, stress, lavt selvværd og relationelle udfordringer."
         text="Psykoterapi handler ikke kun om at fjerne symptomer, men om at styrke dig som menneske. Jeg tilbyder et trygt og respektfuldt rum, hvor du kan udforske dine følelser, bearbejde svære oplevelser og finde nye måder at leve på."

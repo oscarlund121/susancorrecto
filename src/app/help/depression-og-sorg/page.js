@@ -82,7 +82,7 @@ export default function DepressionOgSorg() {
                 tags={helpAreas}
               />
             </div>
-            <div className="flex justify-center items-center">
+            <div className="hidden md:flex justify-center items-center">
               <figure className="">
                 <Image
                   src="/img/meditation.webp"
@@ -103,7 +103,7 @@ export default function DepressionOgSorg() {
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="flex justify-center items-center order-2 md:order-1">
+            <div className="hidden md:flex justify-center items-center order-2 md:order-1">
               <figure className="">
                 <Image
                   src="/img/purple-flower.webp"
@@ -165,7 +165,7 @@ export default function DepressionOgSorg() {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center items-center">
+            <div className="hidden md:flex justify-center items-center">
               <figure className="">
                 <Image
                   src="/img/many-flowers.webp"

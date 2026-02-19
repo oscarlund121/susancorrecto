@@ -13,7 +13,7 @@ const CTAContent = ({
     <div className="bg-[#367067] py-16 md:py-24 lg:py-32 text-white">
       <div className="content-max">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          <div className="flex justify-center items-center order-2 md:order-1">
+          <div className="hidden md:flex justify-center items-center order-2 md:order-1">
             <figure>
               <Image
                 src={imageSrc}
