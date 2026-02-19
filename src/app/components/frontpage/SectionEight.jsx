@@ -49,7 +49,7 @@ const SectionEight = () => {
     <div className="app relative min-h-screen py-16 md:py-24 lg:py-32">
       {/* Background image */}
       <Image
-        src="/img/many-flowers.jpg"
+        src="/img/many-flowers.webp"
         alt="testimonial background"
         width={1920}
         height={1080}

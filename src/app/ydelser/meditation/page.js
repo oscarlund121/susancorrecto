@@ -12,7 +12,7 @@ export const metadata = {
     title: 'Meditation og Dyb Afslapning | Susan Albertsen',
     description: 'Lær meditation og dyb afslapning. Reducer stress og skab indre ro.',
     url: 'https://www.psykoterapisusan.dk/ydelser/meditation',
-    images: [{ url: '/img/meditation.jpg', width: 1200, height: 630, alt: 'Meditation hos Susan Albertsen' }],
+    images: [{ url: '/img/meditation.webp', width: 1200, height: 630, alt: 'Meditation hos Susan Albertsen' }],
   },
   twitter: {
     title: 'Meditation og Dyb Afslapning',
@@ -81,7 +81,7 @@ export default function Meditation() {
               <div className="flex justify-center items-center">
                 <figure className="">
                   <Image
-                    src="/img/meditation.jpg"
+                    src="/img/meditation.webp"
                     alt="Beskrivelse af billedet"
                     width={500}
                     height={300}

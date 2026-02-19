@@ -62,7 +62,7 @@ export const metadata = {
     type: 'website',
     images: [
       {
-        url: '/img/about-front.jpg',
+        url: '/img/about-front.webp',
         width: 1200,
         height: 630,
         alt: 'Psykoterapeut Susan Albertsen',
@@ -73,7 +73,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'Psykoterapeut Susan Albertsen | Psykoterapi i Aarhus',
     description: 'Professionel psykoterapi i Aarhus. Få hjælp til angst, stress, traumer og relationer.',
-    images: ['/img/about-front.jpg'],
+    images: ['/img/about-front.webp'],
   },
   robots: {
     index: true,

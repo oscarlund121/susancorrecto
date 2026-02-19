@@ -8,7 +8,7 @@ const HeroSection = () => {
     <div className="relative section min-h-screen pb-16 lg:pb-16 md:pb-8 sm:pb-4">
       {/* Background image */}
       <Image
-        src="/img/hero-img-blue-bright.jpg"
+        src="/img/hero-img-blue-bright.webp"
         alt="Hero background"
         width={1920}
         height={1080}

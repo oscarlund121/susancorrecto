@@ -12,7 +12,7 @@ export const metadata = {
     title: 'Psykoterapi | Susan Albertsen',
     description: 'Helhedsorienteret psykoterapi der kombinerer flere terapeutiske metoder.',
     url: 'https://www.psykoterapisusan.dk/ydelser/essentiel-integrativ-psykoterapi',
-    images: [{ url: '/img/bee.jpg', width: 1200, height: 630, alt: 'Integrativ psykoterapi' }],
+    images: [{ url: '/img/bee.webp', width: 1200, height: 630, alt: 'Integrativ psykoterapi' }],
   },
   twitter: {
     title: 'Psykoterapi',
@@ -85,7 +85,7 @@ export default function Essentiel() {
             <div className="flex justify-center items-center">
               <figure className="">
                 <Image
-                  src="/img/bee.jpg"
+                  src="/img/bee.webp"
                   alt="Beskrivelse af billedet"
                   width={500}
                   height={300}

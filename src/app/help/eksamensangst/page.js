@@ -79,7 +79,7 @@ export default function Eksamensangst() {
             <div className="flex justify-center items-center">
               <figure className="">
                 <Image
-                  src="/img/meditation.jpg"
+                  src="/img/meditation.webp"
                   alt="Eksamensangst"
                   width={500}
                   height={300}
@@ -100,7 +100,7 @@ export default function Eksamensangst() {
             <div className="flex justify-center items-center order-2 md:order-1">
               <figure className="">
                 <Image
-                  src="/img/purple-flower.jpg"
+                  src="/img/purple-flower.webp"
                   alt="Behandling af eksamensangst"
                   width={500}
                   height={300}
@@ -151,7 +151,7 @@ export default function Eksamensangst() {
             <div className="flex justify-center items-center">
               <figure className="">
                 <Image
-                  src="/img/heart.jpg"
+                  src="/img/heart.webp"
                   alt="Bryd mønstret"
                   width={500}
                   height={300}

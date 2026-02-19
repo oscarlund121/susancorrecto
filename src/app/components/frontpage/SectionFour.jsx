@@ -96,7 +96,7 @@ const SectionFour = () => {
 
           {/*     <figure className="custom order-2 ">
             <Image
-              src="/img/determind.jpg"
+              src="/img/determind.webp"
               alt="Hero background"
               width={315}
               height={450}

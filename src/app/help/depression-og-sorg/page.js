@@ -13,7 +13,7 @@ export const metadata = {
     title: 'Behandling af Depression og Sorg | Susan Albertsen',
     description: 'Få professionel hjælp til depression, sorg og tab hos psykoterapeut Susan Albertsen.',
     url: 'https://www.psykoterapisusan.dk/help/depression-og-sorg',
-    images: [{ url: '/img/purple-flower.jpg', width: 1200, height: 630, alt: 'Behandling af depression og sorg hos Susan Albertsen' }],
+    images: [{ url: '/img/purple-flower.webp', width: 1200, height: 630, alt: 'Behandling af depression og sorg hos Susan Albertsen' }],
   },
   twitter: {
     title: 'Behandling af Depression og Sorg',
@@ -85,7 +85,7 @@ export default function DepressionOgSorg() {
             <div className="flex justify-center items-center">
               <figure className="">
                 <Image
-                  src="/img/meditation.jpg"
+                  src="/img/meditation.webp"
                   alt="Depression"
                   width={500}
                   height={300}
@@ -106,7 +106,7 @@ export default function DepressionOgSorg() {
             <div className="flex justify-center items-center order-2 md:order-1">
               <figure className="">
                 <Image
-                  src="/img/purple-flower.jpg"
+                  src="/img/purple-flower.webp"
                   alt="Sorg"
                   width={500}
                   height={300}
@@ -168,7 +168,7 @@ export default function DepressionOgSorg() {
             <div className="flex justify-center items-center">
               <figure className="">
                 <Image
-                  src="/img/many-flowers.jpg"
+                  src="/img/many-flowers.webp"
                   alt="Terapi for depression og sorg"
                   width={500}
                   height={300}

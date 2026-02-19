@@ -8,7 +8,7 @@ const SectionFive = () => {
     <div className="relative section  pb-16 ">
       {/* Background image */}
       <Image
-        src="/img/wheat-2.jpg"
+        src="/img/wheat-2.webp"
         alt="Hero background"
         width={1512}
         height={450}

@@ -14,7 +14,7 @@ const SectionSix = () => {
         <div className="grid grid-cols-1 text-max md:grid-cols-2 gap-2 mx-auto">
           <figure className="mt-10 md:mt-0 flex flex-col  justify-center items-center w-full order-2 md:order-1">
             <Image
-              src="/img/about-susan-correct.jpg"
+              src="/img/about-susan-correct.webp"
               alt="Om Susan Image"
               width={500}
               height={600}

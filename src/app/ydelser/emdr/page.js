@@ -12,7 +12,7 @@ export const metadata = {
     title: 'EMDR-terapi - Traumebehandling | Susan Albertsen',
     description: 'EMDR-terapi til behandling af traumer og PTSD. WHO-anbefalet metode.',
     url: 'https://www.psykoterapisusan.dk/ydelser/emdr',
-    images: [{ url: '/img/emdr-1.jpg', width: 1200, height: 630, alt: 'EMDR-terapi hos Susan Albertsen' }],
+    images: [{ url: '/img/emdr-1.webp', width: 1200, height: 630, alt: 'EMDR-terapi hos Susan Albertsen' }],
   },
   twitter: {
     title: 'EMDR-terapi - Traumebehandling',
@@ -75,7 +75,7 @@ export default function EMDR() {
            <div className="flex justify-center items-center">
               <figure className="">
                 <Image
-                  src="/img/emdr-1.jpg"
+                  src="/img/emdr-1.webp"
                   alt="Beskrivelse af billedet"
                   width={500}
                   height={300}

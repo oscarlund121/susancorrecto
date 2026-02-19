@@ -12,7 +12,7 @@ export const metadata = {
     title: 'Om Susan Albertsen | Psykoterapeut i Aarhus',
     description: 'Mød psykoterapeut Susan Albertsen. Uddannet fra Essentiel Integrativ Essens med over 20 års erfaring.',
     url: 'https://www.psykoterapisusan.dk/om-susan',
-    images: [{ url: '/img/about-front.jpg', width: 1200, height: 630, alt: 'Susan Albertsen - Psykoterapeut' }],
+    images: [{ url: '/img/about-front.webp', width: 1200, height: 630, alt: 'Susan Albertsen - Psykoterapeut' }],
   },
   twitter: {
     title: 'Om Susan Albertsen | Psykoterapeut',
@@ -65,7 +65,7 @@ export default function OmSusan() {
             <div>
               <figure className="mb-8">
                 <Image
-                  src="/img/about-front.jpg"
+                  src="/img/about-front.webp"
                   alt="Susan Albertsen"
                   width={500}
                   height={450}

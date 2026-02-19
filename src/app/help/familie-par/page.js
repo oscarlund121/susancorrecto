@@ -13,7 +13,7 @@ export const metadata = {
     title: 'Par- og Familieterapi | Susan Albertsen',
     description: 'Parterapi og familieterapi i Aarhus. Hjælp til relationer og kommunikation.',
     url: 'https://www.psykoterapisusan.dk/help/familie-par',
-    images: [{ url: '/img/heart.jpg', width: 1200, height: 630, alt: 'Par- og familieterapi' }],
+    images: [{ url: '/img/heart.webp', width: 1200, height: 630, alt: 'Par- og familieterapi' }],
   },
   twitter: {
     title: 'Par- og Familieterapi',
@@ -86,7 +86,7 @@ export default function FamiliePar() {
               <div className="flex justify-center items-center">
                 <figure className="">
                   <Image
-                    src="/img/heart.jpg"
+                    src="/img/heart.webp"
                     alt="Beskrivelse af billedet"
                     width={500}
                     height={300}

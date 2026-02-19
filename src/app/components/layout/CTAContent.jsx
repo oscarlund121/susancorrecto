@@ -6,7 +6,7 @@ const CTAContent = ({
   subtitle = "Sådan foregår et forløb",
   description = "Vi starter altid med en indledende samtale, hvor vi afklarer, hvad der fylder mest for dig, og hvordan du ønsker, at dit liv skal se ud fremover. Derefter arbejder vi struktureret med de områder, hvor du ønsker forandring.",
   ctaText = "Kontakt mig for en uforpligtende samtale om, hvordan jeg kan hjælpe dig med at finde ro og balance i dit liv.",
-  imageSrc = "/img/determind.jpg",
+  imageSrc = "/img/determind.webp",
   imageAlt = "Kontakt",
 }) => {
   return (

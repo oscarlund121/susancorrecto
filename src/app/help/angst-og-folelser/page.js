@@ -13,7 +13,7 @@ export const metadata = {
     title: 'Behandling af Angst og Følelser | Susan Albertsen',
     description: 'Få professionel hjælp til angst, panikangst og fobier hos psykoterapeut Susan Albertsen.',
     url: 'https://www.psykoterapisusan.dk/help/angst-og-folelser',
-    images: [{ url: '/img/heart.jpg', width: 1200, height: 630, alt: 'Angstbehandling hos Susan Albertsen' }],
+    images: [{ url: '/img/heart.webp', width: 1200, height: 630, alt: 'Angstbehandling hos Susan Albertsen' }],
   },
   twitter: {
     title: 'Behandling af Angst og Følelser',
@@ -82,7 +82,7 @@ export default function AngstOgFolelser() {
             <div className="flex justify-center items-center">
               <figure className="">
                 <Image
-                  src="/img/heart.jpg"
+                  src="/img/heart.webp"
                   alt="Angst"
                   width={500}
                   height={300}
@@ -103,7 +103,7 @@ export default function AngstOgFolelser() {
             <div className="flex justify-center items-center order-2 md:order-1">
               <figure className="">
                 <Image
-                  src="/img/bee.jpg"
+                  src="/img/bee.webp"
                   alt="Hvordan mærkes angst"
                   width={500}
                   height={300}
@@ -173,7 +173,7 @@ export default function AngstOgFolelser() {
             <div className="flex justify-center items-center">
               <figure className="">
                 <Image
-                  src="/img/meditation.jpg"
+                  src="/img/meditation.webp"
                   alt="Behandling af angst"
                   width={500}
                   height={300}
