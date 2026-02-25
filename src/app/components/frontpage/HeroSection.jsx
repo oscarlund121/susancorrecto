@@ -5,18 +5,18 @@ import Button from "../ui/Button";
 
 const HeroSection = () => {
   return (
-    <div className="relative section min-h-screen pb-16 lg:pb-16 md:pb-8 sm:pb-4">
+    <div className="relative section h-[95vh] pb-16 lg:pb-16 md:pb-8 sm:pb-4 flex flex-col">
       {/* Background image */}
       <Image
-        src="/img/hero-img-blue-bright.webp"
+        src="/img/hero-img-new.webp"
         alt="Hero background"
         width={1920}
         height={1080}
-        className="absolute w-full h-full object-cover object-[72%_center]"
+        className="absolute w-full h-full object-cover "
       />
 
-      {/* Black overlay with 60% opacity */}
-      <div className="absolute inset-0 bg-black/10 z-10"></div>
+      {/* Dark overlay — gradient from left for text contrast */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/10 z-10" />
 
       {/* Navigation on top */}
       <div className="relative z-50">
@@ -24,27 +24,30 @@ const HeroSection = () => {
       </div>
 
       {/* Hero content */}
-        <div className="relative z-20 flex items-start min-h-[75vh] sm:min-h-[70vh] content-max sm:pt-12 pt-0">
-        <div className=" text-white ">
-          {/* Add your hero content here */}
-          <h1 className="mb-0 md:mb-4 text-hero-max text-left animate-fadeInUp">
-            Terapi der giver dig frihed til at leve fuldt ud
+      <div className="relative z-20 flex-1 flex items-end md:items-start mt-8 px-8 md:px-16 lg:px-24">
+        <div className="flex flex-col text-white text-left">
+
+
+          {/* H1 — emotionel hook med typografisk rytme */}
+          <h1 className="mb-0 text-left [text-shadow:0_2px_20px_rgba(0,0,0,0.3),0_4px_40px_rgba(0,0,0,0.15)] opacity-0 animate-fade-in-up">
+            Find indre <span className="text-[#F38A5D]">ro</span> <br />
+            og 
+            <span className="text-[#F38A5D]"> overskud</span> 
           </h1>
-        </div>
-      </div>
 
-      <div className="absolute bottom-0 left-0 right-0 z-20 bg-transparent sm:bg-[#3670674D]/70 sm:border-t-[#367067] border-t-0 sm:border-t-2 px-4 py-8 md:py-4 animate-slideInLeft w-full">
-        {/* Content inside box DOES have max-width constraint */}
-        <div className="text-white flex flex-col items-center md:items-end content-max"> 
-          <div className="w-full md:w-lg lg:w-xl">
-          <p className="md:text-max">
-           At tage skridtet eller være midt i forandring, kan både føles spændende og udfordrende. Jeg støtter dig i at håndtere pres, usikkerhed og fastlåste mønstre, så du kan finde indre ro, fokus og overskud, og opleve mere glæde og trivsel i hverdagen.
-
+          {/* Subheader — beroligende undertekst */}
+          <p className="mt-6 md:mt-8 text-white/80 font-light max-w-md md:max-w-lg text-base md:text-lg leading-relaxed opacity-0 animate-fade-in-up" style={{ animationDelay: "600ms", animationFillMode: "forwards" }}>
+            Jeg støtter dig i at håndtere pres, usikkerhed og fastlåste mønstre
+            — så du kan opleve mere glæde og trivsel i hverdagen.
           </p>
+
+          {/* CTA — tydelig handling */}
+          <div className="mt-8 md:mt-10 opacity-0 animate-fade-in-up" style={{ animationDelay: "800ms", animationFillMode: "forwards" }}>
+            <Button variant="primary" href="/kontakt">
+              Book en samtale
+            </Button>
           </div>
-         {/*  <div className="sm:mt-0 my-4">
-            <Button variant="secondary" />
-          </div> */}
+
         </div>
       </div>
     </div>

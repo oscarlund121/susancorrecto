@@ -2,6 +2,7 @@ import { Geist, Geist_Mono, Open_Sans, Fraunces, Prata, Domine, Source_Serif_4 }
 import "./globals.css";
 import Navigation from "./components/layout/Navigation";
 import Footer from "./components/layout/Footer";
+import CollapsibleForm from "./components/ui/CollapsibleForm";
 
 
 
@@ -101,6 +102,7 @@ export default function RootLayout({ children }) {
   
   {children}
   <Footer />
+  <CollapsibleForm />
       </body>
     </html>
   );

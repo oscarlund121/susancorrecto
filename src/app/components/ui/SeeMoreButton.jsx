@@ -1,48 +1,49 @@
 "use client";
 
-const SeeMoreButton = ({ 
-  children = "Læs mere", 
-  variant = "light" 
-}) => {
+import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
-  const isLight = variant === "light";
+const variants = {
+  orange: {
+    wrapper: "bg-[#F38A5D] hover:bg-[#e07a4f] pl-4 pr-1.5 py-1.5 rounded-full border-2 border-[#F38A5D] hover:border-[#e07a4f]",
+    text: "text-white",
+    circle: "bg-white/20 group-hover/btn:bg-white/30",
+    icon: "text-white",
+  },
+  inverse: {
+    wrapper: "",
+    text: "text-[#367067] group-hover/btn:text-white",
+    circle: "bg-[#367067] group-hover/btn:bg-[#DBE1F8]",
+    icon: "text-[#DBE1F8] group-hover/btn:text-[#367067]",
+  },
+  light: {
+    wrapper: "bg-[#367067] hover:bg-[#DBE1F8] pl-3 pr-1.5 py-1 rounded-full",
+    text: "text-white group-hover/btn:text-[#367067]",
+    circle: "bg-[#DBE1F8] group-hover/btn:bg-[#367067]",
+    icon: "text-[#367067] group-hover/btn:text-[#DBE1F8]",
+  },
+};
 
-  return (
-    <button className={`group flex items-center gap-2 sm:gap-3 hover:gap-4 transition-all duration-200 ${isLight ? "hover:bg-[#DBE1F8]" : "hover:bg-[#367067]"} pl-3 pr-2 py-1 rounded-full`}>
-      <span
-        className={`text-sm sm:text-lg lg:text-xl font-light transition-colors ${
-          isLight ? "text-white group-hover:text-[#367067]" : "text-[#367067] group-hover:text-white"
-        }`}
-      >
-        {children}
+const SeeMoreButton = ({ children, variant = "light", href, className = "" }) => {
+  const v = variants[variant] || variants.light;
+
+  const content = (
+    <>
+      {children && (
+        <span className={`text-md font-light transition-colors ${v.text}`}>
+          {children}
+        </span>
+      )}
+      <span className={`w-7 h-7 sm:w-8 sm:h-8 rounded-full flex items-center justify-center overflow-hidden transition-colors duration-300 ${v.circle}`}>
+        <FaArrowRight className={`text-xs sm:text-sm transition-colors duration-300 group-hover/btn:animate-[arrow-slide_0.5s_ease-in-out] ${v.icon}`} />
       </span>
-
-      <div
-        className={`w-6 h-6 sm:w-7 sm:h-7 lg:w-8 lg:h-8 rounded-full flex items-center justify-center transition-all duration-200 ${
-          isLight
-            ? "bg-[#DBE1F8] group-hover:bg-[#367067]"
-            : "bg-[#367067] group-hover:bg-[#DBE1F8]"
-        }`}
-      >
-        <svg 
-          className="w-2.5 h-2.5 sm:w-3 sm:h-3 lg:w-3.5 lg:h-3.5" 
-          viewBox="0 0 12 12" 
-          fill="none"
-        >
-          <path
-            d="M2 6H10M10 6L6 2M10 6L6 10"
-            className={isLight 
-              ? "stroke-[#367067] group-hover:stroke-[#DBE1F8] transition-colors" 
-              : "stroke-white group-hover:stroke-[#367067] transition-colors"
-            }
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          />
-        </svg>
-      </div>
-    </button>
+    </>
   );
+
+  const classes = `group/btn inline-flex items-center justify-center gap-2 sm:gap-3 transition-all duration-200 ${v.wrapper} ${className}`;
+
+  if (href) return <Link href={href} className={classes}>{content}</Link>;
+  return <span className={classes} aria-hidden="true">{content}</span>;
 };
 
 export default SeeMoreButton;

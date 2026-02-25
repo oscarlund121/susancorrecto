@@ -1,9 +1,10 @@
-import HeaderSection from "@/app/components/layout/FrontpageHeaderSection";
 import Navigation from "../../components/layout/Navigation";
 import Image from "next/image";
-import Help from "../../components/layout/UnderHelp";
-import CTAContent from "../../components/layout/CTAContent";
-import BackToHelp from "../../components/ui/BackToHelp";
+import HelpPageHeader from "../../components/layout/HelpPageHeader";
+import HelpPageCTA from "../../components/layout/HelpPageCTA";
+import HelpGreenBox from "../../components/ui/HelpGreenBox";
+import OrangeBulletList from "../../components/ui/OrangeBulletList";
+import SerifHeading from "../../components/ui/SerifHeading";
 
 export const metadata = {
   title: 'Behandling af Depression og Sorg',
@@ -24,164 +25,116 @@ export const metadata = {
   },
 };
 
-const helpAreas = [
-  "Depression & tristhed",
-  "Sorg & tab",
-  "Livskriser",
-  "Udmattelse & stress",
-  "Tomhed & meningsløshed",
-  "Uforløste følelser"
-];
-
 export default function DepressionOgSorg() {
   return (
     <div>
       <div className="relative z-50">
         <Navigation />
       </div>
-      <div className="bg-[#DBE1F8]/50 md:py-16 py-8 ">
-        <div className="mb-8">
-          <HeaderSection
-            title="Depression & sorg"
-            text="Depression og sorg kan føles overvældende og ensomt – men du behøver ikke bære det alene. Hos mig kan du få professionel hjælp til at forstå og bearbejde dine følelser i et trygt og nænsomt rum."
-            buttonHref="/kontakt"
-            variant={false}
-            borderColor="black"
-          />
-        </div>
-      </div>
 
-      <div className="pt-8 md:pt-12">
-        <BackToHelp />
-      </div>
-      
-      {/* Depression sektion */}
-      <div className="bg-white pb-12 md:pb-24 lg:pb-32 pt-4 md:pt-8">
+      {/* Header */}
+      <HelpPageHeader
+        title="Depression &"
+        accentWord="sorg"
+        text="Depression og sorg kan føles overvældende og ensomt – men du behøver ikke bære det alene. Hos mig kan du få professionel hjælp til at forstå og bearbejde dine følelser i et trygt og nænsomt rum."
+      />
+
+      {/* Hovedindhold */}
+      <div className="bg-white py-12 md:py-16 lg:py-24">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 pt-2 md:pt-4">
               <div>
-                <div className="border-b-1 border-black">
+                <div className="mb-6 border-b-2 border-black">
                   <h3>Depression – når livet føles tungt</h3>
                 </div>
-                <div className="w-full max-w-xl mt-6 space-y-4">
-                  <p>
-                    Der kan være mange grunde til, at man oplever depression. Det kan være, at man over længere tid har været presset på flere områder af livet, eller at man gentagne gange har ladet sig blive overhørt eller ikke fået sagt fra, så de uforløste følelser hober sig op. Ofte bærer man også rundt på gamle oplevelser eller traumer, som har sat sig dybe spor, og som psyken til sidst ikke kan ignorere.
-                  </p>
-                  <p>
-                    Depression kan vise sig som tristhed, tomhed, manglende energi, tab af interesse for ting man ellers holder af, søvn- eller appetitforstyrrelser og negative tankemønstre. For nogle kan det føles, som om livet har mistet mening, og dagene kører af sted uden retning eller glæde.
-                  </p>
-                  <p>
-                    Jeg støtter dig i at forstå, hvad der ligger bag de depressive følelser, og hjælper dig med at bearbejde uforløste oplevelser. Sammen finder vi små, konkrete skridt mod mere overskud, indre ro og mening i hverdagen – altid i dit tempo og der, hvor du er.
-                  </p>
-                </div>
-              </div>
-              <Help
-                title="Hvornår kan jeg hjælpe?"
-                tags={helpAreas}
-              />
-            </div>
-            <div className="hidden md:flex justify-center items-center">
-              <figure className="">
-                <Image
-                  src="/img/meditation.webp"
-                  alt="Depression"
-                  width={500}
-                  height={300}
-                  className="w-[450px] h-auto object-cover"
-                />
-              </figure>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
+                <p>
+                  Der kan være mange grunde til, at man oplever depression. Det kan være, at man over længere tid har været presset på flere områder af livet, eller at man gentagne gange har ladet sig blive overhørt eller ikke fået sagt fra, så de uforløste følelser hober sig op.
+                </p>
+                <p className="mt-4">
+                  Depression kan vise sig som tristhed, tomhed, manglende energi, tab af interesse for ting man ellers holder af, søvn- eller appetitforstyrrelser og negative tankemønstre. For nogle kan det føles, som om livet har mistet mening.
+                </p>
 
-      {/* Sorg sektion */}
-      <div className="bg-[#367067] py-16 md:py-24 lg:py-32 text-white">
-        <div className="content-max">
-          <div className="md:px-[20px] lg:px-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="hidden md:flex justify-center items-center order-2 md:order-1">
-              <figure className="">
-                <Image
-                  src="/img/purple-flower.webp"
-                  alt="Sorg"
-                  width={500}
-                  height={300}
-                  className="w-[450px] h-auto object-cover"
-                />
-              </figure>
-            </div>
-            <div className="order-1 md:order-2">
-              <div className="pb-8">
-                <div className="mb-6 border-b-2 border-white">
-                  <h3>Sorg – en naturlig reaktion på tab</h3>
-                </div>
-                <div className="w-full max-w-xl space-y-4">
-                  <p>
-                    Sorg er en naturlig og nødvendig reaktion, når vi mister noget eller nogen, der har betydning i vores liv. Det kan være tab af en elsket, et forhold, et job, helbred eller en vigtig livssituation.
+                <SerifHeading before="Hvordan" accent="mærkes" after="depression?" />
+                <p>
+                  Mange oplever vedvarende tristhed, tomhed eller en følelse af at være afkoblet fra sig selv og andre. Der kan være søvnforstyrrelser, appetitændringer, koncentrationsbesvær og en dyb træthed, som hvile ikke kan løsne op for.
+                </p>
+
+                <blockquote className="border-l-4 border-[#F38A5D] pl-6 my-8 py-2">
+                  <p className="text-lg md:text-xl italic text-[#367067] leading-relaxed">
+                    &quot;Depression har ofte rod i uforløste oplevelser, som psyken til sidst ikke kan bære alene. Når følelserne får plads, kan kroppen og sindet begynde at finde tilbage til balance.&quot;
                   </p>
-                  <p>
-                    Men sorg kan også opstå efter andre typer af tab: en skilsmisse, et nært venskab, dit barn flytter hjemmefra, tab af egen identitet, tab af job eller ændringer i helbredet i forbindelse med sygdom.
-                  </p>
-                  <p>
-                    Fælles for alle disse tab er, at noget i dit liv aldrig bliver det samme igen. Sorg kan vise sig på mange måder: tristhed, tomhed, savn, vrede, skyldfølelse, fysisk udmattelse eller søvn- og appetitforstyrrelser. Det er normalt, at sorgen kommer i bølger, med både stærke følelser og perioder med tomhed eller apati.
-                  </p>
-                  <p>
-                    Jeg tilbyder støtte til at navigere i sorgen, bearbejde følelserne og finde måder at leve videre på, uden at miste kontakten til det, du har mistet. Sammen skaber vi et trygt rum, hvor du kan mærke, udtrykke og forstå dine følelser.
-                  </p>
-                </div>
+                </blockquote>
+
+                <SerifHeading before="Hvad er" accent="sorg" after="?" />
+                <p>
+                  Sorg er en naturlig og nødvendig reaktion, når vi mister noget eller nogen, der har betydning i vores liv. Det kan være tab af en elsket, et forhold, et job, helbred eller en vigtig livssituation. Sorg kan også opstå efter en skilsmisse, et nært venskab der ender, eller ændringer i helbredet.
+                </p>
+                <p className="mt-4">
+                  Fælles for alle disse tab er, at noget i dit liv aldrig bliver det samme igen. Sorgen kommer i bølger – med både stærke følelser og perioder med tomhed eller apati.
+                </p>
+              </div>
+
+              <div>
+                <figure className="mb-8">
+                  <Image
+                    src="/img/purple-flower.webp"
+                    alt="Depression og sorg behandling hos Susan Albertsen"
+                    width={500}
+                    height={450}
+                    className="w-full h-auto object-cover rounded-[32px]"
+                  />
+                </figure>
               </div>
             </div>
-          </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Hvordan kan terapi hjælpe */}
-      <div className="bg-white py-12 md:py-24 lg:py-32">
-        <div className="content-max">
-          <div className="md:px-[20px] lg:px-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="pb-8">
-                <div className="border-b-1 border-black">
+            {/* Terapi + grøn boks — centreret */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center mt-20">
+              <div>
+                <HelpGreenBox
+                  title="Hvornår kan jeg hjælpe?"
+                  items={[
+                    "Depression & tristhed",
+                    "Sorg & tab",
+                    "Livskriser",
+                    "Udmattelse & stress",
+                    "Tomhed & meningsløshed",
+                    "Uforløste følelser",
+                  ]}
+                />
+              </div>
+
+              <div>
+                <div className="border-b-2 border-black mb-6">
                   <h3>Hvordan kan terapi hjælpe?</h3>
                 </div>
-                <div className="w-full max-w-xl mt-6 space-y-4">
+                <div className="space-y-6">
                   <p>
                     Gennem psykoterapi, chok-forløsning og meditation arbejder vi med de underliggende årsager til depression og sorg. Sammen kan vi:
                   </p>
-                  <ul className="list-disc ml-6 space-y-1">
-                    <li>Forstå og bearbejde uforløste følelser og oplevelser</li>
-                    <li>Genskabe kontakten til dig selv og dine behov</li>
-                    <li>Finde små, konkrete skridt mod mere overskud og mening</li>
-                  </ul>
+                  <OrangeBulletList
+                    items={[
+                      "Forstå og bearbejde uforløste følelser og oplevelser",
+                      "Genskabe kontakten til dig selv og dine behov",
+                      "Finde små, konkrete skridt mod mere overskud og mening",
+                    ]}
+                  />
                   <p>
                     Du behøver ikke have alle svarene på forhånd. Vi starter der, hvor du er – og arbejder i dit tempo mod mere indre ro, lethed og livskvalitet.
+                  </p>
+                  <p className="font-medium">
+                    Jeg støtter dig i at finde vejen – i dit eget tempo.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="hidden md:flex justify-center items-center">
-              <figure className="">
-                <Image
-                  src="/img/many-flowers.webp"
-                  alt="Terapi for depression og sorg"
-                  width={500}
-                  height={300}
-                  className="w-[450px] h-auto object-cover"
-                />
-              </figure>
-            </div>
-          </div>
           </div>
         </div>
       </div>
 
-      <CTAContent
+      {/* Bottom CTA */}
+      <HelpPageCTA
+        text="Du behøver ikke have alle svarene på forhånd. Kontakt mig for en uforpligtende samtale om, hvordan terapi kan hjælpe dig med at finde ro og mening igen."
       />
     </div>
   );

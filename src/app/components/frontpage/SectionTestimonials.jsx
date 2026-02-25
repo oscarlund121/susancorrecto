@@ -1,5 +1,4 @@
 import Testimonials from "../layout/Testimonials";
-import Image from "next/image";
 
 const testimonialData = [
   {
@@ -44,30 +43,20 @@ const testimonialData = [
   },
 ];
 
-const SectionEight = () => {
+const SectionTestimonials = () => {
   return (
-    <div className="app relative min-h-screen py-16 md:py-24 lg:py-32">
-      {/* Background image */}
-      <Image
-        src="/img/many-flowers.webp"
-        alt="testimonial background"
-        width={1920}
-        height={1080}
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-black/50 z-10"></div>
+    <div className="bg-[#DBE1F8] ">
+      {/* Header */}
+      <h3 className="text-black text-center mb-12 md:mb-16">
+        Det siger mine klienter
+      </h3>
 
-      {/* Header - stays in content area */}
-      <h2 className="relative z-20 text-white text-center mb-4">
-        Det siger mine klienter:
-      </h2>
-
-      {/* Testimonials - full width with .full class */}
-      <div className="full relative z-20">
+      {/* Testimonials - full width scroll */}
+      <div className="full">
         <Testimonials testimonials={testimonialData} />
       </div>
     </div>
   );
 };
 
-export default SectionEight;
+export default SectionTestimonials;

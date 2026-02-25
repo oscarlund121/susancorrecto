@@ -1,65 +1,52 @@
 "use client";
 
 import Navigation from '../components/layout/Navigation';
-import HeaderSection from '../components/layout/FrontpageHeaderSection';
 import ContactForm from '../components/ui/ContactForm';
-
-// Metadata skal eksporteres fra en separat fil for client components
-// Se kontakt/layout.js for metadata
+import ContactInfoCards from '../components/ui/ContactInfoCard';
+import ScrollToButton from '../components/ui/ScrollToButton';
 
 export default function KontaktPage() {
-  const handleFormSubmit = (formData) => {
-    // Custom form submission logic
-    console.log('Form submitted:', formData);
-    // Her kan du tilføje API kald, email sending, etc.
-  };
-
   return (
     <div className="bg-white">
       <Navigation />
 
-      <div className="bg-[#DBE1F8]/50 md:py-16 py-8">
-        <div className="mb-8">
-          <HeaderSection
-            title="Kontakt"
-            text="Har du spørgsmål eller ønsker du at booke en samtale? Kontakt mig gerne, så vender jeg tilbage hurtigst muligt."
-            variant={false}
-            borderColor="black"
-          />
+      {/* Hero header — emotionel landing */}
+      <div className="bg-[#F8F8F8] pt-12 pb-32 md:pt-20 md:pb-40">
+        <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+              {/* Left — headline & intro */}
+              <div>
+                <div className="flex  mb-4">
+                  <p className="text-[#F38A5D] tracking-wide uppercase mb-0">Kontakt</p>
+
+                </div>
+                <h2 className="mb-4">Tag det første skridt mod mere ro og overskud</h2>
+                <p className="max-w-xl text-gray-600">
+                  Udfyld formularen eller kontakt mig direkte, så vender jeg tilbage inden for 24 timer.
+                </p>
+              </div>
+
+              {/* Right — contact info cards */}
+              <div className='flex flex-col gap-6'>
+                <ContactInfoCards />
+                <div className='flex justify-center'>
+                  <ScrollToButton targetId="kontakt-formular">Kontaktformular</ScrollToButton>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="bg-white py-12 md:py-16 lg:py-24">
+      {/* Form — floating card overlapping header */}
+      <div id="kontakt-formular" className="-mt-24 md:-mt-28 pb-16 md:pb-24 scroll-mt-8">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 justify-between">
-            <div>
-              <div className="mb-6 border-b-2 border-black">
-                <h3>Kontaktoplysninger</h3>
-              </div>
-              <p className="text-gray-600 mb-4">
-                Send en mail eller læg en besked.
-              </p>
-
-              {/* Contact info boxes */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
-                <div className="p-6 text-center">
-                  <h4 className="font-semibold text-black mb-2">E-mail</h4>
-                  <p className="text-black">kontakt@psykoterapisusan.dk</p>
-                </div>
-                <div className="p-6 text-center">
-                  <h4 className="font-semibold text-black mb-2">Telefon</h4>
-                  <p className="text-black">+45 25 39 25 39</p>
-                </div>
-              </div>
+            <div className="max-w-2xl mx-auto">
+              <ContactForm />
             </div>
-
-            {/* Kontaktformular - gemmes til senere
-            <div className="flex justify-center">
-              <ContactForm onSubmit={handleFormSubmit} />
-            </div>
-            */}
-          </div>
           </div>
         </div>
       </div>

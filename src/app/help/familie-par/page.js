@@ -1,9 +1,10 @@
-import HeaderSection from "@/app/components/layout/FrontpageHeaderSection";
 import Navigation from "../../components/layout/Navigation";
 import Image from "next/image";
-import Help from "../../components/layout/UnderHelp";
-import CTAContent from "../../components/layout/CTAContent";
-import BackToHelp from "../../components/ui/BackToHelp";
+import HelpPageHeader from "../../components/layout/HelpPageHeader";
+import HelpPageCTA from "../../components/layout/HelpPageCTA";
+import HelpGreenBox from "../../components/ui/HelpGreenBox";
+import OrangeBulletList from "../../components/ui/OrangeBulletList";
+import SerifHeading from "../../components/ui/SerifHeading";
 
 export const metadata = {
   title: 'Par- og Familieterapi',
@@ -24,81 +25,110 @@ export const metadata = {
   },
 };
 
-const helpAreas = [
-  "Konflikter & misforståelser",
-  "Fastlåst kommunikation",
-  "Skilsmisse, sygdom & tab",
-  "Børn & unges trivsel"
-];
-
 export default function FamiliePar() {
   return (
     <div>
       <div className="relative z-50">
         <Navigation />
       </div>
-      <div className="bg-[#DBE1F8]/50 md:py-16 py-8 ">
-        <div className="mb-16">
-          <HeaderSection
-            title="Relationer & familieliv"
-            text="Relationer kan være både kilder til glæde og til udfordringer. Mange oplever konflikter, kommunikationsproblemer eller uro i familien, og det kan være svært at finde ro og forståelse i hverdagen."
-            buttonHref="/kontakt"
-            variant={false}
-            borderColor="black"
-          />
-        </div>
-      </div>
 
-      <div className="pt-8 md:pt-12">
-        <BackToHelp />
-      </div>
+      {/* Header */}
+      <HelpPageHeader
+        title="Relationer &"
+        accentWord="familieliv"
+        text="Relationer kan være både kilder til glæde og til udfordringer. Mange oplever konflikter, kommunikationsproblemer eller uro i familien, og det kan være svært at finde ro og forståelse i hverdagen."
+      />
 
-        <div className="bg-white pb-12 md:pb-24 lg:pb-32 pt-4 md:pt-8">
-          <div className="content-max">
-            <div className="md:px-[20px] lg:px-[60px]">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {/* Hovedindhold */}
+      <div className="bg-white py-12 md:py-16 lg:py-24">
+        <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 pt-2 md:pt-4">
               <div>
-                <div>
-                  <div className="border-b-1 border-black">
-                    <h3>Jeg tilbyder støtte inden for:</h3>
-                  </div>
-                  <div className="w-full max-w-xl mt-6 space-y-6">
-                    <div>
-                      <h5 className="font-semibold mb-2">Kommunikationsproblemer</h5>
-                      <p>Mange familier og par oplever, at det er svært at blive forstået eller at forstå hinanden. Jeg hjælper med at skabe klarhed, øge gensidig forståelse og finde nye måder at kommunikere på, så relationerne kan blive mere trygge og nærværende.</p>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold mb-2">Forældrevejledning</h5>
-                      <p>Forældreskab kan være udfordrende, og der kan opstå usikkerhed, konflikter eller bekymring for børnene. Jeg støtter forældre i at finde ro, overskud, eftertanke og konkrete redskaber til at navigere i familielivet, samtidig med at relationen til barnet styrkes.</p>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold mb-2">Social angst & ensomhed</h5>
-                      <p>Følelser af ensomhed eller social angst kan gøre det svært at indgå i relationer. Jeg hjælper dig med at forstå, hvad der ligger bag disse følelser, og støtter dig i at opbygge tryghed, selvtillid og bedre sociale forbindelser.</p>
-                    </div>
-                   
-                    <div>
-                      <h5 className="font-semibold mb-2">Familiekonflikter & uro</h5>
-                      <p>Uenigheder og spændinger i familien kan skabe stress og afstand mellem familiemedlemmer. Jeg hjælper med at håndtere konflikter, forstå dynamikker og skabe mere tryghed og samarbejde i familien.</p>
-                    </div>
-                  </div>
+                <div className="mb-6 border-b-2 border-black">
+                  <h3>Jeg tilbyder støtte inden for:</h3>
                 </div>
+
+                <SerifHeading accent="Kommunikationsproblemer" />
+                <p>
+                  Mange familier og par oplever, at det er svært at blive forstået eller at forstå hinanden. Jeg hjælper med at skabe klarhed, øge gensidig forståelse og finde nye måder at kommunikere på, så relationerne kan blive mere trygge og nærværende.
+                </p>
+
+                <SerifHeading accent="Forældrevejledning" />
+                <p>
+                  Forældreskab kan være udfordrende, og der kan opstå usikkerhed, konflikter eller bekymring for børnene. Jeg støtter forældre i at finde ro, overskud, eftertanke og konkrete redskaber til at navigere i familielivet.
+                </p>
+
+                <SerifHeading before="Social angst &" accent="ensomhed" />
+                <p>
+                  Følelser af ensomhed eller social angst kan gøre det svært at indgå i relationer. Jeg hjælper dig med at forstå, hvad der ligger bag disse følelser, og støtter dig i at opbygge tryghed, selvtillid og bedre sociale forbindelser.
+                </p>
+
+                <SerifHeading before="Familiekonflikter &" accent="uro" />
+                <p>
+                  Uenigheder og spændinger i familien kan skabe stress og afstand mellem familiemedlemmer. Jeg hjælper med at håndtere konflikter, forstå dynamikker og skabe mere tryghed og samarbejde i familien.
+                </p>
               </div>
-              <div className="hidden md:flex justify-center items-center">
-                <figure className="">
+
+              <div>
+                <figure className="mb-8">
                   <Image
                     src="/img/heart.webp"
-                    alt="Beskrivelse af billedet"
+                    alt="Par- og familieterapi hos Susan Albertsen"
                     width={500}
-                    height={300}
-                    className="w-[450px] h-auto object-cover"
+                    height={450}
+                    className="w-full h-auto object-cover rounded-[32px]"
                   />
                 </figure>
               </div>
             </div>
+
+            {/* Terapi + grøn boks — centreret */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center mt-20">
+              <div>
+                <HelpGreenBox
+                  title="Hvornår kan jeg hjælpe?"
+                  items={[
+                    "Konflikter & misforståelser",
+                    "Fastlåst kommunikation",
+                    "Skilsmisse, sygdom & tab",
+                    "Børn & unges trivsel",
+                  ]}
+                />
+              </div>
+
+              <div>
+                <div className="border-b-2 border-black mb-6">
+                  <h3>Hvordan kan terapi hjælpe?</h3>
+                </div>
+                <div className="space-y-6">
+                  <p>
+                    Gennem psykoterapi kan vi arbejde med de mønstre og dynamikker, der skaber uro i jeres relationer. Sammen kan vi:
+                  </p>
+                  <OrangeBulletList
+                    items={[
+                      "Forstå de underliggende følelser bag konflikterne",
+                      "Skabe nye, tryggere måder at kommunikere på",
+                      "Styrke nærværet og tilliden i jeres relation",
+                    ]}
+                  />
+                  <p>
+                    Vi starter altid der, hvor I er – og arbejder i jeres tempo mod mere forståelse, nærhed og ro i hverdagen.
+                  </p>
+                  <p className="font-medium">
+                    Det kræver mod at bede om hjælp – og det er et godt første skridt.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-        <CTAContent />
+      </div>
+
+      {/* Bottom CTA */}
+      <HelpPageCTA
+        text="Du behøver ikke have alle svarene på forhånd. Kontakt mig for en uforpligtende samtale om, hvordan terapi kan hjælpe jer med at finde nærvær og forståelse igen."
+      />
     </div>
   );
 }

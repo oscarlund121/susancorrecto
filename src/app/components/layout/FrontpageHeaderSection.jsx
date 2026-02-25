@@ -19,10 +19,10 @@ const HeaderSection = ({
         <div className="flex justify-between md:flex-row flex-col items-end">
           <div className=" space-y-8">
             <div className="w-full ">
-              <h2>{title}</h2>
+              <h3 className="font-light ">{title}</h3>
             </div>
-            <div className="flex flex-col md:flex-row md:justify-between md:items-end mt-4 md:mt-10 gap-4">
-              <p className=" w-full md:w-lg">{text}</p>
+            <div className="flex flex-col md:flex-row md:justify-between md:items-end mt-4 md:mt-10 gap-4 ">
+              <p className=" w-full md:w-2xl">{text}</p>
 
             </div>
           </div>

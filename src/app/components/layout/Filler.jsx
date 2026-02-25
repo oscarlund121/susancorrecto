@@ -1,16 +1,55 @@
 "use client";
 
 import Button from "../ui/Button";
+import FadeIn from "../ui/FadeIn";
 
-const Filler = ({title}) => {
+const steps = [
+  { number: "1", label: "Book tid", desc: "Vælg en tid der passer dig" },
+  { number: "2", label: "Afklarende samtale", desc: "Vi taler om dine behov" },
+  { number: "3", label: "Vi finder vejen sammen", desc: "I dit tempo, skridt for skridt" },
+];
+
+const Filler = ({ title }) => {
   return (
     <div className="bg-[#DBE1F8] py-16 md:py-24 lg:py-32">
-      <div className="flex flex-col items-center justify-center gap-12">
-        <h2 className="text-center text-max">
-          {title}
-        </h2>
-        <div className="flex justify-center">
-          <Button />
+      <div className="content-max">
+        <div className="md:px-[20px] lg:px-[60px]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+            {/* Left — headline + CTA */}
+            <FadeIn>
+              <div>
+                <h3 className="mb-8">{title}</h3>
+                <Button />
+              </div>
+            </FadeIn>
+
+            {/* Right — micro-timeline */}
+            <div className="flex flex-col gap-0">
+              {steps.map((step, i) => (
+                <FadeIn key={i} delay={200 + i * 150}>
+                  <div className="flex items-start gap-5">
+                    {/* Timeline line + dot */}
+                    <div className="flex flex-col items-center">
+                      <span className="w-10 h-10 rounded-full bg-[#367067] text-white flex items-center justify-center text-sm font-semibold shrink-0">
+                        {step.number}
+                      </span>
+                      {i < steps.length - 1 && (
+                        <div className="w-[2px] h-12 bg-[#367067]/20" />
+                      )}
+                    </div>
+
+                    {/* Text */}
+                    <div className="pt-1.5 pb-6">
+                      <p className="font-semibold text-black text-base">{step.label}</p>
+                      <p className="text-gray-600 text-sm mt-1">{step.desc}</p>
+                    </div>
+                  </div>
+                </FadeIn>
+              ))}
+            </div>
+
+          </div>
         </div>
       </div>
     </div>

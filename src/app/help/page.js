@@ -77,13 +77,13 @@ export default function Help() {
         </div>
       </div>
 
-      <div className="bg-white py-12 md:py-12">
+      <div className="bg-[#F8F8F8] py-12 md:py-16">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
           <div className="mb-12">
             <ServiceLinks />
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
             {categories.map((category, index) => (
               <CategorySection 
                 key={category.id}
@@ -91,11 +91,12 @@ export default function Help() {
                 description={category.description}
                 tags={category.tags}
                 index={index}
+                featured={index === 0}
               />
             ))}
           </div>
-          <div className="flex justify-center my-8">
-            <Button variant="secondary">Book en samtale</Button>
+          <div className="flex justify-center my-8 md:mt-24">
+            <Button variant="primary">Book en samtale</Button>
           </div>
           </div>
         </div>

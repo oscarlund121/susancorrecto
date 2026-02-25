@@ -1,35 +1,40 @@
 import GreenBox from "../ui/GreenBox";
-import SeeMoreButton from "../ui/SeeMoreButton";
-import Link from "next/link";
-import * as Accordion from "@radix-ui/react-accordion";
-import { ChevronDownIcon } from "@radix-ui/react-icons";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionTrigger,
+  AccordionContent,
+} from "@/components/ui/accordion";
 
-const Help = ({ title, tags, index = 0 }) => {
+const Help = ({ title, tags, index = 0, tagVariant = "default", featured = false, iconVariant }) => {
   return (
-    <div className="flex flex-col w-full md:w-auto">
-      <Accordion.Root type="single" collapsible>
-        <Accordion.Item value={title}>
-          <div className="xl:w-[600px] lg:w-[500px] md:w-[350px] w-full mb-4 bg-white p-6 rounded-lg t cursor-pointer opacity-0 animate-fade-in-up"
+    <div className="w-full">
+      <Accordion type="single" collapsible className="w-full">
+        <AccordionItem value={title} className="w-full">
+          <div className="w-full p-2 md:p-4 cursor-pointer opacity-0 animate-fade-in-up"
                style={{ animationDelay: `${index * 150}ms` }}>
-            <Accordion.Trigger className="flex justify-between items-center w-full text-left group border-b border-black pb-2 mb-6">
-              <h3>{title}</h3>
-              <ChevronDownIcon className="h-5 w-5 shrink-0 text-black transition-transform duration-200 data-[state=open]:rotate-180" />
-            </Accordion.Trigger>
-            <Accordion.Content className="data-[state=open]:animate-slideDown data-[state=closed]:animate-slideUp overflow-hidden">
-              <div className="flex flex-wrap gap-x-3 gap-y-6 pt-4">
+            <AccordionTrigger className={featured ? "bg-[#F38A5D] data-[state=open]:bg-white" : ""} iconVariant={iconVariant}>
+              <span className={featured 
+                ? "text-white group-data-[state=open]:text-black group-data-[state=open]:font-semibold" 
+                : "text-[#367067] group-data-[state=open]:text-black group-data-[state=open]:font-semibold"
+              }>{title}</span>
+            </AccordionTrigger>
+            <AccordionContent>
+              <div className="flex flex-wrap justify-start gap-x-3 gap-y-6 pt-4 md:pt-8">
                 {tags.map((tag, tagIndex) => (
-                  <GreenBox key={tagIndex} text={tag} />
+                  <span
+                    key={tagIndex}
+                    className="opacity-0 animate-fade-in-up"
+                    style={{ animationDelay: `${tagIndex * 80}ms`, animationFillMode: "forwards" }}
+                  >
+                    <GreenBox text={tag} variant={tagVariant} />
+                  </span>
                 ))}
               </div>
-            {/*   <div className="flex justify-end mt-6">
-                <Link href="/help">
-                  <SeeMoreButton variant="inverse" />
-                </Link>
-              </div> */}
-            </Accordion.Content>
+            </AccordionContent>
           </div>
-        </Accordion.Item>
-      </Accordion.Root>
+        </AccordionItem>
+      </Accordion>
     </div>
   );
 };

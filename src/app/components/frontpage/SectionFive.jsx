@@ -2,6 +2,7 @@
 
 import HeaderSection from "../layout/FrontpageHeaderSection";
 import Image from "next/image";
+import FadeIn from "../ui/FadeIn";
 
 const SectionFive = () => {
   return (
@@ -21,6 +22,7 @@ const SectionFive = () => {
 
 
       <div className="relative flex flex-col items-center justify-center z-100 py-16 md:py-24 lg:py-32 text-white">
+        <FadeIn>
         <blockquote className="text-max text-center">
           “Vi kan kun skabe varige transformationer i os selv, hvis vi gør det
           ud fra ren ubetinget kærlighed. Kan vi ikke skabe ændringer ud fra
@@ -28,6 +30,7 @@ const SectionFive = () => {
           er essensen i terapien at være helhjertet – at have hele hjertet med.”
         </blockquote>
         <p>- Karen Aaes</p>
+        </FadeIn>
       </div>
     </div>
   );

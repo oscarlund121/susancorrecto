@@ -1,9 +1,10 @@
-import HeaderSection from "@/app/components/layout/FrontpageHeaderSection";
 import Navigation from "../../components/layout/Navigation";
 import Image from "next/image";
-import Help from "../../components/layout/UnderHelp";
-import CTAContent from "../../components/layout/CTAContent";
-import BackToHelp from "../../components/ui/BackToHelp";
+import HelpPageHeader from "../../components/layout/HelpPageHeader";
+import HelpPageCTA from "../../components/layout/HelpPageCTA";
+import HelpGreenBox from "../../components/ui/HelpGreenBox";
+import OrangeBulletList from "../../components/ui/OrangeBulletList";
+import SerifHeading from "../../components/ui/SerifHeading";
 
 export const metadata = {
   title: 'Eksamens- og Præstationsangst',
@@ -23,148 +24,114 @@ export const metadata = {
   },
 };
 
-const helpAreas = [
-  "Eksamensangst",
-  "Præstationsangst",
-  "Mundtlige eksaminer",
-  "Fremlæggelser",
-  "Jobsamtaler",
-  "Blackouts ved præstationer"
-];
-
 export default function Eksamensangst() {
   return (
     <div>
       <div className="relative z-50">
         <Navigation />
       </div>
-      <div className="bg-[#DBE1F8]/50 md:py-16 py-8 ">
-        <div className="mb-8">
-          <HeaderSection
-            title="Eksamens- & præstationsangst"
-            text="Når kroppen pludselig tager over med hjertebanken, svedige hænder, kvalme, svimmelhed eller en fornemmelse af at 'lukke ned', kan det være svært at forstå, hvad der sker."
-            buttonHref="/kontakt"
-            variant={false}
-            borderColor="black"
-          />
-        </div>
-      </div>
 
-      <div className="pt-8 md:pt-12">
-        <BackToHelp />
-      </div>
+      {/* Header */}
+      <HelpPageHeader
+        title="Eksamens- &"
+        accentWord="præstationsangst"
+        text="Når stemmen svigter, hjertet hamrer og tankerne går i stå – selvom du har forberedt dig. Du behøver ikke leve med det. Sammen finder vi roden til angsten, så du kan præstere frit."
+      />
 
-      {/* Når angsten tager styringen sektion */}
-      <div className="bg-white pb-12 md:pb-24 lg:pb-32 pt-4 md:pt-8">
+      {/* Hovedindhold */}
+      <div className="bg-white py-12 md:py-16 lg:py-24">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 pt-2 md:pt-4">
               <div>
-                <div className="border-b-1 border-black">
+                <div className="mb-6 border-b-2 border-black">
                   <h3>Når angsten tager styringen</h3>
                 </div>
-                <p className="w-full max-w-xl mt-6">
-                  Mange oplever, at stemmen svigter, tankerne går i stå, eller at de føler sig helt væk i situationer, hvor de ellers havde forberedt sig godt.
+                <p>
+                  Mange oplever, at <strong>stemmen svigter, tankerne går i stå</strong>, eller at de føler sig helt væk i situationer, hvor de ellers havde forberedt sig godt.
                 </p>
-                <p className="w-full max-w-xl mt-4">
-                  At være nervøs før en eksamen, en præsentation eller en anden præstationssituation er helt normalt. Men for nogle bliver nervøsiteten så voldsom, at den spænder ben i stedet for at hjælpe. Når angsten tager styringen, kan det resultere i præstationer, der slet ikke afspejler ens evner – eller i at man helt undgår situationerne.
+                <p className="mt-4">
+                  At være nervøs før en eksamen, en præsentation eller en anden præstationssituation er helt normalt. Men for nogle bliver nervøsiteten så voldsom, at den <strong>spænder ben i stedet for at hjælpe</strong>.
+                </p>
+
+                <SerifHeading before="Hvordan" accent="mærkes" after="præstationsangst?" />
+                <p>
+                  Kroppen går i alarmberedskab: hjertebanken, sveddryppende hænder, rysten på stemmen, blackouts. Det sker, fordi hjernen forbinder situationen med fare – selvom den reelle trussel ikke er til stede.
+                </p>
+
+                <blockquote className="border-l-4 border-[#F38A5D] pl-6 my-8 py-2">
+                  <p className="text-lg md:text-xl italic text-[#367067] leading-relaxed">
+                    &quot;Eksamensangst handler sjældent om forberedelse. Den handler om, at kroppen husker en gammel oplevelse af utryghed – og reagerer, som om den sker lige nu.&quot;
+                  </p>
+                </blockquote>
+
+                <SerifHeading before="Hvorfor" accent="opstår" after="det?" />
+                <p>
+                  Angsten har ofte rod i tidligere oplevelser, hvor man har følt sig vurderet, utilstrækkelig eller utryg. Selvom den oprindelige situation er overstået, genaktiveres den samme kropslige reaktion – automatisk og ufrivilligt.
                 </p>
               </div>
-              <Help
-                title="Hvornår kan metoden hjælpe?"
-                tags={helpAreas}
-              />
-            </div>
-            <div className="hidden md:flex justify-center items-center">
-              <figure className="">
-                <Image
-                  src="/img/bee.webp"
-                  alt="Eksamensangst"
-                  width={500}
-                  height={300}
-                  className="w-[450px] h-auto object-cover"
-                />
-              </figure>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
 
-      {/* Hvordan kan terapi hjælpe sektion */}
-      <div className="bg-[#367067] py-16 md:py-24 lg:py-32 text-white">
-        <div className="content-max">
-          <div className="md:px-[20px] lg:px-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="hidden md:flex justify-center items-center order-2 md:order-1">
-              <figure className="">
-                <Image
-                  src="/img/purple-flower.webp"
-                  alt="Behandling af eksamensangst"
-                  width={500}
-                  height={300}
-                  className="w-[450px] h-auto object-cover"
-/>
-              </figure>
+              <div>
+                <figure className="mb-8">
+                  <Image
+                    src="/img/sand.webp"
+                    alt="Eksamensangst behandling hos Susan Albertsen"
+                    width={500}
+                    height={450}
+                    className="w-full h-auto object-cover rounded-[32px]"
+                  />
+                </figure>
+              </div>
             </div>
-            <div className="order-1 md:order-2">
-              <div className="pb-8">
-                <div className="mb-6 border-b-2 border-white">
+
+            {/* Terapi + grøn boks — centreret */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center mt-20">
+              <div>
+                <HelpGreenBox
+                  title="Hvornår kan metoden hjælpe?"
+                  items={[
+                    "Eksamensangst",
+                    "Præstationsangst",
+                    "Mundtlige eksaminer",
+                    "Fremlæggelser",
+                    "Jobsamtaler",
+                    "Blackouts ved præstationer",
+                  ]}
+                />
+              </div>
+
+              <div>
+                <div className="border-b-2 border-black mb-6">
                   <h3>Hvordan kan terapi hjælpe?</h3>
                 </div>
-                <div className="w-full max-w-xl space-y-4">
+                <div className="space-y-6">
                   <p>
-                    Med psykoterapi og meditation (indadvendt fokuseret opmærksomhed) er det muligt at arbejde målrettet med eksamens- og præstationsangst. I behandlingen går vi tilbage til de oplevelser, hvor angsten oprindeligt opstod, og som stadig får dit nervesystem til at reagere, som om du er i fare.
+                    Med psykoterapi og meditation arbejder vi målrettet med eksamens- og præstationsangst. Sammen kan vi:
                   </p>
+                  <OrangeBulletList
+                    items={[
+                      "Gå tilbage til de oplevelser, der satte angsten i gang",
+                      "Chok-forløse og bryde det gamle mønster",
+                      "Hjælpe kroppen med at falde til ro i præstationssituationer",
+                    ]}
+                  />
                   <p>
-                    Selvom situationen i dag er anderledes, genaktiveres den samme kropslige reaktion igen og igen.
+                    Mange oplever <strong>øget selvtillid, større ro, klarhed og bedre fokus</strong> – og for de fleste er 1–3 sessioner tilstrækkeligt til at skabe en mærkbar forandring.
                   </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Bryd mønstret sektion */}
-      <div className="bg-white py-12 md:py-24 lg:py-32">
-        <div className="content-max">
-          <div className="md:px-[20px] lg:px-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="pb-8">
-                <div className="border-b-1 border-black">
-                  <h3>Bryd mønstret</h3>
-                </div>
-                <div className="w-full max-w-xl mt-6 space-y-4">
-                  <p>
-                    Psykoterapien og meditationen hjælper dig med at chok-forløse og bryde dette mønster, så kroppen kan falde til ro, og du igen kan føle dig tryg i præstationssituationer.
-                  </p>
-                  <p>
-                    Mange oplever øget selvtillid, større ro, klarhed, lethed og bedre fokus – og for de fleste er 1–3 sessioner tilstrækkeligt til at skabe en mærkbar forandring.
+                  <p className="font-medium">
+                    Vi starter der, hvor du er – og arbejder i dit tempo.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="hidden md:flex justify-center items-center">
-              <figure className="">
-                <Image
-                  src="/img/heart.webp"
-                  alt="Bryd mønstret"
-                  width={500}
-                  height={300}
-                  className="w-[450px] h-auto object-cover"
-                />
-              </figure>
-            </div>
-          </div>
           </div>
         </div>
       </div>
 
-      <CTAContent />
+      {/* Bottom CTA */}
+      <HelpPageCTA
+        text="Du behøver ikke have alle svarene på forhånd. Kontakt mig for en uforpligtende samtale om, hvordan du kan slippe præstationsangsten og præstere frit igen."
+      />
     </div>
   );
 }

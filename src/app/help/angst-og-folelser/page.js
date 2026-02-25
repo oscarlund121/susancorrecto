@@ -1,9 +1,10 @@
-import HeaderSection from "@/app/components/layout/FrontpageHeaderSection";
 import Navigation from "../../components/layout/Navigation";
 import Image from "next/image";
-import Help from "../../components/layout/UnderHelp";
-import CTAContent from "../../components/layout/CTAContent";
-import BackToHelp from "../../components/ui/BackToHelp";
+import HelpPageHeader from "../../components/layout/HelpPageHeader";
+import HelpPageCTA from "../../components/layout/HelpPageCTA";
+import HelpGreenBox from "../../components/ui/HelpGreenBox";
+import OrangeBulletList from "../../components/ui/OrangeBulletList";
+import SerifHeading from "../../components/ui/SerifHeading";
 
 export const metadata = {
   title: 'Behandling af Angst og Følelser',
@@ -24,170 +25,116 @@ export const metadata = {
   },
 };
 
-const helpAreas = [
-  "Angst & fobier",
-  "Panikangst",
-  "Social angst",
-  "Klaustrofobi",
-  "Højdeskræk",
-  "Følelsesmæssig ustabilitet"
-];
-
 export default function AngstOgFolelser() {
   return (
     <div>
       <div className="relative z-50">
         <Navigation />
       </div>
-      <div className="bg-[#DBE1F8]/50 md:py-16 py-8 ">
-        <div className="mb-8">
-          <HeaderSection
-            title="Angst & følelser"
-            text="Angst (eks. panikangst, socialangst og fobier som klaustrofobi eller højdeskræk) kan være ubehagelig og overvældende – men du behøver ikke leve med den alene. Hos mig kan du få professionel hjælp til at forstå og håndtere din angst på en tryg og nænsom måde."
-            buttonHref="/kontakt"
-            variant={false}
-            borderColor="black"
-          />
-        </div>
-      </div>
 
-      <div className="pt-8 md:pt-12">
-        <BackToHelp />
-      </div>
-      
-      {/* Hvad er angst */}
-     <div className="bg-white pb-12 md:pb-24 lg:pb-32 pt-4 md:pt-8">
+      {/* Header */}
+      <HelpPageHeader
+        title="Angst &"
+        accentWord="følelser"
+        text="Angst (eks. panikangst, socialangst og fobier som klaustrofobi eller højdeskræk) kan være ubehagelig og overvældende – men du behøver ikke leve med den alene. Hos mig kan du få professionel hjælp til at forstå og håndtere din angst på en tryg og nænsom måde."
+      />
+
+      {/* Hovedindhold */}
+      <div className="bg-white py-12 md:py-16 lg:py-24">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 pt-2 md:pt-4">
               <div>
-                <div className="border-b-1 border-black">
-                  <h3>Hvad er angst?</h3>
-                </div>
-                <div className="w-full max-w-xl mt-6 space-y-4">
-                  <p>
-                    Angst er kroppens måde at beskytte dig på. Den opstår, når hjernen tror, at der er fare på færde, så kroppen kan reagere hurtigt og passe på dig.
-                  </p>
-                  <p>
-                    Problemet opstår, når kroppen reagerer, selvom der ikke er nogen reel fare. Det kan fx ske i sociale situationer, ved præstationer eller i hverdagsoplevelser, der føles ubehagelige. Denne form for angst kan føles skræmmende og frustrerende, men det er vigtigt at vide, at kroppen blot forsøger at hjælpe dig.
-                  </p>
-                </div>
-              </div>
-              <Help
-                title="Hvornår kan jeg hjælpe?"
-                tags={helpAreas}
-              />
+            <div className="mb-6 border-b-2 border-black">
+              <h3>Hvad er angst?</h3>
             </div>
-            <div className="hidden md:flex justify-center items-center">
-              <figure className="">
-                <Image
-                  src="/img/wheat.webp"
-                  alt="Angst"
-                  width={500}
-                  height={300}
-                  className="w-[450px] h-auto object-cover"
-                />
-              </figure>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
+                <p>
+                  Angst er kroppens måde at beskytte dig på. Den opstår, når hjernen tror, at der er fare på færde, så kroppen kan reagere hurtigt og passe på dig.
+                </p>
+                <p className="mt-4">
+                  Problemet opstår, når kroppen reagerer, selvom der ikke er nogen reel fare. Det kan fx ske i sociale situationer, ved præstationer eller i hverdagsoplevelser, der føles ubehagelige. Denne form for angst kan føles skræmmende og frustrerende, men det er vigtigt at vide, at kroppen blot forsøger at hjælpe dig.
+                </p>
 
-      {/* Hvordan mærkes angst + Hvorfor får man angst */}
-      <div className="bg-[#367067] py-16 md:py-24 lg:py-32 text-white">
-        <div className="content-max">
-          <div className="md:px-[20px] lg:px-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div className="hidden md:flex justify-center items-center order-2 md:order-1">
-              <figure className="">
-                <Image
-                  src="/img/sand.webp"
-                  alt="Hvordan mærkes angst"
-                  width={500}
-                  height={300}
-                  className="w-[450px] h-auto object-cover"
-                />
-              </figure>
-            </div>
-            <div className="order-1 md:order-2">
-              <div className="pb-8">
-                <div className="mb-6 border-b-2 border-white">
-                  <h3>Hvordan mærkes angst?</h3>
-                </div>
-                <div className="w-full max-w-xl space-y-4">
-                  <p>Angst opleves forskelligt fra person til person. Du kan fx mærke:</p>
-                  <ul className="list-disc ml-6 space-y-1">
-                    <li>Hjertebanken eller svedige hænder</li>
-                    <li>Spændinger i kroppen eller uro</li>
-                    <li>Svimmelhed eller kvalme</li>
-                    <li>Følelse af at miste kontrollen</li>
-                  </ul>
-                  <p>
-                    For nogle bliver angsten så ubehagelig, at de begynder at undgå bestemte situationer. Dette kan gøre, at angsten fylder mere og mere i hverdagen.
-                  </p>
-                </div>
-              </div>
-              <div className="pb-8">
-                <div className="mb-6 border-b-2 border-white">
-                  <h3>Hvorfor får man angst?</h3>
-                </div>
-                <div className="w-full max-w-xl space-y-4">
-                  <p>
-                    Angst har ofte rod i tidligere oplevelser, hvor kroppen har følt sig utryg eller truet. Selvom den oprindelige situation er ovre, kan kroppen reagere på lignende situationer igen – som om faren stadig er til stede. Det sker helt automatisk, og ofte kan man ikke selv huske den oprindelige oplevelse.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
+                <SerifHeading before="Hvordan" accent="mærkes" after="angst?" />
+                <p>
+                  Angst opleves forskelligt fra person til person. Du kan fx mærke hjertebanken, svedige hænder, spændinger i kroppen, svimmelhed eller en følelse af at miste kontrollen.
+                </p>
+                <p className="mt-4">
+                  For nogle bliver angsten så ubehagelig, at de begynder at undgå bestemte situationer. Dette kan gøre, at angsten fylder mere og mere i hverdagen.
+                </p>
 
-      {/* Hvordan kan terapi hjælpe */}
-      <div className="bg-white py-12 md:py-24 lg:py-32">
-        <div className="content-max">
-          <div className="md:px-[20px] lg:px-[60px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            <div>
-              <div className="pb-8">
-                <div className="border-b-1 border-black">
-                  <h3>Hvordan kan terapi, chok-forløsning og meditation hjælpe?</h3>
+                <blockquote className="border-l-4 border-[#F38A5D] pl-6 my-8 py-2">
+                  <p className="text-lg md:text-xl italic text-[#367067] leading-relaxed">
+                    &quot;Angst har ofte rod i tidligere oplevelser, hvor kroppen har følt sig utryg eller truet. Selvom den oprindelige situation er ovre, kan kroppen reagere, som om faren stadig er til stede.&quot;
+                  </p>
+                </blockquote>
+
+                <SerifHeading before="Hvorfor" accent="får" after="man angst?" />
+                <p>
+                  Angst har ofte rod i tidligere oplevelser, hvor kroppen har følt sig utryg eller truet. Selvom den oprindelige situation er ovre, kan kroppen reagere på lignende situationer igen – som om faren stadig er til stede. Det sker helt automatisk, og ofte kan man ikke selv huske den oprindelige oplevelse.
+                </p>
+                
+              </div>
+
+              <div>
+                <figure className="mb-8">
+                  <Image
+                    src="/img/wheat.webp"
+                    alt="Angstbehandling hos Susan Albertsen"
+                    width={500}
+                    height={450}
+                    className="w-full h-auto object-cover rounded-[32px]"
+                  />
+                </figure>
+              </div>
+            </div>
+
+            {/* Terapi + grøn boks — centreret */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-14 items-center mt-20">
+              <div>
+                <HelpGreenBox
+                  title="Hvornår kan jeg hjælpe?"
+                  items={[
+                    "Angst & fobier",
+                    "Panikangst",
+                    "Social angst",
+                    "Klaustrofobi",
+                    "Højdeskræk",
+                    "Følelsesmæssig ustabilitet",
+                  ]}
+                />
+              </div>
+
+              <div>
+                <div className="border-b-2 border-black mb-6">
+                  <h3>Hvordan kan terapi hjælpe?</h3>
                 </div>
-                <div className="w-full max-w-xl mt-6 space-y-4">
+                <div className="space-y-6">
                   <p>
                     Gennem psykoterapi, chok-forløsning og meditation (indadvendt fokuseret opmærksomhed) kan vi:
                   </p>
-                  <ul className="list-disc ml-6 space-y-1">
-                    <li>Identificere, hvad der har sat din angst i gang</li>
-                    <li>Arbejde med de gamle reaktioner i kroppen</li>
-                    <li>Hjælpe dig med at slippe gamle mønstre</li>
-                  </ul>
+                  <OrangeBulletList
+                    items={[
+                      "Identificere, hvad der har sat din angst i gang",
+                      "Arbejde med de gamle reaktioner i kroppen",
+                      "Hjælpe dig med at slippe gamle mønstre",
+                    ]}
+                  />
                   <p>
                     Når kroppen ikke længere er i konstant alarmberedskab, vil angsten gradvist fylde mindre, og du vil opleve mere ro, lethed, tryghed og kontrol.
+                  </p>
+                  <p className="font-medium">
+                    Vi starter altid der, hvor du er – og arbejder i dit tempo.
                   </p>
                 </div>
               </div>
             </div>
-            <div className="hidden md:flex justify-center items-center">
-              <figure className="">
-                <Image
-                  src="/img/wheat-2.webp"
-                  alt="Behandling af angst"
-                  width={500}
-                  height={300}
-                  className="w-full h-auto object-cover"
-                />
-              </figure>
-            </div>
-          </div>
           </div>
         </div>
       </div>
 
-      <CTAContent
-      />
+      {/* Bottom CTA */}
+      <HelpPageCTA />
     </div>
   );
 }
