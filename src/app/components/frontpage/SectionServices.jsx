@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const SectionServices = () => {
   return (
-    <div className="bg-gradient-to-b from-[white] to-[#367067]">
+    <div className="bg-white">
       <div className="py-16 md:py-24 bg-[#367067] md:mr-28 md:pr-12 md:rounded-r-[200px] ">
         <div className="content-max">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-start">

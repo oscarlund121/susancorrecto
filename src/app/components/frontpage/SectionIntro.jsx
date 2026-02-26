@@ -21,7 +21,7 @@ const SectionIntro = () => {
             <FadeIn>
               <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
                 {/* Text content */}
-                <div className="flex-1">
+                <div className="lg:flex-[3]">
                   <h3 className="text-black text-center lg:text-left font-normal leading-[1.25]">
                     &ldquo;Mange af mine klienter beskriver, at de i lang tid har
                     gået med en følelse af uro,{" "}
@@ -48,13 +48,13 @@ const SectionIntro = () => {
                 </div>
 
                 {/* Image */}
-                <div className="flex-1 w-full lg:w-auto">
+                <div className="lg:flex-[2] w-full lg:w-auto">
                   <Image
                     src="/img/smile_session.webp"
                     alt="Terapeutisk samtale"
-                    width={600}
-                    height={700}
-                    className="w-full h-auto rounded-3xl object-cover"
+                    width={500}
+                    height={600}
+                    className="w-full max-h-[450px] rounded-3xl object-cover"
                   />
                 </div>
               </div>
