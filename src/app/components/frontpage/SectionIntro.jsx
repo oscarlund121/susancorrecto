@@ -14,7 +14,7 @@ const questions = [
 
 const SectionIntro = () => {
   return (
-    <div className="bg-white py-16 md:py-24 lg:py-32">
+    <div className="bg-white py-16 md:py-24 lg:py-32 mt-12">
       <div className="content-max">
         <div className="md:px-[20px] lg:px-[60px]">
           <div className="flex flex-col gap-12 lg:gap-20 items-start">

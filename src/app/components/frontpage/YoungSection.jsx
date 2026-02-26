@@ -13,7 +13,7 @@ const YoungSection = () => {
   ];
 
   return (
-    <div className="bg-white py-16 md:py-24 lg:py-32">
+    <div className="bg-white py-16 mt-16 ">
       <div className="content-max">
         <div className="md:px-[20px] lg:px-[60px] py-12 bg-white rounded-3xl">
           <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center">
