@@ -9,6 +9,50 @@ body {
   padding: 0;
 }
 
+/* Decorative accent boxes behind images */
+.image-accent-green,
+.image-accent-orange {
+  position: relative;
+  isolation: isolate;
+}
+
+.image-accent-green::before,
+.image-accent-orange::before {
+  display: none;
+}
+
+.image-accent-green::after {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .image-accent-green::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 100%;
+    height: 100%;
+    background-color: #367067e2;
+    border-radius: 16px;
+    z-index: -2;
+  }
+
+  .image-accent-orange::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -8%;
+    left: -10%;
+    width: 100%;
+    height: 100%;
+    background-color: #f38a5de4;
+    border-radius: 16px;
+    z-index: -1;
+  }
+}
+
 /* Animations */
 @keyframes arrow-slide {
   0% {

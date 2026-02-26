@@ -20,22 +20,22 @@ const YoungSection = () => {
           
             {/* Image — left */}
             <FadeIn className=" w-full md:w-2/5 shrink-0">
-              <div className="relative aspect-[3/4] rounded-2xl overflow-hidden">
+              <div className=" image-accent-orange relative aspect-[3/4] rounded-2xl overflow-visible">
                 <Image
                   src="/img/terapi_unge.webp"
                   alt="Susan i samtale med ung klient"
                   fill
-                  className="object-cover"
+                  className="object-cover relative z-[1] rounded-2xl"
                 />
             
               </div>
             </FadeIn>
 
             {/* Text — right */}
-            <FadeIn delay={150} className="w-full md:w-3/5 md:pl-4">
-              <div className="">
+            <FadeIn delay={150} className="w-full md:w-3/5 md:pl-4 ">
+              <div>
                 <h3 className="text-black text-left mb-6">
-                  Få ro til at være dig selv, <br /> også når studiet presser på
+                 <span className=""> Få ro til at være dig selv, </span> <br /> <span className=" italic text-[#F38A5D]">også når studiet presser på</span>
                 </h3>
               </div>
 

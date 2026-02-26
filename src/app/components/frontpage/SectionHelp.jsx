@@ -6,7 +6,7 @@ import FadeIn from "../ui/FadeIn";
 
 const SectionHelp = () => {
   return (
-    <div id="hjaelp-kategorier" className="py-16 md:py-24 bg-[#367067] md:ml-28 md:pl-12 md:rounded-l-[200px] text-white scroll-mt-8">
+    <div id="hjaelp-kategorier" className="py-16 md:py-24 bg-[#367067] md:ml-28 md:pl-12 md:rounded-bl-[100px] rounded-tl-[50px] text-white scroll-mt-8">
       <FadeIn>
         <HeaderSection
           title="Få hjælp til angst, stress, lavt selvværd & relationelle udfordringer."
@@ -18,8 +18,9 @@ const SectionHelp = () => {
         />
       </FadeIn>
 
-      <div className="px-4 md:px-[20px] lg:px-[60px]">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8 max-w-6xl ">
+      <div className="content-max">
+        <div className="md:px-[20px] lg:px-[60px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mt-12">
             <Help
               title="Unge & studerende"
               tags={[
@@ -100,6 +101,7 @@ const SectionHelp = () => {
               tagVariant="orange"
               iconVariant="featured"
             />
+        </div>
         </div>
         <FadeIn>
           <div className="flex justify-center mt-12">

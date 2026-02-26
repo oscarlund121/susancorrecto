@@ -48,13 +48,13 @@ const SectionIntro = () => {
                 </div>
 
                 {/* Image */}
-                <div className="lg:flex-[2] w-full lg:w-auto">
+                <div className="image-accent-green lg:flex-[2] w-full lg:w-auto">
                   <Image
                     src="/img/smile_session.webp"
                     alt="Terapeutisk samtale"
                     width={500}
                     height={600}
-                    className="w-full max-h-[450px] rounded-3xl object-cover"
+                    className="relative w-full max-h-[500px] rounded-xl object-cover"
                   />
                 </div>
               </div>

@@ -19,7 +19,7 @@ const AccordionTrigger = React.forwardRef(({ className, children, iconVariant, .
       ref={ref}
       className={cn(
         `group flex flex-1 items-center justify-between 
-         rounded-3xl px-8 py-5 text-left
+         rounded-md px-8 py-5 text-left
          bg-[#DBE1F8] 
          shadow-[0_1px_4px_rgba(0,0,0,0.06)]
          hover:shadow-[0_2px_8px_rgba(0,0,0,0.1)]
