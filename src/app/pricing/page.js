@@ -1,4 +1,3 @@
-import HeaderSection from "../components/layout/FrontpageHeaderSection";
 import Navigation from "../components/layout/Navigation";
 import PriceSection from "../components/layout/PriceSection";
 import InfoCard from "../components/layout/InfoCard";
@@ -76,23 +75,26 @@ const priceData = [
 
 export default function Pricing() {
   return (
-    <div className="mb-32">
+    <div>
       <Navigation />
-      <div className="bg-[#DBE1F8]/50 md:py-16 py-8">
-        <div className="mb-8">
-          <HeaderSection
-            title="Priser & rabatter"
-            text="Hos mig kan du vælge mellem enkeltsessioner eller forløb – alt efter hvad der passer bedst til dig. Jeg tilbyder også særlige priser til studerende."
-            variant={false}
-            borderColor="black"
-          />
+      <div className="bg-[#F8F8F8] pt-12 pb-16 md:pt-20 md:pb-24">
+        <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
+            <div className="flex mb-4">
+              <p className="text-[#F38A5D] tracking-wide uppercase mb-0">Priser</p>
+            </div>
+            <h2 className="mb-4">Priser & rabatter</h2>
+            <p className="max-w-xl text-gray-600">
+              Hos mig kan du vælge mellem enkeltsessioner eller forløb – alt efter hvad der passer bedst til dig. Jeg tilbyder også særlige priser til studerende.
+            </p>
+          </div>
         </div>
       </div>
       
-      <div className="bg-white py-12 md:py-16 lg:py-24">
+      <div className="bg-white pb-16 md:pb-24 lg:pb-32">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 py-12">
             {/* Venstre side - Prisliste */}
             <div className="lg:col-span-2">
               {priceData.map((section, index) => (

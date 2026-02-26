@@ -1,5 +1,6 @@
 import Navigation from "../../components/layout/Navigation";
 import ServiceHeader from "../../components/layout/ServiceHeader";
+import HelpPageCTA from "../../components/layout/HelpPageCTA";
 import Image from "next/image";
 import Button from "../../components/ui/Button";
 import ListItem from "../../components/ui/ListItem";
@@ -107,20 +108,9 @@ export default function Essentiel() {
         </div>
       </div>
 
-      {/* Bottom CTA */}
-      <div className="bg-[#367067] py-16 md:py-24 lg:py-32 text-white">
-        <div className="content-max">
-          <div className="md:px-[20px] lg:px-[60px]">
-            <div className="max-w-2xl mx-auto text-center">
-              <h3 className="text-white mb-6">Klar til at tage det næste skridt?</h3>
-              <p className="text-white/80 font-light text-lg leading-relaxed mb-10">
-                Vi starter altid med en indledende samtale, hvor vi afklarer hvad der fylder mest for dig. Kontakt mig for en uforpligtende samtale om, hvordan psykoterapi kan hjælpe dig med at finde ro og balance.
-              </p>
-              <Button variant="secondary" href="/kontakt">Book en samtale</Button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HelpPageCTA
+        text="Vi starter altid med en indledende samtale, hvor vi afklarer hvad der fylder mest for dig. Kontakt mig for en uforpligtende samtale om, hvordan psykoterapi kan hjælpe dig med at finde ro og balance."
+      />
     </div>
   );
 }

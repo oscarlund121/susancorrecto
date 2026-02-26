@@ -104,10 +104,6 @@ export default function OmSusan() {
                     Meditation og intuitivt energiarbejde – for at skabe ro, balance og dyb indre forbindelse.
                   </ListItem>
 
-                  <ListItem>
-                    Relationer og familieliv
-                  </ListItem>
-
                   <div className="flex justify-center pt-6">
                     <Button variant="study">
                       Book en samtale

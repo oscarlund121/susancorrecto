@@ -9,6 +9,7 @@ import {
   DropdownMenuRadioGroup,
   DropdownMenuRadioItem,
 } from "@/components/ui/dropdown-menu";
+import { sendContactEmail } from "@/app/actions/sendEmail";
 
 const contactOptions = [
   { value: "call", label: "Ring mig op" },
@@ -19,17 +20,23 @@ const contactOptions = [
 const ContactForm = () => {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
   const [contactPref, setContactPref] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setError("");
 
-    // TODO: Replace with Resend server action
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const formData = new FormData(e.target);
+    const result = await sendContactEmail(formData);
 
     setLoading(false);
-    setSubmitted(true);
+    if (result.success) {
+      setSubmitted(true);
+    } else {
+      setError(result.error || "Der opstod en fejl. Prøv igen.");
+    }
   };
 
   if (submitted) {
@@ -154,6 +161,13 @@ const ContactForm = () => {
             </span>
           </label>
         </div>
+
+        {/* Error message */}
+        {error && (
+          <p className="text-red-300 text-sm text-center bg-red-500/10 py-2 px-4 rounded-xl">
+            {error}
+          </p>
+        )}
 
         {/* Submit */}
         <button

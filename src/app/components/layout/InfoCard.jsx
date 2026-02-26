@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const InfoCard = () => {
   return (
-    <div className="bg-[#367067] text-white p-8 h-fit sticky top-8">
+    <div className="bg-[#367067] text-white p-8 rounded-2xl h-fit sticky top-8">
       <div className="mb-8 border-b border-white pb-4">
         <h3 className="text-white">Er du i tvivl om, hvilket forløb der passer bedst til dig?</h3>
       </div>
@@ -51,7 +51,7 @@ const InfoCard = () => {
       </div>
 
       <div className="flex justify-end mt-6">
-        <Button variant="secondary" />
+        <Button variant="study" />
       </div>
     </div>
   );

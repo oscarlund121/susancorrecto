@@ -27,10 +27,10 @@ const Testimonials = ({ testimonials }) => {
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="item bg-[#FAFCFB] relative p-9 md:p-11 w-[350px] rounded-[32px] "
+            className="item bg-[#DBE1F8] relative p-9 md:p-11 w-[350px] rounded-[32px] "
           >
             {/* Quote icon — small, intentional */}
-            <FaQuoteLeft className="text-[#F38A5D] text-lg mb-5" />
+            <FaQuoteLeft className="text-black text-lg mb-5" />
 
             {/* Quote text */}
             <p className="text-gray-800 text-lg font-light leading-[1.7] mb-8">
@@ -38,7 +38,7 @@ const Testimonials = ({ testimonials }) => {
             </p>
 
             {/* Separator */}
-            <div className="border-t border-gray-200 pt-5 mb-5">
+            <div className="border-t pt-5 px-5 mb-5">
               <h5 className="font-semibold text-black text-sm">{testimonial.name}</h5>
               <p className="text-[#F38A5D] text-xs font-medium mt-1">{testimonial.issue}</p>
             </div>

@@ -1,4 +1,3 @@
-import HeaderSection from "../components/layout/FrontpageHeaderSection";
 import Navigation from "../components/layout/Navigation";
 import CategorySection from "../components/layout/CategorySection";
 import Button from "../components/ui/Button";
@@ -65,15 +64,17 @@ export default function Help() {
   return (
     <div>
       <Navigation />
-      <div className="bg-[#DBE1F8]/50 md:py-16 py-8">
-        <div className="mb-8">
-          <HeaderSection
-            title="Hvad jeg kan hjælpe dig med"
-            text="Vi møder alle livets udfordringer forskelligt. Hos mig får du et trygt rum, hvor vi sammen finder frem til løsninger, der passer til dig – uanset om det handler om angst, stress, lavt selvværd eller svære relationer."
-            buttonHref="/kontakt"
-            variant={false}
-            borderColor="black"
-          />
+      <div className="bg-[#F8F8F8] pt-12 pb-16 md:pt-20 md:pb-24">
+        <div className="content-max">
+          <div className="md:px-[20px] lg:px-[60px]">
+            <div className="flex mb-4">
+              <p className="text-[#F38A5D] tracking-wide uppercase mb-0">Hjælp</p>
+            </div>
+            <h2 className="mb-4">Hvad jeg kan hjælpe dig med</h2>
+            <p className="max-w-xl text-gray-600">
+              Vi møder alle livets udfordringer forskelligt. Hos mig får du et trygt rum, hvor vi sammen finder frem til løsninger, der passer til dig – uanset om det handler om angst, stress, lavt selvværd eller svære relationer.
+            </p>
+          </div>
         </div>
       </div>
 

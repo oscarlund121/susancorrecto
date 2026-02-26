@@ -2,9 +2,9 @@ import PriceItem from "../ui/PriceItem";
 
 const PriceSection = ({ title, items }) => {
   return (
-    <div className="mb-12">
-      <div className="mb-6 border-b-2 border-black pb-2">
-        <h3>{title}</h3>
+    <div className="mb-14">
+      <div className="mb-6 border-b-2 border-[#367067]/20 pb-3">
+        <h4 className="text-[#367067]">{title}</h4>
       </div>
       <div>
         {items.map((item, index) => (
