@@ -330,7 +330,7 @@ button {
   display: grid;
   grid-gap: calc(var(--gutter) * 3.5);
   grid-template-columns: 10px repeat(var(--total, 5), calc(25% - var(--gutter))) 10px;
-  grid-template-rows: minmax(250px, 1fr);
+  grid-template-rows: minmax(200px, 1fr);
 
   overflow-x: scroll;
   -ms-overflow-style: none;
@@ -347,7 +347,7 @@ button {
 
 .hs > .item {
   scroll-snap-align: center;
-  padding: calc(var(--gutter) / 2 * 1.5);
+  padding: calc(var(--gutter) / 2 * 2);
   display: flex;
   flex-direction: column;
   justify-content: space-between;

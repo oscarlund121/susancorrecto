@@ -25,7 +25,7 @@ const SectionIntro = () => {
                   <h3 className="text-black text-center lg:text-left font-normal leading-[1.25]">
                     &ldquo;Mange af mine klienter beskriver, at de i lang tid har
                     gået med en følelse af uro,{" "}
-                    <span className="text-[#F38A5D]">usikkerhed</span> eller
+                    <span className="text-[#F38A5D] italic">usikkerhed</span> eller
                     fastlåsthed.
                   </h3>
                   <h4 className="text-[#367067] mt-6 font-light italic">

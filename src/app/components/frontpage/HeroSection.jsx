@@ -24,7 +24,7 @@ const HeroSection = () => {
       </div>
 
       {/* Hero content */}
-      <div className="relative z-20 flex-1 flex items-end md:items-start mt-8 px-8 md:px-16 lg:px-24">
+      <div className="relative z-20 flex-1 flex items-end  mt-8 px-8 md:px-16 lg:px-24">
         <div className="flex flex-col text-white text-left">
 
 
@@ -36,13 +36,13 @@ const HeroSection = () => {
           </h1>
 
           {/* Subheader — beroligende undertekst */}
-          <p className="mt-6 md:mt-8 text-white/80 font-light max-w-md md:max-w-lg text-base md:text-lg leading-relaxed opacity-0 animate-fade-in-up" style={{ animationDelay: "600ms", animationFillMode: "forwards" }}>
+          <p className="mt-6 md:mt-8 text-white/80 font-light max-w-md md:max-w-lg text-base md:text-lg leading-relaxed opacity-0 animate-fade-in-up" style={{ animationDelay: "300ms", animationFillMode: "forwards" }}>
             Jeg støtter dig i at håndtere pres, usikkerhed og fastlåste mønstre
             — så du kan opleve mere glæde og trivsel i hverdagen.
           </p>
 
           {/* CTA — tydelig handling */}
-          <div className="mt-8 md:mt-10 opacity-0 animate-fade-in-up" style={{ animationDelay: "800ms", animationFillMode: "forwards" }}>
+          <div className="mt-8 md:mt-10 opacity-0 animate-fade-in-up" style={{ animationDelay: "500ms", animationFillMode: "forwards" }}>
             <Button variant="primary" href="/kontakt">
               Book en samtale
             </Button>

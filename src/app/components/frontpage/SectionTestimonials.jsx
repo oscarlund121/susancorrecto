@@ -50,11 +50,17 @@ const testimonialData = [
 
 const SectionTestimonials = () => {
   return (
-    <div className="bg-white py-16 md:py-24 lg:py-32">
+    <div className="bg-white pt-24 md:pt-32  pb-16 md:pb-24 lg:pb-32">
       {/* Header */}
-      <div className="content-max">
+      <div className="content-max">      
+        {/* Pull-quote/stat bridge */}
+      <div className="w-full flex justify-center pointer-events-none select-none 4 mb-4 z-20">
+        <span className="bg-[#ffffff] text-[#F38A5D] rounded-full px-6 py-2 md:px-8 md:py-2.5 shadow-lg text-normal md:text-xl font-serif font-medium  min-w-[180px] max-w-[90vw] mt-2 mb-2">
+          20+ års erfaring
+        </span>
+      </div>
         <h2 className="text-black text-center">
-          Det siger mine <span className="text-[#F38A5D]">klienter</span>
+          Det siger mine <span className="text-[#367067] italic font-medium">klienter</span>
         </h2>
         <p className="text-center mt-4 md:mt-6 mb-16 md:mb-20 ">
           Her er nogle af de oplevelser, mine klienter har haft med terapien.
