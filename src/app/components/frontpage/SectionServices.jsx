@@ -9,15 +9,15 @@ import FadeIn from "../ui/FadeIn";
 const SectionServices = () => {
   return (
     <div className="bg-white">
-      <div className="py-16 md:py-24 bg-[#367067] md:mr-28 md:pr-12 md:rounded-r-[200px]">
+      <div className="py-16 md:py-24 lg:py-32 bg-[#367067] md:mr-28 md:pr-12 md:rounded-r-[200px]">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
             <FadeIn>
               <div className="text-center mb-14">
-                <h2 className="text-white font-normal mb-4">
+                <h3 className="text-white font-light mb-4">
                   Jeg tilbyder evidensbaseret psykoterapi med fokus på
-                  helhedsorienteret behandling og personlig udvikling
-                </h2>
+                  helhedsorienteret behandling og personlig udvikling.
+                </h3>
               </div>
             </FadeIn>
 

@@ -50,7 +50,7 @@ const testimonialData = [
 
 const SectionTestimonials = () => {
   return (
-    <div className="bg-white py-16 pb-24 md:pb-32  ">
+    <div className="bg-white py-16 md:py-24 lg:py-32">
       {/* Header */}
       <div className="content-max">
         <h2 className="text-black text-center">

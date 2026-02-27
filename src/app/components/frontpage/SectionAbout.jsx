@@ -10,7 +10,7 @@ const SectionAbout = () => {
     <div className="py-16 md:py-24 lg:py-32 flex flex-col items-center text-black bg-[white]">
       {/* HeaderSection får fuld bredde */}
 
-      <div className="content-max mt-12">
+      <div className="content-max">
         <div className="grid grid-cols-1 text-max md:grid-cols-2 gap-2">
           <figure className="mt-10 md:mt-0 flex flex-col justify-center items-center w-full order-1 md:order-1">
             <div className="relative w-full max-w-[350px] md:max-w-[500px]">

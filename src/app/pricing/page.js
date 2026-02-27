@@ -94,7 +94,7 @@ export default function Pricing() {
       <div className="bg-white pb-16 md:pb-24 lg:pb-32">
         <div className="content-max">
           <div className="md:px-[20px] lg:px-[60px]">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             {/* Venstre side - Prisliste */}
             <div className="lg:col-span-2">
               {priceData.map((section, index) => (

@@ -6,7 +6,7 @@ import FadeIn from "../ui/FadeIn";
 
 const SectionHelp = () => {
   return (
-    <div id="hjaelp-kategorier" className="py-16 md:py-24 bg-[#367067] md:ml-28 md:pl-12 md:rounded-bl-[100px] rounded-tl-[50px] text-white scroll-mt-8">
+    <div id="hjaelp-kategorier" className="py-16 md:py-24 lg:py-32 bg-[#367067] md:ml-28 md:pl-12 md:rounded-bl-[100px] rounded-tl-[50px] text-white scroll-mt-8">
       <FadeIn>
         <HeaderSection
           title="Få hjælp til angst, stress, lavt selvværd & relationelle udfordringer."
