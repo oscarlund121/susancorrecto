@@ -48,7 +48,7 @@ const SectionIntro = () => {
                 </div>
 
                 {/* Image */}
-                <div className="image-accent-green lg:flex-[2] w-full lg:w-auto">
+                <div className="image-accent-orange lg:flex-[2] w-full lg:w-auto">
                   <Image
                     src="/img/smile_session.webp"
                     alt="Terapeutisk samtale"
