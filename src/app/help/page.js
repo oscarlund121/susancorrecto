@@ -50,7 +50,7 @@ const categories = [
     id: 5,
     title: "Relationer & familie",
     description: "Familie og relationer er en vigtig del af vores liv. De kan være en stor støtte – men også en kilde til udfordringer og smerte. Når vi ikke føler os hørt, forstået – eller selv har svært ved at forstå den anden – kan det skabe afstand, spændinger og fastlåste mønstre. Uenigheder og følelsesmæssig belastning kan påvirke både den enkelte og fællesskabet. I terapien arbejder vi med at skabe større forståelse, bedre kommunikation og nye måder at være sammen på – med fokus på tryghed, respekt og nærvær.",
-    tags: ["Kommunikationsproblemer", "Forældrerådgivning", "Social angst & ensomhed", "Parforhold", "Familiekonflikter & uro i familien"]
+    tags: ["Kommunikationsproblemer", "Forældrerådgivning", "Social angst & ensomhed", "Familiekonflikter & uro i familien"]
   },
   {
     id: 6,
