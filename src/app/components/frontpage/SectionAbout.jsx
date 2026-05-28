@@ -15,11 +15,11 @@ const SectionAbout = () => {
           <figure className="mt-10 md:mt-0 flex flex-col justify-center items-center w-full order-1 md:order-1">
             <div className="relative w-full max-w-[350px] md:max-w-[500px]">
               <Image
-                src="/img/headshot.webp"
-                alt="Om Susan Image"
+                src="/img/new-about-susan.webp"
+                alt="Susan Albertsen"
                 width={500}
                 height={600}
-                className="w-full h-auto object-cover object-bottom rounded-3xl"
+                className="w-full h-auto object-cover rounded-3xl"
               />
             </div>
 

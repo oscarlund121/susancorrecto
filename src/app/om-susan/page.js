@@ -84,7 +84,7 @@ export default function OmSusan() {
               <div>
                 <figure className="mb-8">
                   <Image
-                    src="/img/headshot.webp"
+                    src="/img/new-about-susan.webp"
                     alt="Susan Albertsen"
                     width={500}
                     height={450}

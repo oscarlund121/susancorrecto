@@ -23,7 +23,7 @@ const CollapsibleForm = () => {
       {/* Floating trigger button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="group bg-[#367067] text-white rounded-full cursor-pointer hover:bg-[#2e6159] transition-all duration-300 shadow-lg hover:shadow-xl px-6 py-4 flex items-center gap-3"
+        className="group bg-[#F38A5D] text-white rounded-full cursor-pointer hover:bg-[#2e6159] transition-all duration-300 shadow-lg hover:shadow-xl px-6 py-4 flex items-center gap-3 font-medium"
       >
         <span className="text-sm md:text-base font-light">
           {isOpen ? "Luk" : "Skal vi starte en samtale?"}
