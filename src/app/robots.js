@@ -25,6 +25,5 @@ export default function robots() {
       },
     ],
     sitemap: 'https://www.psykoterapisusan.dk/sitemap.xml',
-    host: 'https://www.psykoterapisusan.dk',
   };
 }
